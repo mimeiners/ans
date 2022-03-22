@@ -1,1 +1,1 @@
-# M1.9 Grundlagen der Elektrotechnik 1 (GEL1)
+# M6.9 Analoge Schaltungstechnik (ANS)
