@@ -2,21 +2,36 @@
 
 format: jb-book
 root: about/unsyllabus
-chapters:
-- file: docs/Experiment_01
-# - file: docs/Experiment_02
-- file: docs/Experiment_02_TZ
-# - file: docs/Experiment_03
-- file: docs/Experiment_03_TZ
-- file: docs/Experiment_04
-- file: docs/Experiment_05
-- file: docs/Experiment_06
-- file: docs/Experiment_07
-- file: docs/Experiment_08
-- file: docs/Experiment_09
-- file: docs/Experiment_10
-- file: docs/Experiment_11
-- file: docs/Experiment_12
-- file: docs/Experiment_13
-- file: docs/Experiment_14
-- file: docs/RedPitaya_Messautomatisierung
+parts:
+- caption: About this course
+  chapters:
+    - file: about/syllabus
+    - file: about/course_schedule
+    - file: about/accommodations
+    - file: about/doing_well
+    - file: about/faq
+- caption: Seminar
+  chapters:
+    - file: class/week01_summary
+      title: Einleitung und Übersicht
+    - file: class/week02_summary
+      title: Kapitel 2
+- caption: Labor
+  chapters:
+    - file: lab/Experiment_01
+#    - file: lab/Experiment_02
+    - file: lab/Experiment_02_TZ
+#    - file: lab/Experiment_03
+    - file: lab/Experiment_03_TZ
+    - file: lab/Experiment_04
+    - file: lab/Experiment_05
+    - file: lab/Experiment_06
+    - file: lab/Experiment_07
+    - file: lab/Experiment_08
+    - file: lab/Experiment_09
+    - file: lab/Experiment_10
+    - file: lab/Experiment_11
+    - file: lab/Experiment_12
+    - file: lab/Experiment_13
+    - file: lab/Experiment_14
+    - file: lab/RedPitaya_Messautomatisierung
