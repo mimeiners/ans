@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Grundlagen der Elektrotechnik 2 (GEL2)</title>
+    <title>Search &#8212; M 6.9 Analoge Schaltungen (ANS)</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="https://dokie.li/media/css/dokieli.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -41,6 +42,41 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="dokieli" src="https://dokie.li/scripts/dokieli.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "mimeiners/ans");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -51,6 +87,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="_static/searchtools.js"></script>
     <script src="_static/language_data.js"></script>
+    <link rel="canonical" href="https://mimeiners.github.io/ans/search.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="#" />
   <script src="searchindex.js" defer></script>
@@ -81,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/hsb-logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Grundlagen der Elektrotechnik 2 (GEL2)</h1>
+      <h1 class="site-logo" id="site-title">M 6.9 Analoge Schaltungen (ANS)</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="#" method="get">
@@ -91,48 +128,139 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/01_lec.html">
-   Einleitung
+  <a class="reference internal" href="about/unsyllabus.html">
+   Unsyllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this course
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="about/syllabus.html">
+   Course Syllabus (Official)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/02_lec.html">
-   Netzwerkerregung
+  <a class="reference internal" href="about/course_schedule.html">
+   Course Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/03_lec.html">
-   Frequenzbereich
+  <a class="reference internal" href="about/accommodations.html">
+   Accommodations
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/04_lec.html">
-   Impedanz, Admittanz und Leistung
+  <a class="reference internal" href="about/doing_well.html">
+   How to do well in this course
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/05_lec.html">
-   Graphische Analysemethoden
+  <a class="reference internal" href="about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Seminar
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="class/week01_summary.html">
+   Einleitung und Übersicht
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/06_lec.html">
-   Netzwerkanalyse
+  <a class="reference internal" href="class/week02_summary.html">
+   Kapitel 2
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Labor
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_01.html">
+   Grundschaltungen des OPV
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/07_lec.html">
-   Messbrücken
+  <a class="reference internal" href="lab/Experiment_02_TZ.html">
+   Schmitt-Trigger
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/08_lec.html">
-   Resonanzkreise
+  <a class="reference internal" href="lab/Experiment_03_TZ.html">
+   Charakteristik von Integrator und Differenzierer
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/09_lec.html">
-   Transformatoren und Übertrager
+  <a class="reference internal" href="lab/Experiment_04.html">
+   Analoge Filter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_05.html">
+   Self-Tuned Filter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_06.html">
+   Voltage Controlled Oscillator (VCO)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_07.html">
+   Phase Locked Loop (PLL)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_08.html">
+   Automatic Gain/Volume Control (AGC/AVC)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_09.html">
+   DC-DC Wandler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_10.html">
+   Entwurf eines LDO Reglers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_11.html">
+   Parameterstudie eines LDO’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_12.html">
+   Parameterstudie eines DC-DC Wandlers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_13.html">
+   Entwurf eines digital kontrollierten GSA’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/Experiment_14.html">
+   Digital programmierbarer Signalgenerator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab/RedPitaya_Messautomatisierung.html">
+   Red Pitaya Messautomatisierung
   </a>
  </li>
 </ul>
@@ -175,11 +303,11 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jb-gel2"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/mimeiners/ans"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jb-gel2/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/mimeiners/ans/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -250,7 +378,13 @@ const thebe_selector_output = ".output, .cell_output"
         
           By M. Meiners<br/>
         
-            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
       </p>
     </div>
   </footer>

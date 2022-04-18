@@ -1,15 +1,15 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: ASLK Pro Experimente
-author: M. Meiners
+title: M 6.9 Analoge Schaltungen (ANS)
+author: M. Meiners 
 copyright: ""
 logo: hsb-logo.png
 exclude_patterns: ["LICENSE.md", "README.md"]
 only_build_toc_files: true
 # Short description about the book
 description: >-
-  Elektronik-Experimente mit dem ASLK Pro.
+  Bachelor Modul ANS.
 
 # execute:
 #  execute_notebooks: cache
@@ -22,12 +22,12 @@ html:
   use_repository_button: true
   use_edit_page_button: true
   navbar_number_sections: false
-  baseurl: "https://mimeiners.github.io/ASLK_PRO/"
+  baseurl: "https://mimeiners.github.io/ans/"
 # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
   comments:
     hypothesis: false
     utterances:
-      repo: "mimeiners/ASLK_PRO"
+      repo: "mimeiners/ans"
     dokieli: true
   extra_footer : |
       <div>
@@ -42,8 +42,8 @@ launch_buttons:
   thebe: true
   
 repository:
-  url: https://github.com/mimeiners/ASLK_PRO
-  path_to_book: "jb-aslkpro"
+  url: https://github.com/mimeiners/ans
+  path_to_book: ""
   branch: master
 
 
@@ -53,7 +53,7 @@ bibtex_bibfiles:
 latex:
   latex_engine: "xelatex"
   latex_documents:
-    targetname: aslkpro.tex
+    targetname: ans.tex
 
 sphinx:
   config:
