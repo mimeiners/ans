@@ -1,0 +1,1177 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einleitung und Motivation &#8212; M 6.9 Analoge Schaltungstechnik (ANS)</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="https://dokie.li/media/css/dokieli.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="dokieli" src="https://dokie.li/scripts/dokieli.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "mimeiners/ans");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <link rel="canonical" href="https://mimeiners.github.io/ans/class/01_lec.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Grundschaltungen des OPV" href="../lab/Experiment_01.html" />
+    <link rel="prev" title="Unsyllabus" href="../about/unsyllabus.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/hsb-logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">M 6.9 Analoge Schaltungstechnik (ANS)</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/unsyllabus.html">
+   Unsyllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Seminar
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Einleitung und Übersicht
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Labor
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_01.html">
+   Grundschaltungen des OPV
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_02_TZ.html">
+   Schmitt-Trigger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_03_TZ.html">
+   Charakteristik von Integrator und Differenzierer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_04.html">
+   Analoge Filter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_05.html">
+   Self-Tuned Filter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_06.html">
+   Voltage Controlled Oscillator (VCO)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_07.html">
+   Phase Locked Loop (PLL)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_08.html">
+   Automatic Gain/Volume Control (AGC/AVC)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_09.html">
+   DC-DC Wandler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_10.html">
+   Entwurf eines LDO Reglers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_11.html">
+   Parameterstudie eines LDO’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_12.html">
+   Parameterstudie eines DC-DC Wandlers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_13.html">
+   Entwurf eines digital kontrollierten GSA’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/Experiment_14.html">
+   Digital programmierbarer Signalgenerator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab/RedPitaya_Messautomatisierung.html">
+   Red Pitaya Messautomatisierung
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/class/01_lec.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mimeiners/ans"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/mimeiners/ans/issues/new?title=Issue%20on%20page%20%2Fclass/01_lec.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/mimeiners/ans/edit/master/class/01_lec.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lernziele-des-moduls">
+   Lernziele des Moduls
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voraussetzungen-des-moduls">
+   Voraussetzungen des Moduls
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scientific-computing-data-science">
+   Scientific Computing / Data Science
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analoge-schaltungssimulation-spice">
+   Analoge Schaltungssimulation (SPICE)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#betriebssystem-os-werkzeuge-tools">
+   Betriebssystem (OS) - Werkzeuge (Tools)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-editoren">
+   Code Editoren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schreibst-du-noch-oder-texst-du-schon">
+   Schreibst Du noch oder TeXst Du schon?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#latex-editoren">
+   LaTeX Editoren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#literaturverwaltung-und-latex">
+   Literaturverwaltung und LaTeX
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#labor">
+   Labor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-science">
+   Data Science
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schaltungsanalyse-entwurf-neq-black-magic">
+   Schaltungsanalyse/-entwurf
+   <span class="math notranslate nohighlight">
+    \(\neq\)
+   </span>
+   Black Magic
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schone-neue-welt">
+   Schöne neue Welt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#from-sand-to-silicon-infineon-dresden">
+   From Sand to Silicon (Infineon, Dresden)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finfet-intel">
+   FinFET (Intel)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tsmc-fab-next-gen-7-5-nm">
+   TSMC Fab (Next Gen 7/5 nm)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#es-war-einmal">
+   Es war einmal …
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#damals-und-heute">
+   Damals und heute
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moore-s-law">
+   Moore’s Law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#systemhierarchie">
+   Systemhierarchie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#system-assembly">
+   System Assembly
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schnittstellen-zur-aussenwelt">
+   Schnittstellen zur Aussenwelt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#meeting-mit-einem-system">
+   Meeting mit einem System
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#system-in-a-package-sip">
+   System in a Package (SiP)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#backend-phasen">
+   Backend Phasen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sie-werden-experte">
+   Sie werden Experte
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evolution-von-produkten">
+   Evolution von Produkten
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eda-kompetenz">
+   EDA Kompetenz
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ansichten-zur-hardware-i">
+   Ansichten zur Hardware (I)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ansichten-zur-hardware-ii">
+   Ansichten zur Hardware (II)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstraktionsebenen">
+   Abstraktionsebenen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entwurfsablauf">
+   Entwurfsablauf
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verifikation">
+   Verifikation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frontend-vs-backend-analog">
+   Frontend vs. Backend (analog)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frontend-vs-backend-digital">
+   Frontend vs. Backend (digital)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-entwurfsmethodik">
+   Design-/Entwurfsmethodik
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analog-design-entry">
+   Analog Design Entry
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#netlist">
+   Netlist
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#layout">
+   Layout
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digital-design-entry">
+   Digital Design Entry
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hardwarebeschreibungssprachen">
+   Hardwarebeschreibungssprachen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology-gates-und-netlisting">
+   Technology-Gates und Netlisting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#standard-cell-layout">
+   Standard Cell Layout
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nachhaltige-elektronik">
+   Nachhaltige Elektronik …
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#warum-es-sicht-lohnt">
+   Warum es sicht lohnt …
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#und-ab-an-den-strand">
+   Und ab an den Strand …
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#literaturverzeichnis">
+   Literaturverzeichnis
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- !split -->
+<!-- jupyter-book 01_lec.md -->
+<div class="tex2jax_ignore mathjax_ignore section" id="einleitung-und-motivation">
+<h1>Einleitung und Motivation<a class="headerlink" href="#einleitung-und-motivation" title="Permalink to this headline">¶</a></h1>
+<!-- !split -->
+<div class="section" id="lernziele-des-moduls">
+<h2>Lernziele des Moduls<a class="headerlink" href="#lernziele-des-moduls" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ein tieferes Verständnis für das Verhalten von MOS-Elementen im analogen Schaltungsentwurf entwickeln und Ausblicke auf weiterführende Kurse im Master bekommen.</p></li>
+<li><p>Funktionsprinzipien und Charakterisierung von MOS-Elementen</p></li>
+<li><p>Fundamentale integrierte analoge Schaltungen</p></li>
+<li><p>Operationsverstärker</p></li>
+<li><p>Lernen, Grenzen und Tradeoffs analoger Schaltungen zu bewerten</p></li>
+<li><p>Entwickeln eines systematischen Entwurfsstils, auch anwendbar für andere Ingenieursdisziplinen</p></li>
+<li><p>Lernen, einen Schaltungssimulator für den Entwurf einzusetzen.</p></li>
+<li><p>Technisch-wissenschaftliche Dokumentation</p></li>
+<li><p>Konsoliderung der oberen Aspekte in Laborprojekten</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="voraussetzungen-des-moduls">
+<h2>Voraussetzungen des Moduls<a class="headerlink" href="#voraussetzungen-des-moduls" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Netzwerkanalyse im Zeit- und Frequenzbereich</p></li>
+<li><p>Grundlagen Bipolar und MOSFET Halbleiterphysik</p></li>
+<li><p>Ersatzschaltbilder von Halbleiterbauelementen</p></li>
+<li><p>Pol-Nullstellen-Diagramm</p></li>
+<li><p>Bode-Diagramm</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="scientific-computing-data-science">
+<h2>Scientific Computing / Data Science<a class="headerlink" href="#scientific-computing-data-science" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.anaconda.com/download/">Python</a></p></li>
+<li><p><a class="reference external" href="https://www.r-project.org">R Project</a></p></li>
+<li><p><a class="reference external" href="http://de.mathworks.com/?requestedDomain=de.mathworks.com">Matlab</a></p></li>
+<li><p><a class="reference external" href="http://www.gnuplot.info">Gnuplot</a> (<a class="reference external" href="http://www.gnuplotting.org">Gnuplotting</a>)</p></li>
+<li><p><a class="reference external" href="http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html">Command-line tools</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="analoge-schaltungssimulation-spice">
+<h2>Analoge Schaltungssimulation (SPICE)<a class="headerlink" href="#analoge-schaltungssimulation-spice" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html">LTspice (Analog Devices)</a></p></li>
+<li><p><a class="reference external" href="https://www.ti.com/tool/TINA-TI">TINA-TI (Texas Instruments)</a></p></li>
+<li><p><a class="reference external" href="http://ngspice.sourceforge.net">ngspice (Open Source)</a></p></li>
+<li><p><a class="reference external" href="https://eda.sw.siemens.com/en-US/eldo/">ELDO (Siemens EDA)</a></p></li>
+<li><p><a class="reference external" href="https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-simulation-platform.html">Spectre (cadence)</a></p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html">PrimeSim HSPICE (SYNOPSIS)</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="betriebssystem-os-werkzeuge-tools">
+<h2>Betriebssystem (OS) - Werkzeuge (Tools)<a class="headerlink" href="#betriebssystem-os-werkzeuge-tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Shell_%28computing%29">Shell</a></p>
+<ul>
+<li><p><a class="reference external" href="https://ohmyz.sh">oh-my-zsh</a>,</p></li>
+<li><p><a class="reference external" href="https://bash-it.readthedocs.io/en/latest/">bash-it</a></p></li>
+<li><p><a class="reference external" href="https://de.wikipedia.org/wiki/Secure_Shell">SSH (Secure Shell)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://git-scm.com">GIT (Versionskontrolle)</a></p></li>
+<li><p><a class="reference external" href="https://cygwin.com">Cygwin</a></p>
+<ul>
+<li><p>A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows.</p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="code-editoren">
+<h2>Code Editoren<a class="headerlink" href="#code-editoren" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a></p></li>
+<li><p><a class="reference external" href="https://www.vim.org">Vim</a></p></li>
+<li><p><a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a></p></li>
+<li><p><a class="reference external" href="https://atom.io">Atom</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com">Visual Studio Code</a></p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="schreibst-du-noch-oder-texst-du-schon">
+<h2>Schreibst Du noch oder TeXst Du schon?<a class="headerlink" href="#schreibst-du-noch-oder-texst-du-schon" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://miktex.org/">MikTeX (Windows, MacOS, Linux)</a></p></li>
+<li><p><a class="reference external" href="https://www.tug.org/mactex/">MacTeX (MacOS)</a></p></li>
+<li><p><a class="reference external" href="http://tug.org/texlive/">TeXLive (Linux)</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="latex-editoren">
+<h2>LaTeX Editoren<a class="headerlink" href="#latex-editoren" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>IDE’s</p>
+<ul>
+<li><p><a class="reference external" href="http://www.texstudio.org">TeXStudio</a></p></li>
+<li><p><a class="reference external" href="http://www.xm1math.net/texmaker/">TeXMaker</a></p></li>
+<li><p><a class="reference external" href="http://www.tug.org/texworks/">TeXWorks</a></p></li>
+</ul>
+</li>
+<li><p>Kollaborative Frameworks</p>
+<ul>
+<li><p><a class="reference external" href="https://www.sharelatex.com/">ShareLaTeX, Online LaTeX</a></p></li>
+<li><p><a class="reference external" href="https://cocalc.com/doc/latex-editor.html">CoCalc - Online LaTeX</a></p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="literaturverwaltung-und-latex">
+<h2>Literaturverwaltung und LaTeX<a class="headerlink" href="#literaturverwaltung-und-latex" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www1.citavi.com/sub/manual5/de/exporting_to_bibtex.html">Citavi im Detail &gt; Titel exportieren &gt; Export nach BibTeX</a></p></li>
+<li><p><a class="reference external" href="https://unimelb.libguides.com/c.php?g=565734%5C&amp;p=3912294">RefWorks - Library Guide Univ. Melbourne</a></p></li>
+<li><p><a class="reference external" href="https://nerdpause.de/benutzerdefinierte-bibtex-keys-mit-zotero/">Benutzerdefinierte BibTex-Keys mit Zotero | nerdpause</a></p></li>
+<li><p><a class="reference external" href="https://unimelb.libguides.com/c.php?g=565734%5C&amp;p=3897117">JabRef - Library Guide Univ. Melbourne</a></p></li>
+<li><p><a class="reference external" href="https://unimelb.libguides.com/latexbibtex/endnote">EndNote - Library Guide Univ. Melbourne</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="labor">
+<h2>Labor<a class="headerlink" href="#labor" title="Permalink to this headline">¶</a></h2>
+<p><em>Experimente mit dem ASLK Pro.</em></p>
+<ul class="simple">
+<li><p>Anwendung unterschiedlicher Beschreibungsebenen</p>
+<ul>
+<li><p>Systemebene (Mathe, z.B. Matlab/Simulink, Python)</p></li>
+<li><p>Schaltungsebene (SPICE)</p></li>
+<li><p>Charakterisierung (Messungen)</p></li>
+</ul>
+</li>
+<li><p>Analog System Lab Kit – <a class="reference external" href="https://aslk-pro.readthedocs.io/de/latest/">ASLK Pro</a></p>
+<ul>
+<li><p>Experimente 1 bis 3</p></li>
+</ul>
+</li>
+<li><p>Messautomatisierung Red Pitaya <a class="reference external" href="https://redpitaya.readthedocs.io/en/latest/developerGuide/125-14/top.html">STEMlab 125-14/10</a></p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="data-science">
+<h2>Data Science<a class="headerlink" href="#data-science" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Arbeitsordner auf dem Rechner (sandboxing, virtualenv)</p></li>
+<li><p>Tabellenformat (ASCII, CSV)</p></li>
+<li><p>Datenspeicherung in speziellen Formaten, z.B. mat-files (HDF5)</p></li>
+<li><p><a class="reference external" href="https://db-engines.com">Datenbanken</a>,</p>
+<ul>
+<li><p>SQL (z.B. <a class="reference external" href="https://en.wikipedia.org/wiki/MariaDB">MariaDB</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/SQLite">SQlite</a>),</p></li>
+<li><p>noSQL (z.B. <a class="reference external" href="https://en.wikipedia.org/wiki/MongoDB">MongoDB</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/LevelDB">LevelDB</a>)</p></li>
+<li><p>Time-Series-DB (z.B. <a class="reference external" href="https://www.influxdata.com/time-series-database/">InfluxDB</a>)</p></li>
+<li><p><a class="reference external" href="https://www.opensourceforu.com/2017/05/three-python-databases-pickledb-tinydb-zodb/">PythonDB</a> (z.B. PicklDB, TinyDB, ZODB)</p></li>
+</ul>
+</li>
+<li><p>Exceldatei (.xlsx ) or OpenDocument (.ods)</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="schaltungsanalyse-entwurf-neq-black-magic">
+<h2>Schaltungsanalyse/-entwurf <span class="math notranslate nohighlight">\(\neq\)</span>  Black Magic<a class="headerlink" href="#schaltungsanalyse-entwurf-neq-black-magic" title="Permalink to this headline">¶</a></h2>
+<p><em>Schaltungsanalyse.</em></p>
+<ul class="simple">
+<li><p>ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen</p></li>
+<li><p>basierend auf einem einfachen, aber hinreichend genauen Modell</p></li>
+<li><p>“Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird!</p></li>
+<li><p>eine Schaltung <span class="math notranslate nohighlight">\(\Rightarrow\)</span> eine Lösung</p></li>
+</ul>
+<p><em>Schaltungsdesign/-entwurf.</em></p>
+<ul class="simple">
+<li><p>ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse.</p></li>
+<li><p>eine Spezifikation <span class="math notranslate nohighlight">\(\Rightarrow\)</span> viele Lösungen</p></li>
+<li><p>Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="schone-neue-welt">
+<h2>Schöne neue Welt<a class="headerlink" href="#schone-neue-welt" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<!-- <img src="fig/lec_AMD@16nm@Jaguar.jpg" width="400"><p><em>AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 <div id="fig:jaguar"></div></em></p> -->
+<p><img alt="AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 " src="../_images/lec_AMD&#64;16nm&#64;Jaguar.jpg" /></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="from-sand-to-silicon-infineon-dresden">
+<h2>From Sand to Silicon (Infineon, Dresden)<a class="headerlink" href="#from-sand-to-silicon-infineon-dresden" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="793" height="446" src="https://www.youtube.com/embed/bor0qLifjz4?list=PLO_wT97BGA6xC6hNy9VGtt1bKwVuQXI5B" frameborder="0" allowfullscreen></iframe>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="finfet-intel">
+<h2>FinFET (Intel)<a class="headerlink" href="#finfet-intel" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="793" height="446" src="https://www.youtube.com/embed/_VMYPLXnd7E" frameborder="0" allowfullscreen></iframe>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="tsmc-fab-next-gen-7-5-nm">
+<h2>TSMC Fab (Next Gen 7/5 nm)<a class="headerlink" href="#tsmc-fab-next-gen-7-5-nm" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="793" height="446" src="https://www.youtube.com/embed/Hb1WDxSoSec" frameborder="0" allowfullscreen></iframe>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="es-war-einmal">
+<h2>Es war einmal …<a class="headerlink" href="#es-war-einmal" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.45 -->
+<!-- <img src="fig/lec_vacuum_tube.png" width="400"><p><em>1906 die Elektronenröhre</em></p> -->
+<p><img alt="1906 die Elektronenröhre" src="../_images/lec_vacuum_tube.png" /></p>
+<!-- !eslidecell -->
+<!-- !bslidecell 01 0.45 -->
+<!-- <img src="fig/lec_1st_transistor.png" width="400"><p><em>1947 der erste Transistor, Bell Labs Foto</em></p> -->
+<p><img alt="1947 der erste Transistor, Bell Labs Foto" src="../_images/lec_1st_transistor.png" /></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="damals-und-heute">
+<h2>Damals und heute<a class="headerlink" href="#damals-und-heute" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.45 -->
+<!-- <img src="fig/lec_1st_ic_kilby.png" width="400"><p><em>1958 Jack Kilby's erster IC <div id="fig:kilbyic"></div></em></p> -->
+<p><img alt="1958 Jack Kilby's erster IC " src="../_images/lec_1st_ic_kilby.png" /></p>
+<!-- !eslidecell -->
+<!-- !bslidecell 01 0.45 -->
+<!-- <img src="fig/lec_modern_ic.png" width="400"><p><em>Moderner IC <div id="fig:modernic"></div></em></p> -->
+<p><img alt="Moderner IC " src="../_images/lec_modern_ic.png" /></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="moore-s-law">
+<h2>Moore’s Law<a class="headerlink" href="#moore-s-law" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<p><embed src="https://players.brightcove.net/734546229001/default_default/index.html?videoId=4144803153001" width="793" height="446" autoplay="false" loop="true"></embed></p>
+<p><em></em></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="systemhierarchie">
+<h2>Systemhierarchie<a class="headerlink" href="#systemhierarchie" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.85 -->
+<!-- <img src="fig/lec_system_hierarchy.png" height="400"><p><em>Funktionsblöcke eines elektronischen Systems.</em></p> -->
+<p><img alt="Funktionsblöcke eines elektronischen Systems." src="../_images/lec_system_hierarchy.png" /></p>
+<!-- !eslidecell -->
+<ul class="simple">
+<li><p>Nutzen Sie Hierarchien zur Beschreibung komplexer Systeme</p></li>
+<li><p>Teile und herrsche</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="system-assembly">
+<h2>System Assembly<a class="headerlink" href="#system-assembly" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_system_assembly.png" height="400"><p><em>Bottom-up Prozess, Integration.</em></p> -->
+<p><img alt="Bottom-up Prozess, Integration." src="../_images/lec_system_assembly.png" /></p>
+<p>Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.</p>
+<!-- !split -->
+</div>
+<div class="section" id="schnittstellen-zur-aussenwelt">
+<h2>Schnittstellen zur Aussenwelt<a class="headerlink" href="#schnittstellen-zur-aussenwelt" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_real_world_interface.png" width="400"><p><em>Interfacing.</em></p> -->
+<p><img alt="Interfacing." src="../_images/lec_real_world_interface.png" /></p>
+<p>Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.</p>
+<!-- !split -->
+</div>
+<div class="section" id="meeting-mit-einem-system">
+<h2>Meeting mit einem System<a class="headerlink" href="#meeting-mit-einem-system" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_smartphone.png" width="400"><p><em>Drahtloses Kommunikationssystem.</em></p> -->
+<p><img alt="Drahtloses Kommunikationssystem." src="../_images/lec_smartphone.png" /></p>
+<p>Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.</p>
+<!-- !split -->
+</div>
+<div class="section" id="system-in-a-package-sip">
+<h2>System in a Package (SiP)<a class="headerlink" href="#system-in-a-package-sip" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_system_in_package.png" width="400"><p><em>Beschleunigungssensor.</em></p> -->
+<p><img alt="Beschleunigungssensor." src="../_images/lec_system_in_package.png" /></p>
+<p>Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.</p>
+<!-- !split -->
+</div>
+<div class="section" id="backend-phasen">
+<h2>Backend Phasen<a class="headerlink" href="#backend-phasen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Packaging</p></li>
+<li><p>Zuverlässigkeit = Qualität auf Zeit</p></li>
+<li><p>Testing auf Wafer Level, known good die (KGD)</p>
+<ul>
+<li><p>Burn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)</p></li>
+<li><p>Automatic Test Equipment (ATE)</p>
+<ul>
+<li><p>System Probe</p></li>
+<li><p>Interconnect Test</p></li>
+<li><p>Build-in Self-Test (BIST)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Statistische Datenanalyse und Yield Prognosen</p>
+<ul>
+<li><p>Ausfallrate FIT (failure in time)</p></li>
+<li><p>Badewannenkurve</p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="sie-werden-experte">
+<h2>Sie werden Experte<a class="headerlink" href="#sie-werden-experte" title="Permalink to this headline">¶</a></h2>
+<p><em>Leistungsmerkmale.</em></p>
+<ul class="simple">
+<li><p>Hintergrundwissen</p>
+<ul>
+<li><p>Systemverständnis, Architektur, Herstellungsverfahren, Implementation</p></li>
+</ul>
+</li>
+<li><p>Unterbewusste Kompetenz</p>
+<ul>
+<li><p>Abgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen</p></li>
+</ul>
+</li>
+<li><p>Spezialwissen</p>
+<ul>
+<li><p>Berufsspezifisches Wissen</p></li>
+</ul>
+</li>
+<li><p>Teamwork Haltung</p>
+<ul>
+<li><p>Kommunikationsfähigkeit, Berichtswesen und technische Präsentation</p></li>
+</ul>
+</li>
+<li><p>Kreativität</p></li>
+<li><p>Tool-Kenntnisse</p></li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="evolution-von-produkten">
+<h2>Evolution von Produkten<a class="headerlink" href="#evolution-von-produkten" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Angetrieben durch Technologieverbesserung</p>
+<ul>
+<li><p>Kosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)</p></li>
+<li><p>Leistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)</p></li>
+</ul>
+</li>
+<li><p>Angetrieben durch Verbesserung der Entwurfsmethodik</p>
+<ul>
+<li><p>Architektur (Leistung, Funktionen)</p></li>
+<li><p>CAD (Entwicklungskosten, Time-to-Market)</p></li>
+</ul>
+</li>
+<li><p>Komplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)</p></li>
+<li><p>Rolle von CAD</p>
+<ul>
+<li><p>Verbesserung der Produktivität von Konstruktionsprozessen</p></li>
+<li><p>Reduzierung der Komplexität für den Konstrukteur</p></li>
+<li><p>Sicherstellung des ordnungsgemäßen Betriebs der Geräte</p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="eda-kompetenz">
+<h2>EDA Kompetenz<a class="headerlink" href="#eda-kompetenz" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>EDA-Anbieter (Tool-Entwickler)</p>
+<ul>
+<li><p>Identifikation von Entwurfsaufgaben, Bedarf an Werkzeugen</p></li>
+<li><p>Entwicklung von Strategien und Algorithmen</p></li>
+<li><p>Implementierung von Software-Werkzeugen</p></li>
+<li><p>Verifikation der Stabilität und Funktionalität der Software-Tools</p></li>
+</ul>
+</li>
+<li><p>IC-Hersteller</p>
+<ul>
+<li><p>Entscheidungsplanung, welches Tool die Produktivität steigern könnte</p></li>
+<li><p>EDA-Tool-Manager, Installation und Wartung</p></li>
+<li><p>Experten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung</p></li>
+</ul>
+</li>
+<li><p>Dozenten und Studenten</p>
+<ul>
+<li><p>Jobchancen</p></li>
+<li><p>Notwendigkeit, auf dem Laufenden zu bleiben</p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="ansichten-zur-hardware-i">
+<h2>Ansichten zur Hardware (I)<a class="headerlink" href="#ansichten-zur-hardware-i" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-views_on_hardware_1.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-views_on_hardware_1.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="ansichten-zur-hardware-ii">
+<h2>Ansichten zur Hardware (II)<a class="headerlink" href="#ansichten-zur-hardware-ii" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-views_on_hardware_2.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-views_on_hardware_2.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="abstraktionsebenen">
+<h2>Abstraktionsebenen<a class="headerlink" href="#abstraktionsebenen" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-abstraction_layer.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-abstraction_layer.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="entwurfsablauf">
+<h2>Entwurfsablauf<a class="headerlink" href="#entwurfsablauf" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-design_flow.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-design_flow.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="verifikation">
+<h2>Verifikation<a class="headerlink" href="#verifikation" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-verification.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-verification.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="frontend-vs-backend-analog">
+<h2>Frontend vs. Backend (analog)<a class="headerlink" href="#frontend-vs-backend-analog" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-front-end_back-end_analog.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-front-end_back-end_analog.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="frontend-vs-backend-digital">
+<h2>Frontend vs. Backend (digital)<a class="headerlink" href="#frontend-vs-backend-digital" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-front-end_back-end_digital.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+<p><img alt="(c) M. Ortmanns, Univ. Ulm." src="../_images/lec_01-front-end_back-end_digital.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="design-entwurfsmethodik">
+<h2>Design-/Entwurfsmethodik<a class="headerlink" href="#design-entwurfsmethodik" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Full Custom - vollständig manuell: ASIC</p>
+<ul>
+<li><p>Überwiegend analoge Schaltungen</p></li>
+<li><p>Einfache digitale Gatter</p></li>
+<li><p>Volle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)</p></li>
+</ul>
+</li>
+<li><p>Semi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen</p>
+<ul>
+<li><p>Standardzellen, Makrozellen, IP’s</p></li>
+<li><p>Wiederverwendung von vordefinierten Blöcken oder Maskensätzen</p></li>
+<li><p>Eingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)</p></li>
+</ul>
+</li>
+<li><p>Vollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs</p>
+<ul>
+<li><p>FPGA, PLA</p></li>
+<li><p>Ausschließlich digitale Schaltungen</p></li>
+<li><p>Schnelles Prototyping</p></li>
+</ul>
+</li>
+</ul>
+<!-- !split -->
+</div>
+<div class="section" id="analog-design-entry">
+<h2>Analog Design Entry<a class="headerlink" href="#analog-design-entry" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-design_entry_analog.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-design_entry_analog.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="netlist">
+<h2>Netlist<a class="headerlink" href="#netlist" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-netlist.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-netlist.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="layout">
+<h2>Layout<a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-inverter_layout.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-inverter_layout.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="digital-design-entry">
+<h2>Digital Design Entry<a class="headerlink" href="#digital-design-entry" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-design_entry_digital.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-design_entry_digital.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="hardwarebeschreibungssprachen">
+<h2>Hardwarebeschreibungssprachen<a class="headerlink" href="#hardwarebeschreibungssprachen" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-hdl_inv.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-hdl_inv.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="technology-gates-und-netlisting">
+<h2>Technology-Gates und Netlisting<a class="headerlink" href="#technology-gates-und-netlisting" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-technology_gate_netlist.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-technology_gate_netlist.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="standard-cell-layout">
+<h2>Standard Cell Layout<a class="headerlink" href="#standard-cell-layout" title="Permalink to this headline">¶</a></h2>
+<!-- <img src="fig/lec_01-standard_cell_layout.png" width="400"> -->
+<p><img alt="" src="../_images/lec_01-standard_cell_layout.png" /></p>
+<!-- !split -->
+</div>
+<div class="section" id="nachhaltige-elektronik">
+<h2>Nachhaltige Elektronik …<a class="headerlink" href="#nachhaltige-elektronik" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="859" height="483" src="https://www.youtube.com/embed/7S5IuaKiZIY" frameborder="0" allowfullscreen></iframe>
+<p><em>Geekchester.</em></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="warum-es-sicht-lohnt">
+<h2>Warum es sicht lohnt …<a class="headerlink" href="#warum-es-sicht-lohnt" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="859" height="483" src="https://www.youtube.com/embed/SwPGxwBZw6I" frameborder="0" allowfullscreen></iframe>
+<p><em>Circuit Song.</em></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="und-ab-an-den-strand">
+<h2>Und ab an den Strand …<a class="headerlink" href="#und-ab-an-den-strand" title="Permalink to this headline">¶</a></h2>
+<!-- !bslidecell 00 0.9 -->
+<iframe width="859" height="483" src="https://www.youtube.com/embed/ekkJlQf-K4I" frameborder="0" allowfullscreen></iframe>
+<p><em>Viva la Electronica.</em></p>
+<!-- !eslidecell -->
+<!-- !split -->
+</div>
+<div class="section" id="literaturverzeichnis">
+<h2>Literaturverzeichnis<a class="headerlink" href="#literaturverzeichnis" title="Permalink to this headline">¶</a></h2>
+<!-- begin bibliography -->
+<ol class="simple">
+<li><p><a name="maloberti2011"></a> <strong>F. Maloberti</strong>.  <em>Understanding Microelectronics: a Top-Down Approach</em>, Wiley-Blackwell, 2011.</p></li>
+</ol>
+<!-- end bibliography -->
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "mimeiners/ans",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./class"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../about/unsyllabus.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Unsyllabus</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../lab/Experiment_01.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Grundschaltungen des OPV</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By M. Meiners (HSB)<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
