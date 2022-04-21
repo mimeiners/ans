@@ -3,19 +3,10 @@
 format: jb-book
 root: about/unsyllabus
 parts:
-- caption: About this course
-  chapters:
-    - file: about/syllabus
-    - file: about/course_schedule
-    - file: about/accommodations
-    - file: about/doing_well
-    - file: about/faq
 - caption: Seminar
   chapters:
-    - file: class/week01_summary
+    - file: class/01_lec
       title: Einleitung und Übersicht
-    - file: class/week02_summary
-      title: Kapitel 2
 - caption: Labor
   chapters:
     - file: lab/Experiment_01
