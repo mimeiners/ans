@@ -17,25 +17,21 @@
 
 <!-- !split -->
 ### Voraussetzungen des Moduls
-* Netzwerkanalyse im Zeit- und Frequenzbereich
-* Grundlagen Bipolar und MOSFET Halbleiterphysik
-* Ersatzschaltbilder von Halbleiterbauelementen
-* Pol-Nullstellen-Diagramm
-* Bode-Diagramm
+* Grundlagen der Halbleiterbauelemente
+* Netzwerk- und Systemtheorie
+* Regelungstechnik 
 
 <!-- !split -->
-### Scientific Computing / Data Science
+### Wissenschaftliches Rechnen / Datenwissenschaft
 * [Python](https://www.anaconda.com/download/)
-* [R Project](https://www.r-project.org) 
-* [Matlab](http://de.mathworks.com/?requestedDomain=de.mathworks.com)
-* [Gnuplot](http://www.gnuplot.info) ([Gnuplotting](http://www.gnuplotting.org))
+* [Matlab](https://de.mathworks.com)
+* [Gnu Octave](https://www.gnu.org/software/octave/)
 * [Command-line tools](http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html) 
 
 <!-- !split -->
-### Analoge Schaltungssimulation (SPICE)
-* [LTspice (Analog Devices)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
-* [TINA-TI (Texas Instruments)](https://www.ti.com/tool/TINA-TI)
-* [ngspice (Open Source)](http://ngspice.sourceforge.net)
+### Schaltungssimulation (SPICE)
+* [LTspice Linear Technology](http://www.linear.com/designtools/software/)
+* [ngspice (open-source)](http://ngspice.sourceforge.net)
 * [ELDO (Siemens EDA)](https://eda.sw.siemens.com/en-US/eldo/)
 * [Spectre (cadence)](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-simulation-platform.html)
 * [PrimeSim HSPICE (SYNOPSIS)](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html)
@@ -49,17 +45,13 @@
 
   * [GIT (Versionskontrolle)](https://git-scm.com)
   * [Cygwin](https://cygwin.com)
-    * A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows.
-
 
 <!-- !split -->
 ### Code Editoren
-  * [Emacs](https://www.gnu.org/software/emacs/)
-  * [Vim](https://www.vim.org)
-  * [Notepad++](https://notepad-plus-plus.org)
-  * [Atom](https://atom.io)
   * [Visual Studio Code](https://code.visualstudio.com)
-  * [PyCharm](https://www.jetbrains.com/pycharm/)
+  * [Notepad++](https://notepad-plus-plus.org) (Windows)
+  * [Emacs](https://www.gnu.org/software/emacs/)	
+  * [Vim](https://www.vim.org)
 
 <!-- !split -->
 ### Schreibst Du noch oder TeXst Du schon?
@@ -91,7 +83,7 @@
 ### Labor
 *Experimente mit dem ASLK Pro.* 
 * Anwendung unterschiedlicher Beschreibungsebenen
-  * Systemebene (Mathe, z.B. Matlab/Simulink, Python)
+  * Systemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)
   * Schaltungsebene (SPICE)
   * Charakterisierung (Messungen)
 
@@ -108,8 +100,7 @@
 * Tabellenformat (ASCII, CSV)
 * Datenspeicherung in speziellen Formaten, z.B. mat-files (HDF5)
 * [Datenbanken](https://db-engines.com), 
-  * SQL (z.B. [MariaDB](https://en.wikipedia.org/wiki/MariaDB), [SQlite](https://en.wikipedia.org/wiki/SQLite)),
-  * noSQL (z.B. [MongoDB](https://en.wikipedia.org/wiki/MongoDB), [LevelDB](https://en.wikipedia.org/wiki/LevelDB))
+  * SQL (z.B. [SQlite](https://www.sqlite.org/index.html), [DuckDB](https://duckdb.org))
   * Time-Series-DB (z.B. [InfluxDB](https://www.influxdata.com/time-series-database/))
   * [PythonDB](https://www.opensourceforu.com/2017/05/three-python-databases-pickledb-tinydb-zodb/) (z.B. PicklDB, TinyDB, ZODB)
 
@@ -137,8 +128,8 @@
 ### Schöne neue Welt
 <!-- !bslidecell 00 0.9 -->
 
-<!-- <img src="fig/lec_AMD@16nm@Jaguar.jpg" width="400"><p><em>AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 <div id="fig:jaguar"></div></em></p> -->
-![<p><em>AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 <div id="fig:jaguar"></div></em></p>](fig/lec_AMD@16nm@Jaguar.jpg)
+<!-- <img src="../../lecture/doconce/fig/lec_AMD@16nm@Jaguar.jpg" width="400"><p><em>AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 <div id="fig:jaguar"></div></em></p> -->
+![<p><em>AMD Jaguar APU (CPU/GPU), 16 nm, 325 qmm, 2016 <div id="fig:jaguar"></div></em></p>](../../lecture/doconce/fig/lec_AMD@16nm@Jaguar.jpg)
 
 <!-- !eslidecell -->
 
@@ -169,25 +160,25 @@
 <!-- !split -->
 ### Es war einmal ...
 <!-- !bslidecell 00 0.45 -->
-<!-- <img src="fig/lec_vacuum_tube.png" width="400"><p><em>1906 die Elektronenröhre</em></p> -->
-![<p><em>1906 die Elektronenröhre</em></p>](fig/lec_vacuum_tube.png)
+<!-- <img src="../../lecture/doconce/fig/lec_vacuum_tube.png" width="400"><p><em>1906 die Elektronenröhre</em></p> -->
+![<p><em>1906 die Elektronenröhre</em></p>](../../lecture/doconce/fig/lec_vacuum_tube.png)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 0.45 -->
-<!-- <img src="fig/lec_1st_transistor.png" width="400"><p><em>1947 der erste Transistor, Bell Labs Foto</em></p> -->
-![<p><em>1947 der erste Transistor, Bell Labs Foto</em></p>](fig/lec_1st_transistor.png)
+<!-- <img src="../../lecture/doconce/fig/lec_1st_transistor.png" width="400"><p><em>1947 der erste Transistor, Bell Labs Foto</em></p> -->
+![<p><em>1947 der erste Transistor, Bell Labs Foto</em></p>](../../lecture/doconce/fig/lec_1st_transistor.png)
 <!-- !eslidecell -->
 
 <!-- !split -->
 ### Damals und heute
 <!-- !bslidecell 00 0.45 -->
-<!-- <img src="fig/lec_1st_ic_kilby.png" width="400"><p><em>1958 Jack Kilby's erster IC <div id="fig:kilbyic"></div></em></p> -->
-![<p><em>1958 Jack Kilby's erster IC <div id="fig:kilbyic"></div></em></p>](fig/lec_1st_ic_kilby.png)
+<!-- <img src="../../lecture/doconce/fig/lec_1st_ic_kilby.png" width="400"><p><em>1958 Jack Kilby's erster IC <div id="fig:kilbyic"></div></em></p> -->
+![<p><em>1958 Jack Kilby's erster IC <div id="fig:kilbyic"></div></em></p>](../../lecture/doconce/fig/lec_1st_ic_kilby.png)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 0.45 -->
-<!-- <img src="fig/lec_modern_ic.png" width="400"><p><em>Moderner IC <div id="fig:modernic"></div></em></p> -->
-![<p><em>Moderner IC <div id="fig:modernic"></div></em></p>](fig/lec_modern_ic.png)
+<!-- <img src="../../lecture/doconce/fig/lec_modern_ic.png" width="400"><p><em>Moderner IC <div id="fig:modernic"></div></em></p> -->
+![<p><em>Moderner IC <div id="fig:modernic"></div></em></p>](../../lecture/doconce/fig/lec_modern_ic.png)
 <!-- !eslidecell -->
 
 <!-- !split -->
@@ -204,8 +195,8 @@
 <!-- !split -->
 ### Systemhierarchie
 <!-- !bslidecell 00 0.85 -->
-<!-- <img src="fig/lec_system_hierarchy.png" height="400"><p><em>Funktionsblöcke eines elektronischen Systems.</em></p> -->
-![<p><em>Funktionsblöcke eines elektronischen Systems.</em></p>](fig/lec_system_hierarchy.png)
+<!-- <img src="../../lecture/doconce/fig/lec_system_hierarchy.png" height="400"><p><em>Funktionsblöcke eines elektronischen Systems.</em></p> -->
+![<p><em>Funktionsblöcke eines elektronischen Systems.</em></p>](../../lecture/doconce/fig/lec_system_hierarchy.png)
 <!-- !eslidecell -->
 
 * Nutzen Sie Hierarchien zur Beschreibung komplexer Systeme
@@ -215,31 +206,23 @@
 
 <!-- !split -->
 ### System Assembly
-<!-- <img src="fig/lec_system_assembly.png" height="400"><p><em>Bottom-up Prozess, Integration.</em></p> -->
-![<p><em>Bottom-up Prozess, Integration.</em></p>](fig/lec_system_assembly.png)
-
-Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.
+<!-- <img src="../../lecture/doconce/fig/lec_system_assembly.png" height="400"><p><em>Bottom-up Prozess, Integration (c) Maloberti, Wiley 2011.</em></p> -->
+![<p><em>Bottom-up Prozess, Integration (c) Maloberti, Wiley 2011.</em></p>](../../lecture/doconce/fig/lec_system_assembly.png)
 
 <!-- !split -->
 ### Schnittstellen zur Aussenwelt
-<!-- <img src="fig/lec_real_world_interface.png" width="400"><p><em>Interfacing.</em></p> -->
-![<p><em>Interfacing.</em></p>](fig/lec_real_world_interface.png)
-
-Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.
+<!-- <img src="../../lecture/doconce/fig/lec_real_world_interface.png" width="400"><p><em>Interfacing (c) Maloberti, Wiley 2011.</em></p> -->
+![<p><em>Interfacing (c) Maloberti, Wiley 2011.</em></p>](../../lecture/doconce/fig/lec_real_world_interface.png)
 
 <!-- !split -->
 ### Meeting mit einem System
-<!-- <img src="fig/lec_smartphone.png" width="400"><p><em>Drahtloses Kommunikationssystem.</em></p> -->
-![<p><em>Drahtloses Kommunikationssystem.</em></p>](fig/lec_smartphone.png)
-
-Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.
+<!-- <img src="../../lecture/doconce/fig/lec_smartphone.png" width="400"><p><em>Drahtloses Kommunikationssystem (c) Maloberti, Wiley 2011.</em></p> -->
+![<p><em>Drahtloses Kommunikationssystem (c) Maloberti, Wiley 2011.</em></p>](../../lecture/doconce/fig/lec_smartphone.png)
 
 <!-- !split -->
 ### System in a Package (SiP)
-<!-- <img src="fig/lec_system_in_package.png" width="400"><p><em>Beschleunigungssensor.</em></p> -->
-![<p><em>Beschleunigungssensor.</em></p>](fig/lec_system_in_package.png)
-
-Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1]</a>.
+<!-- <img src="../../lecture/doconce/fig/lec_system_in_package.png" width="400"><p><em>Beschleunigungssensor (c) Maloberti, Wiley 2011.</em></p> -->
+![<p><em>Beschleunigungssensor (c) Maloberti, Wiley 2011.</em></p>](../../lecture/doconce/fig/lec_system_in_package.png)
 
 <!-- !split -->
 ### Backend Phasen
@@ -322,38 +305,38 @@ Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1
 <!-- !split -->
 ### Ansichten zur Hardware (II)
 
-<!-- <img src="fig/lec_01-views_on_hardware_2.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-views_on_hardware_2.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-views_on_hardware_2.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-views_on_hardware_2.png)
 
 <!-- !split -->
 ### Abstraktionsebenen
 
-<!-- <img src="fig/lec_01-abstraction_layer.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-abstraction_layer.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-abstraction_layer.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-abstraction_layer.png)
 
 <!-- !split -->
 ### Entwurfsablauf
 
-<!-- <img src="fig/lec_01-design_flow.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-design_flow.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-design_flow.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-design_flow.png)
 
 <!-- !split -->
 ### Verifikation
 
-<!-- <img src="fig/lec_01-verification.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-verification.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-verification.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-verification.png)
 
 <!-- !split -->
 ### Frontend vs. Backend (analog)
 
-<!-- <img src="fig/lec_01-front-end_back-end_analog.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-front-end_back-end_analog.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-front-end_back-end_analog.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-front-end_back-end_analog.png)
 
 <!-- !split -->
 ### Frontend vs. Backend (digital)
 
-<!-- <img src="fig/lec_01-front-end_back-end_digital.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](fig/lec_01-front-end_back-end_digital.png)
+<!-- <img src="../../lecture/doconce/fig/lec_01-front-end_back-end_digital.png" width="400"><p><em>(c) M. Ortmanns, Univ. Ulm.</em></p> -->
+![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../../lecture/doconce/fig/lec_01-front-end_back-end_digital.png)
 
 <!-- !split -->
 ### Design-/Entwurfsmethodik
@@ -450,10 +433,5 @@ Entnommen den Vorlesungsfolien von <a href="maloberti2011.html#maloberti2011">[1
 
 <!-- !split -->
 ### Literaturverzeichnis
-
-<!-- begin bibliography -->
- 1. <a name="maloberti2011"></a> **F. Maloberti**.  *Understanding Microelectronics: a Top-Down Approach*, Wiley-Blackwell, 2011.
-
-<!-- end bibliography -->
 
 
