@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Red Pitaya Messautomatisierung &#8212; M 6.9 Analoge Schaltungstechnik (ANS)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link media="all" rel="stylesheet" type="text/css" href="https://dokie.li/media/css/dokieli.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="dokieli" src="https://dokie.li/scripts/dokieli.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "mimeiners/ans");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lab/RedPitaya_Messautomatisierung';</script>
+    <link rel="canonical" href="https://mimeiners.github.io/ans/lab/RedPitaya_Messautomatisierung.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Digital programmierbarer Signalgenerator" href="Experiment_14.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../about/unsyllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/hsb-logo.png" class="logo__image only-light" alt="M 6.9 Analoge Schaltungstechnik (ANS) - Home"/>
+    <script>document.write(`<img src="../_static/hsb-logo.png" class="logo__image only-dark" alt="M 6.9 Analoge Schaltungstechnik (ANS) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../about/unsyllabus.html">
+                    Unsyllabus
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../class/01_lec.html">Einleitung und Übersicht</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Labor</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Experiment_01.html">Grundschaltungen des OPV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_02_TZ.html">Schmitt-Trigger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_03_TZ.html">Charakteristik von Integrator und Differenzierer</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Experiment_04.html">Analoge Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_05.html">Self-Tuned Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_06.html">Voltage Controlled Oscillator (VCO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_07.html">Phase Locked Loop (PLL)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_08.html">Automatic Gain/Volume Control (AGC/AVC)</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Experiment_09.html">DC-DC Wandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_10.html">Entwurf eines LDO Reglers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_11.html">Parameterstudie eines LDO’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_12.html">Parameterstudie eines DC-DC Wandlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_13.html">Entwurf eines digital kontrollierten GSA’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_14.html">Digital programmierbarer Signalgenerator</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Red Pitaya Messautomatisierung</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans/edit/master/lab/RedPitaya_Messautomatisierung.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans/issues/new?title=Issue%20on%20page%20%2Flab/RedPitaya_Messautomatisierung.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lab/RedPitaya_Messautomatisierung.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Red Pitaya Messautomatisierung</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einleitung">Einleitung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dcsweep">DCsweep</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme">Probleme</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generierung-der-gleichspannung">Generierung der Gleichspannung</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#groszere-und-kleinere-spannungen-als-1v-1v">Größere und kleinere Spannungen als +1V, -1V</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitundengang">Amplitundengang</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="red-pitaya-messautomatisierung">
+<h1>Red Pitaya Messautomatisierung<a class="headerlink" href="#red-pitaya-messautomatisierung" title="Link to this heading">#</a></h1>
+<section id="einleitung">
+<h2>Einleitung<a class="headerlink" href="#einleitung" title="Link to this heading">#</a></h2>
+<p>Viele moderen Messinstrumente wie Red Pitaya verfügen über eine SCPI
+(Standard Command for programmable Instrumentation) Schnittstelle. Diese
+kann über einen sogennaten remote Control (Fernbedienung) von Programmen
+wie Matlab, Python, LabView oder SCILAB gesteuert werden kann. Hierdurch
+können zum Beispiel komplexe Signale generiert und über den
+Signalausgang ausgegeben werden. Des Weitern können über die
+FastAnalogInputs, die sogennante FAI, Messdaten aufgezeichnet und in
+gewünschten Formen, wie zum Beispiel als Rohdaten, abgespeichert werden.
+Da die Messdatenerfassung mittels Matlab, Python, LabView oder SCILAB
+durchgeführt wird, lassen sich die aufgezeichneten Messdaten
+hervorragend aufbereiten.</p>
+<p>Eine ausführliche
+<a class="reference external" href="https://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/remoteControl.html">Dokumentation</a>
+mit Beispielen, der Befehlskatalog und eine Anleitung für den
+Verbindungsaufbau zwischen Red Pitaya und Mess-PC ist auf der
+RedPitaya-Webseite zu finden.</p>
+<p>Im Rahmen des “Projekts Analog System Lab Kit Pro Texas” wurden drei
+Skripte mittels Python für die Messautomatisierung erstellt und benutzt.
+Auf den folgenden Seiten wird näher auf die Funktionsweise, Probleme bei
+der Entwicklung und auf evtl. Verbesserungen der Skripte eingehen.</p>
+</section>
+<section id="dcsweep">
+<h2>DCsweep<a class="headerlink" href="#dcsweep" title="Link to this heading">#</a></h2>
+<p>Das DCsweep-Skript kann zur Ermitttlung der Übertragungseigenschaften
+von Systemen für Gleichspannungsverhalten eingesetzt werden.</p>
+<p>Hierfür werden durch den Benutzer eine Start- und Endspannung
+vorgegeben. Für RedPitaya dürfen die Spannungen die Grenenzen von <span class="math notranslate nohighlight">\(1\,V\)</span>
+und <span class="math notranslate nohighlight">\(-1\,V\)</span> nicht überschreiten. Hierbei ist eine Eingabe der Messpunkte
+notwendig. Dadurch wird die Schrittweite zwischen Start- und Endwert
+errechnet.</p>
+<blockquote>
+<div><div class="note docutils">
+<div class="title docutils">
+<p>Note</p>
+</div>
+</div>
+<p>Als Beispiel soll ein Startwert von -1V und ein Endwert von +1V mit 11
+Messpunkten gewählt werden. In diesem Fall werden folgende
+Gleichspannungen generiert und durch den ‘fast analog Output’
+ausgegeben.</p>
+<p><span class="math notranslate nohighlight">\(V_{OUT}: -1.0\,V, -0.8\,V, -0.6\,V, -0.4\,V, -0.2\,V, 0\,V, 0.2\,V, 0.4\,V, 0.6\,V, 0.8\,V, 1.0\,V\)</span></p>
+<div class="docutils">
+</div>
+</div></blockquote>
+<section id="probleme">
+<h3>Probleme<a class="headerlink" href="#probleme" title="Link to this heading">#</a></h3>
+<section id="generierung-der-gleichspannung">
+<h4>Generierung der Gleichspannung<a class="headerlink" href="#generierung-der-gleichspannung" title="Link to this heading">#</a></h4>
+<p>In der oben erwähnten
+<a class="reference external" href="https://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/remoteControl.html">Dokumentation</a>
+ist leider nicht beschrieben, wie eine Gleichspannung generiert werden
+kann. Hierfür muss die Wellenform auf ‘square’ und die Frequenz auf
+‘0’ gesetzt werden. Nach dem Setzen der genannten Parameter lassen
+sich dann über das Einstellen der Amplitude verschiedene
+Gleichspannungen generieren.</p>
+<p>Jedoch lässt sich nicht ohne Weiters eine negative Spannung erzeugen.
+Hierfür ist das Einstellen eines Offsets notwendig. Angenommen eine
+Gleichspannung von <span class="math notranslate nohighlight">\(-0.5\,V\)</span> soll erzeugt werden. In diesem Beispiel ist
+ein Offset von <span class="math notranslate nohighlight">\(-1\,V\)</span> und eine Amplitude von <span class="math notranslate nohighlight">\(0.5\,V\)</span> zu wählen.</p>
+</section>
+<section id="groszere-und-kleinere-spannungen-als-1v-1v">
+<h4>Größere und kleinere Spannungen als +1V, -1V<a class="headerlink" href="#groszere-und-kleinere-spannungen-als-1v-1v" title="Link to this heading">#</a></h4>
+<p>Ein weiters Problem ist, dass mit dem Red Pitaya sich keine größeren
+Spannungen als <span class="math notranslate nohighlight">\(+1\,V\)</span> und keine kleineren als .math:[-1,V]{.title-ref}
+erzeugen lassen. Doch da sich das Projekt größtenteils mit
+Operationsversträkern beschäftigt ist es naheliegend ein
+nicht-inventierenden Verstärker vorzuschalten um größere oder kleinere
+Spannungen zu generieren.</p>
+<p>Des Weiteren ist darauf zu achten, dass die Messspitzen auf das
+Verhältnis 1:10 einzustellen sind. Hierdurch wird der Messbereich von
+<span class="math notranslate nohighlight">\(-1\,V - +1\,V\)</span> auf <span class="math notranslate nohighlight">\(-10\,V - +10\,V\)</span> vergrößert.</p>
+</section>
+</section>
+</section>
+<section id="amplitundengang">
+<h2>Amplitundengang<a class="headerlink" href="#amplitundengang" title="Link to this heading">#</a></h2>
+<p>Mit dem Amplitudengang-Skript lässt sich das Übertragungsverhalten von
+Systemen bei verschiedenen Frequenzen messen. Hierbei wird das
+Verhältnis von Ausgangsspannung zu Eingangsspannung von der
+Startfrequenz bis zur Endfrequenz ermittelt. Somit lässt sich bestimmen
+bei welchen Frequenzen das System ein verstärkendes oder dämpfendes
+Verhalten aufweist. Die Start- und Endfrequenzen sind durch den Benutzer
+zu wählen. Dabei ist, wie beim DCsweep, eine Eingabe der Messpunkte
+notwendig.</p>
+<div class="note docutils">
+<div class="title docutils">
+<p>Note</p>
+</div>
+</div>
+<p>Auch in dieser Messung sind die Messspitzen auf das Verhältnis 1:10
+einzustellen.</p>
+<div class="docutils">
+<h3 class="rubric" id="id1">Probleme</h3>
+<h4 class="rubric" id="messbereich">Messbereich</h4>
+<p>Da das Verhältnis an den Messspitzen nicht größer als 1:10 eingestellt
+werden kann, wird in manchen Fällen das Ende des Messbereichs erreicht.
+In der folgenden Abbildung ist der Amplitudengang eines Differenzierers
+zu sehen. Es wurde ein Frequenzsweep mit einem Sinus <span class="math notranslate nohighlight">\(2\,V_{pp}\)</span>
+durchgeführt. In der <code class="docutils literal notranslate"><span class="pre">redpi_fig_01</span></code>{.interpreted-text role=”numref”} ist
+zu erkennen, dass die Messung nicht ganz mit der Simulation
+übereinstimmt. Ursache dafür ist, dass eine Verstärkung größer als 20dB
+nicht gemessen werden kann da das Ende des Messbereichs erreicht wird.</p>
+<p>Dieser Fehler könnte durch eine kleinere Amplitude im Eingangssignal
+verringert werden. Das ist jedoch keine optimale Lösung.</p>
+<p><img alt="" src="img/redpi/amplitudengang_messung_simulation.png" />{##redpi_fig_01
+.align-center}</p>
+<h2 class="rubric" id="phasengang">Phasengang</h2>
+<p>Mit dem Phasengang-Skript lässt sich die Phasenverschiebung zwischen
+Eingangs- und Ausgangssignal messen und aufzeichnen. Duch die Detektion
+der Nulldurchgänge vom Eingangs- und Ausgangssignal wird die
+Phasenverschiebung ermittelt.</p>
+<div class="note docutils">
+<div class="title docutils">
+<p>Note</p>
+</div>
+</div>
+</div>
+<p>Für die Messung sind die Messspitzen auf das Verhältnis 1:1
+einzustellen.</p>
+<div class="docutils">
+<h3 class="rubric" id="bestimmung-der-periode">Bestimmung der Periode</h3>
+<p>Zur Bestimmung der Periode sind weitere Aufbereitungen an den Messdaten
+notwendig. Die erforderlichen Schritte sind in der
+<code class="docutils literal notranslate"><span class="pre">redpi_fig_02</span></code>{.interpreted-text role=”numref”} graphisch dargestellt.
+Im obersten Graphen ist das unbearbeitete Eingangssignal dargestellt. Im
+ersten Schritt ist festzustellen, ob die ersten Samples größer oder
+kleiner null sind. Im unteren Dargestellten Fall sind die ersten Samples
+größer null und somit werden die Rohdaten folgendermaßen aufbereitet.
+Alle Werte die kleiner null sind, werden durch den Wert null ersetzt.
+Wie in der mittleren Abbildung zu sehen. Anschließend werden im zweiten
+Schritt die ersten Samples die größer null sind ausgeschitten. Siehe
+unterste Abbildung.</p>
+<p>Durch die Aufbereitung der Messdaten wurden die unteren Halbwellen des
+Sinus durch nullen ersetzt und dies entspricht genau einer halben
+Periode. Zur Berechnung der Periode werden nun die Samples gezählt bis
+der Eingang größer null ist und das Ergebnis wird mit zwei
+Multipliziert. Dies enspricht der Periodendauer in Samples.</p>
+<p><img alt="" src="img/redpi/T.png" />{##redpi_fig_02 .align-center}</p>
+<h3 class="rubric" id="bestimmung-der-phasenverschiebung">Bestimmung der Phasenverschiebung</h3>
+<p>Da die Periodendauer im Schritt zuvor bestimmt worden ist, wird nun der
+Zeitpunkt des ersten Nulldurchgangs sowohl vom Eingang als auch vom
+Ausgang detektiert und miteinander verglichen. In der
+<code class="docutils literal notranslate"><span class="pre">redpi_fig_03</span></code>{.interpreted-text role=”numref”} tritt der erste
+Nulldurchgang vom Eingang bei Sample 191 und vom Ausgang bei Sample 382
+auf. Die Periodendauer beträgt 764 Sampeles. Mit folgenden Formeln
+lassen sich die Phasenverschiebungen berechnen. Hierbei sind vier
+Fallunterscheidungen zu beachten.</p>
+<p>Input, Output ersten samples &gt; 0 : <span class="math notranslate nohighlight">\(\phi = ((Input-Output)/T)*360\)</span></p>
+<p>Input, Output ersten samples &lt; 0 : <span class="math notranslate nohighlight">\(\phi = ((Input-Output)/T)*360\)</span></p>
+<p>Input er. samp. &lt; 0, Output er. samp. &gt; 0:
+<span class="math notranslate nohighlight">\(\phi = ((Input-(Output+T/2))/T)*360\)</span></p>
+<p>Input er. samp. &gt; 0, Output er. samp. &lt; 0:
+<span class="math notranslate nohighlight">\(\phi = ((Input-(Output+T/2))/T)*360\)</span></p>
+<p>In unserem Beispiel erhalten wir für die Phasenverschiebung:</p>
+<p><span class="math notranslate nohighlight">\(\phi = ((191-382)/764)*360 = -90°\)</span></p>
+<p><img alt="" src="img/redpi/Eingang_Ausgang.png" />{##redpi_fig_03 .align-center}</p>
+<h3 class="rubric" id="id2">Probleme</h3>
+<h4 class="rubric" id="rauschen-am-ausgang">Rauschen am Ausgang</h4>
+<p>Trotz eines reinen Sinus am Eingang wird das Ausgangssignal sehr
+verrauscht. Wie in <code class="docutils literal notranslate"><span class="pre">redpi_fig_04</span></code>{.interpreted-text role=”numref”} zu
+sehen. Das Rauschen hat zur Folge, dass die Nulldurchgänge nicht
+zuverlässig detektiert werden können.</p>
+<p><img alt="" src="img/redpi/1-10_Verhaeltnis.png" />{##redpi_fig_04 .align-center}</p>
+<p>Ein Auszug(<code class="docutils literal notranslate"><span class="pre">redpi_fig_05</span></code>{.interpreted-text role=”numref”}) aus dem
+Python Variablenraum zeigt wie im Ausgangssignal innerhalb weniger
+sample mehrere Nulldurchgänge stattfinden. Dies macht eine Detektion und
+Vergleich der Nullstellen nach dem oben beschrieben Schema unmöglich
+bzw. unzuverlässig.</p>
+<p><img alt="" src="img/redpi/Bildschirmfoto.png" />{##redpi_fig_05 .align-center}</p>
+<p>Um den Effekt des Rauschens zu beseitigen können die Rohdaten mit Hilfe
+von Python aufbereitet werden. Eine Möglichkeit ist die lineare
+Reggression. Dies hat jedoch zur Folge, dass bei hohen Frequenzen das
+Ausgangssignal stark im Verlauf verfälscht wird und eine weitere
+Auswertung der Daten nicht möglich ist.</p>
+<p>Die zweite Möglichkeit ist ein Moving Average Filter, mit dem die Werte
+geglättet werden. Hierdurch werden aber die ersten Messwerte
+unbrauchbar. Dies stellt jedoch kein Problem dar, denn werden sowohl vom
+Eingang als auch vom Ausgang die erste Werte ausgeschnitten, hat dieser
+Fehler keinen weiteren Einfluss auf die Auswertung.</p>
+<div class="note docutils">
+<div class="title docutils">
+<p>Note</p>
+</div>
+</div>
+</div>
+<p>Des Weiteren sollten die Messspitzen auf das Tastverhältnis von 1:1
+eingestellt werden um den oben genannten Effekt weiter zu verringern.</p>
+<div class="docutils">
+<p>In der folgenden Abbildung ist der Eingang und Ausgang nach Aufbereitung
+der Daten und einem Tastverhältnis von 1:1 zu sehen. Es ist eine
+deutliche Verbesserung zu erkennen.</p>
+<p><img alt="" src="img/redpi/glatt.png" />{##redpi_fig_06 .align-center}</p>
+<h2 class="rubric" id="fazit">Fazit</h2>
+<p>Mit den oben beschriebenen Skripten wurde im Rahmen des Projekts
+“Projekts Analog System Lab Kit Pro Texas “ drei Experimente gemessen
+und ausgewertet. Das grundsätzliche Übertragungsverhalten wurde
+ersichtlich, jedoch kam es zum Teil zu starken Abweichungen. Zu nennen
+wäre da die Amplitundenmessung, die auf 20dB begrenzt war.</p>
+<p>Bei der Phasenmessung kam es innerhalb einer Messreihe zu einzelenen
+sporadischen Fehlmessungen.</p>
+<p>Aus den genannten Gründen ist eine exakte Messung mittels Red Pitaya
+nicht möglich. Jedoch für den erhalt des groben Übertragungsverhalten
+ist die Messautomatisierung gut geeignet.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "mimeiners/ans",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./lab"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Experiment_14.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Digital programmierbarer Signalgenerator</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einleitung">Einleitung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dcsweep">DCsweep</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme">Probleme</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generierung-der-gleichspannung">Generierung der Gleichspannung</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#groszere-und-kleinere-spannungen-als-1v-1v">Größere und kleinere Spannungen als +1V, -1V</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitundengang">Amplitundengang</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By M. Meiners (HSB)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

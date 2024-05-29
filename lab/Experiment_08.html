@@ -1,0 +1,815 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Automatic Gain/Volume Control (AGC/AVC) &#8212; M 6.9 Analoge Schaltungstechnik (ANS)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link media="all" rel="stylesheet" type="text/css" href="https://dokie.li/media/css/dokieli.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="dokieli" src="https://dokie.li/scripts/dokieli.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "mimeiners/ans");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lab/Experiment_08';</script>
+    <link rel="canonical" href="https://mimeiners.github.io/ans/lab/Experiment_08.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DC-DC Wandler" href="Experiment_09.html" />
+    <link rel="prev" title="Phase Locked Loop (PLL)" href="Experiment_07.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../about/unsyllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/hsb-logo.png" class="logo__image only-light" alt="M 6.9 Analoge Schaltungstechnik (ANS) - Home"/>
+    <script>document.write(`<img src="../_static/hsb-logo.png" class="logo__image only-dark" alt="M 6.9 Analoge Schaltungstechnik (ANS) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../about/unsyllabus.html">
+                    Unsyllabus
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../class/01_lec.html">Einleitung und Übersicht</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Labor</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Experiment_01.html">Grundschaltungen des OPV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_02_TZ.html">Schmitt-Trigger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_03_TZ.html">Charakteristik von Integrator und Differenzierer</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Experiment_04.html">Analoge Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_05.html">Self-Tuned Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_06.html">Voltage Controlled Oscillator (VCO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_07.html">Phase Locked Loop (PLL)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Automatic Gain/Volume Control (AGC/AVC)</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Experiment_09.html">DC-DC Wandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_10.html">Entwurf eines LDO Reglers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_11.html">Parameterstudie eines LDO’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_12.html">Parameterstudie eines DC-DC Wandlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_13.html">Entwurf eines digital kontrollierten GSA’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experiment_14.html">Digital programmierbarer Signalgenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RedPitaya_Messautomatisierung.html">Red Pitaya Messautomatisierung</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans/edit/master/lab/Experiment_08.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mimeiners/ans/issues/new?title=Issue%20on%20page%20%2Flab/Experiment_08.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lab/Experiment_08.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Automatic Gain/Volume Control (AGC/AVC)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Automatic Gain/Volume Control (AGC/AVC)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-und-motivation">Theorie und Motivation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spezifikation">Spezifikation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schaltungsaufbau-comparator-agc">Schaltungsaufbau Comparator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schaltungsaufbau-integrator-agc">Schaltungsaufbau Integrator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#simulation-des-agc">Simulation des AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tina-schaltbilder-comperator-und-integrator-agc">Tina Schaltbilder Comperator und Integrator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#messkurven-und-kennlinien-aus-simulation">Messkurven und Kennlinien aus Simulation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#messung">Messung</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fazit">Fazit</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="automatic-gain-volume-control-agc-avc">
+<h1>Automatic Gain/Volume Control (AGC/AVC)<a class="headerlink" href="#automatic-gain-volume-control-agc-avc" title="Link to this heading">#</a></h1>
+<section id="theorie-und-motivation">
+<h2>Theorie und Motivation<a class="headerlink" href="#theorie-und-motivation" title="Link to this heading">#</a></h2>
+<p>AGC´s sind automatische Verstärkungsreglungen die in elektronischen
+Geräten dazu verwendet werden, dass ein Ausgangssignal bzw. ein
+Ausgangspegel unabhängig vom Eingangssignal unterhalb eines gesetzten
+Schwellpegels limitiert oder geregelt wird. Somit werden also über diese
+Schaltungen eingangsseitige Übersteuerungen oder aber starke Variationen
+der Eingangsamplitude mittels regelschleifen am Ausgang in Form einer
+Konstanten Amplitude mit gleicher Frequenz ausgeben. Für die Umsetzung
+solcher Regelschleifen sind unterschiedliche Herangehensweisen möglich.
+Beispielsweise lassen sich diese entweder über komplizierte
+Operations-Verstärkerschaltungen oder aber wie in diesem Experiment
+behandelt, mittels eines Comperator Soll- / Istwert-Vergleiches oder
+eines Integriergliedes in Verbindung mit Multiplikatoren realisieren.</p>
+<p>Im ersten Teil des Experiments ist zunächst die allgemeine Regelschleife
+eines Comparators in Verbindung mit Multiplikatoren zu betrachten. Diese
+sollte zunächst analysiert und folgend hierauf ein Design mit Hilfe des
+Simulations Programms (LTspice oder Tina) entworfen werden, in dem eine
+Sinusspannung beliebiger Amplitude auf eine Ausgangsamplitude von 2V
+geregelt wird.</p>
+<p>Nachdem dies erfolgt ist, soll das Systemverhalten (In- zu Output) im
+Bezug auf die Eingangsspannung dargestellt, die Eingangsspannung an der
+die Zielamplitude erreicht wird bestimmt und zuletzt die Ergebnisse der
+Simulation mit gemessenen Werten eines Schaltungsaufbaus verglichen
+werden.</p>
+<p>Im zweiten Teil des Experiments soll nun eine Regelschleife mit
+Integrierglied betrachtet werden. Hierbei ist ebenso wie zuvor die
+Schaltung zunächst zu analysieren und folgend hierauf ein Design zu
+entwerfen, welches eine beliebige Eingangsamplitude in eine
+Ausgangsamplitude von 2V gleicher Frequenz regelt.</p>
+<p>Ist dies ebenfalls erfolgt, so sind auch hierfür das Systemverhalten und
+die Schwellspannung der Zielamplitude zu bestimmen, sowie die Ergebnisse
+der Simulation mit den gemessen Werten eines Schaltungsaufbaus zu
+vergleichen.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="spezifikation">
+<h1>Spezifikation<a class="headerlink" href="#spezifikation" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="schaltungsaufbau-comparator-agc">
+<h1>Schaltungsaufbau Comparator AGC<a class="headerlink" href="#schaltungsaufbau-comparator-agc" title="Link to this heading">#</a></h1>
+<p>Der Comparator AGC besteht im Grunde aus vier Komponenten.</p>
+<ul class="simple">
+<li><p>Multipizierer</p></li>
+<li><p>Quadrierer</p></li>
+<li><p>Tiefpass Filter</p></li>
+<li><p>Comparator</p></li>
+</ul>
+<p>Diese sind so mit einander verknüpft, dass das Eingangssignal zunächst
+in den Multiplizierer mit einer Rückführung des Comparators eingegeben
+wird. Dieses Ergebnis wird daraufhin an den Quadrierer übergeben,
+welcher das Sinussignal in Betrag setzt und somit zwei positive
+Halbwellen erzeugt. Folgend auf den Quadrierer wird das Signal noch in
+den Tiefpass-Filter eingegeben, in welchem es nochmal geglättet und
+somit in ein DC Signal überführt wird. Dieses DC Signal wird nun in den
+invertierenden Eingang des Comparators eingegeben und mit einer
+Referenzgleichspannung, welche am nicht invertierenden Eingang des
+Comparators eingegeben ist, verglichen. Das Ergebnis dieses Vergleiches
+zwischen Soll- und Ist-Wert sorgt nun durch seine Rückführung an den
+Multiplizierer für eine Skalierung des Eingangssignals. Sodass hierdurch
+das Eingangssignal am eingestellten Referenzwert regelt bzw. limitiert
+wird. Es ist hierbei der Ausgang des AGC´s am ersten Multiplizierer
+anzunehmen.</p>
+<p><img alt="ComparatorBlockschaltbild" src="lab/img/Experiment_08/Comparator.png" />{#08_fig_01
+.align-center}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="schaltungsaufbau-integrator-agc">
+<h1>Schaltungsaufbau Integrator AGC<a class="headerlink" href="#schaltungsaufbau-integrator-agc" title="Link to this heading">#</a></h1>
+<p>Der Integrator AGC besteht aus fünf Komponenten. - Multiplizierer -
+Quadrierer - Schwellstromknoten - Integrierer - Rückführungs-
+Vorspannung</p>
+<p>Das Prinzip des Integrators ist ähnlich dem des Comperators. Jedoch wird
+hier der Vergleich des Referenz-Sollwertes mit der zu regelnden Größe
+nicht mehr über einen Operationsverstärker, sondern mittels eines
+Schwellstroms realisiert. Die Umsetzung erfolgt hier über eine negativ
+vorgespannten Spannungsquelle am Knotenpunkt des invertierenden Eingangs
+des Operationsverstärkers. Diese bewirkt nun, dass wenn der Schwellstrom
+überschritten wurde, dass der Kondensator des Integrierers geladen und
+somit ein herabsetzen (Reglung) über die Rückführung des Integrierers
+hervorgerufen wird. Außerdem fällt hier der Tiefpassfilter weg, da
+dieser im Integrierer implementiert ist. Zuletzt erweitert sich die
+Schaltung noch um eine positiv Vorgespannte Spannungsquelle an der
+Rückführtung des Integrators. Diese bewirkt in Summe mit der negativ
+aufintegrierten Übersteuerung in der Rückführung, dass der Skalierfaktor
+SF des Multiplizierers das Eingangssignal mit jeder Periode herabsetzt,
+bis zuletzt im ausgeregelten Zustand eine konstante Rückführung die
+Regelgröße in den eingestellten Zielbereich regelt.</p>
+<p><img alt="" src="lab/img/Experiment_08/Integrator.png" />{#08_fig_02 .align-center}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="simulation-des-agc">
+<h1>Simulation des AGC<a class="headerlink" href="#simulation-des-agc" title="Link to this heading">#</a></h1>
+<p>Zur Implementierung der zu verwendenden Komponenten in die Simulation,
+mussten zunächst für eine realitätsnahe Abbildung im Simulationsprogramm
+Tina die passenden Makro Modelle für den Multiplizierer MPY634 und den
+Operationsverstärker TL082 eingebunden werden. Für den TL082 ließen sich
+diese relativ schnell finden, für den Multiplizier jedoch nicht. Nach
+einigen Recherchen zeigte sich, das weder <a class="reference external" href="http://TI.com">TI.com</a> noch andre Hersteller
+dieses Bauteil in Form einer Libary oder eines Makros zur Verfügung
+stellen. Jedoch ließ sich nach längerem Durchforsten von Foren für den
+MPY634 ein Makro-Eignenbau auf Basis dessen Datenbattes finden und
+implementieren.</p>
+<p>Es folgt der implementierte Multiplizierer (MPY634) folgender Gleichung:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">V_{out}</span> <span class="pre">=</span> <span class="pre">A</span> <span class="pre">\cdot</span> <span class="pre">\frac{(X1-X2)(Y1-Y2)}{SF}(Z1-Z2)</span> <span class="pre">$$</span></code>{=latex html}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tina-schaltbilder-comperator-und-integrator-agc">
+<h1>Tina Schaltbilder Comperator und Integrator AGC<a class="headerlink" href="#tina-schaltbilder-comperator-und-integrator-agc" title="Link to this heading">#</a></h1>
+<p>Nachdem sämtliche Komponenten eingebunden und mit einander verschaltet
+wurden, ließ sich folgende Schaltbilder für den Comperator und
+Integrator AGC erstellen.</p>
+<p><img alt="Comparator AGC SchaltbildTina" src="lab/img/Experiment_08/Schaltbild1_Tina.png" />{#08_fig_03 .align-center}</p>
+<p><img alt="Integrator AGC SchaltbildTina" src="lab/img/Experiment_08/Schaltbild2_Tina.png" />{#08_fig_04 .align-center}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="messkurven-und-kennlinien-aus-simulation">
+<h1>Messkurven und Kennlinien aus Simulation<a class="headerlink" href="#messkurven-und-kennlinien-aus-simulation" title="Link to this heading">#</a></h1>
+<p><img alt="Messkurven des ComparatorAGC´s" src="lab/img/Experiment_08/Comparator_Out.png" />{#08_fig_05 .align-center}</p>
+<p><img alt="Messkurven des IntegratorAGC´s" src="lab/img/Experiment_08/Integrator_Out.png" />{#08_fig_06 .align-center}</p>
+<p>Es zeigt sich nun aus den Messungen der beiden AGC Schaltungen, dass im
+Falle des Comparators die Ausgangsspannung auf den eingestellten Bereich
+limitiert wird, wohingegen die Ausgangsspannung des Integrators nicht
+limitiert sondern Stück für Stück herabgesetzt wird. Es bleibt somit im
+Falle des Integrator AGC’s die Sinuswelle erhalten.</p>
+<p><img alt="Kennlinie des ComparatorAGC´s" src="lab/img/Experiment_08/Comparator_IN_zu_Out2.png" />{#08_fig_07
+.align-center}</p>
+<p><img alt="Kennlinie des IntegratorAGC´s" src="lab/img/Experiment_08/Integrator_IN_zu_Out2.png" />{#08_fig_08
+.align-center}</p>
+<p>Aus der Kennlinie des Comparator AGC`s ist nun das erwartete Ein- zu
+Ausgangsverhalten eines AGC´s zu erkennbar. Diese zeigt, dass mit
+steigender Eingangsspannung die entworfene Regelschleife ab 2,50 V die
+Ausgangsspannung konstant bei 2,00 V limitiert. Die Kennlinie des
+Integrator AGC´s zeigt nun zusätzlich typisches Verhalten einer
+Regelstrecke. Beispielsweise ist zu erkennen das der Ausgang ebenso wie
+zuvor zunächst dem Eingang bis zu einem Schwellwert (hier 2.00 V) folgt,
+jedoch dann übergeht in ein Reglertypischen Überschwinger mit folgender
+Ausreglung auf einen eingestellten Ausgangszielwert. (hier 1,45 V)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="messung">
+<h1>Messung<a class="headerlink" href="#messung" title="Link to this heading">#</a></h1>
+<p>Folgend sollten die gewonnenen Erkenntnisse aus der Simulation mit
+Messwerten des Integrator AGC´s verglichen, und die Funktion dieser
+Schaltung verifiziert werden. Hierfür wurde die Schaltung entsprechend
+der Schematik des Simulationsprogramms Tina aufgebaut, ein
+Referenzzielwert der Ausgangsspannung von 3,00 V eingestellt, und
+folgend hierauf die Schaltung für unterschiedliche Eingangsamplituden
+betrachtet.</p>
+<div class="only docutils">
+<p>html</p>
+<p><img alt="Messung des Integrator AGC mit unterschiedlichenEingangsamplituden" src="lab/img/Experiment_08/animiertes_gif_1.gif" />{#08_fig_09
+.align-center}</p>
+</div>
+<div class="only docutils">
+<p>latex</p>
+<p><img alt="Messung des Integrator AGC mit unterschiedlichenEingangsamplituden" src="lab/img/Experiment_08/animiertes_gif_1.png" />{#08_fig_09
+.align-center}</p>
+</div>
+<p>Dabei zeigt sich aus den Darstellungen, dass trotz der sich ändernden
+Amplitude der Eingangsspannung (blau) sich die Ausgangsspannung
+(magenta) konstant im Bereich der eingestellten Zielamplitude von 3,00 V
+aufhält. Wodurch also gezeigt ist, dass eine einstellbare Reglung der
+Eingangsspannung über die Schaltung des Integrator AGC´s im vollen
+Umfang gegeben ist.</p>
+<div class="only docutils">
+<p>html</p>
+<p><img alt="Messung des Integrator AGC´mit unterschiedlichenEingangsamplituden" src="lab/img/Experiment_08/animiertes_gif_2.gif" />{#08_fig_10
+.align-center}</p>
+</div>
+<div class="only docutils">
+<p>latex</p>
+<p><img alt="Messung des Integrator AGC´mit unterschiedlichenEingangsamplituden" src="lab/img/Experiment_08/animiertes_gif_2.png" />{#08_fig_10
+.align-center}</p>
+</div>
+<p>Eine Änderung der Referenzspannung zeigt ebenfalls in allen Fällen
+gleiches Regelverhalten mit einer konstanten Sinus
+Ausgangs-Zielamplitude.</p>
+<p>Betrachtet mann nun auch die charakteristische Kennlinine des Integrator
+AGC’s, so zeichnet sich hieraus ebenfalls das typische Reglerverhalten
+des Integrierers aus der Rückführung der Regelschleife heraus.</p>
+<p><img alt="" src="lab/img/Experiment_08/INOUT_Messung.png" />{#08_fig_11 .align-center}</p>
+<p>Diese bewirkt nun, dass die Ausgangsspannung mit einer höher werdenden
+Eingangsspannung ab einem Schwellwert von 1,40 V zunächst einbricht und
+daraufhin nach einer stückweisen Annährung in eine Konstante
+Ausgangsspannung von 2,00 V übergeht und somit ausgeregelt wird.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fazit">
+<h1>Fazit<a class="headerlink" href="#fazit" title="Link to this heading">#</a></h1>
+<p>Es lässt sich damit zeigen, das sich der Comparator oder Integrator AGC
+gleichermaßen gut für eine Reglung eines Eingangsignals in einen
+gewünschten Zielbereich eignet. Jedoch muss für die Anwendung bei der
+Auswahl des AGC`s abgewogen werden, ob der Wert in einer hohe
+Regelzeit-Performance oder aber in einem Erhalt der eingegebenen
+Sinusamplitude liegt.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "mimeiners/ans",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./lab"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Experiment_07.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Phase Locked Loop (PLL)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Experiment_09.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DC-DC Wandler</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Automatic Gain/Volume Control (AGC/AVC)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-und-motivation">Theorie und Motivation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spezifikation">Spezifikation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schaltungsaufbau-comparator-agc">Schaltungsaufbau Comparator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schaltungsaufbau-integrator-agc">Schaltungsaufbau Integrator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#simulation-des-agc">Simulation des AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tina-schaltbilder-comperator-und-integrator-agc">Tina Schaltbilder Comperator und Integrator AGC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#messkurven-und-kennlinien-aus-simulation">Messkurven und Kennlinien aus Simulation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#messung">Messung</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fazit">Fazit</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By M. Meiners (HSB)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
