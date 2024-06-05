@@ -5,7 +5,7 @@ root: about/unsyllabus
 parts:
 - caption: Seminar
   chapters:
-    - file: class/01_lec
+    - file: class/01-intro
       title: Einleitung und Übersicht
 - caption: Labor
   chapters:
