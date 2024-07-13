@@ -2,13 +2,10 @@
 
 Im Modul **M6.9 Analoge Schaltungen (ANS)**, im Bachelorstudiengang (B.Eng.) Elektrotechnik (ET)
 der Fakultät 4 der Hochschule Bremen (HSB), werden aus der Theorie des Schaltungsentwurfs gewonnene Kenntnisse im Labor
-experimentell erprobt und mit [KiCAD]() als eigene PCB-Designs umgesetzt. Für die erste Erprobung von Schaltungen wird das
-ASLK (Analog System Lab Kit) Pro der Firma [MikroElektronika](https://www.mikroe.com/) eingesetzt. Das
-[ASLKPro](https://www.mikroe.com/aslk-pro-kit) wird von MikroElektronika für [Texas Instruments
-(TI)](http://www.ti.com/) vertrieben und soll in ingenieurwissenschaftlichen Studiengängen für Versuche analoger
-Schaltungen eingesetzt werden. Dieses kostengünstige Experimentierboard umfasst gängige analoge Schaltungsblöcke mit
-universellen integrierten Bausteinen, sogenannten IC\'s. Dazu gehören u.a. Operationsverstärker, ADC\'s, DAC\'s und
-Spannungsregler.
+experimentell erprobt ([ASLK Pro Experimente](https://aslk-pro.readthedocs.io)) und mit
+[KiCAD](https://www.kicad.org) als eigene PCB-Designs umgesetzt. Für die erste Erprobung von Schaltungen wird das 
+[ASLK (Analog System Lab Kit) Pro](https://www.mikroe.com/aslk-pro-kit) der Firma
+[MikroElektronika](https://www.mikroe.com/) eingesetzt.
 
 Zur Simulation werden Schaltungssimulatoren wie
 [LTSpice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) und 
@@ -22,30 +19,6 @@ Für die Charakterisierung der Schaltungen stehen im Labor sechs Meßplätze mit
 Signalgeneratoren, Oszilloskopen und dem integrierten Meßlabors [STEMlab](https://www.redpitaya.com/) von RedPitaya zur
 Verfügung.
 
-
-
-__Mitwirkende__
--   Alexander Huber, Experiment 1, 2 und 3
--   Selim Cimen, Experiment 1, 2 und 3, Messautomatisierung RedPitaya
--   Michel Heinze, Experiment 4
--   Janine Köster, Experiment 4
--   Julian Sündermann, Experiment 5
--   Alexander Smolko, Experiment 5
--   Dimitri Krämer, Experiment 5
--   Jonas Richlick, Experiment 6
--   Jost Herkenhoff, Experiment 7
--   Daniel Dyck, Experiment 8
--   Alexander Beckmann, Experiment 9
--   Marius Ingwersen, Experiment 9
--   Jonas Poetsch, Experiment 9
--   Jan Frost, Experiment 9
--   Thomas Wittmer, Experiment 10
--   Thomas Preier, Experiment 10
--   Marc-André von Speulda, Experiment 10
--   Timo Stelter, Experiment 12
--   Jan Dröst, Experiment 12
--   Patrice Bönig, Experiment 12
--   Erich Wentland, Experiment 13
 
 ## Lernziele des Moduls
 
