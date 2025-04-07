@@ -1,11 +1,11 @@
 # Table of contents
 
 format: jb-book
-root: about/unsyllabus
+root: index.md
 parts:
 - caption: Seminar
   chapters:
-    - file: class/01-intro
+    - file: lec/lec-01-intro
       title: Einleitung und Übersicht
 - caption: Labor
   chapters:

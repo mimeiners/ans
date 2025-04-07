@@ -1,0 +1,96 @@
+project:
+  type: book
+  output-dir: _book
+  
+lang: de
+
+book:
+  title: "Analoge Schaltungstechnik"
+  author:
+    - name: Mirco Meiners
+      orcid: 0000-0002-9709-4191
+      email: Mirco.Meiners@hs-bremen.de
+      corresponding: true
+      roles: "Lead author"
+      affiliation:
+        - name: Hochschule Bremen - City University of Applied Sciences (HSB)
+          city: Bremen
+          state: Germany
+          url: https://www.hs-bremen.de/person/mimeiners/ 
+    - name: Tim Ziemann
+      email: Tim.Ziemann@hs-bremen.de
+      roles: "Supporting author"
+  date: last-modified
+  license: "Apache-2.0 license"
+
+  reader-mode: true
+
+  page-footer:
+    left: |
+      M 6.9 Analoge Schaltungstechnik (ANS), M. Meiners, HSB.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+#  cover-image: images/hsb-logo.png
+#  favicon: images/hsb-logo.png
+  site-url: https://mimeiners.github.io/elk/
+  repo-url: https://github.com/mimeiners/elk/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf,epub]
+    
+  chapters:
+    - index.qmd
+
+    - part: Seminar
+      chapters:
+        - lec/lec-01-intro.md
+        - lec/references.qmd
+    
+    - part: Labor
+      chapters:
+        - lab/Experiment_01.qmd
+        # - file: lab/Experiment_02
+        - lab/Experiment_02_TZ.qmd
+        # - file: lab/Experiment_03
+        - lab/Experiment_03_TZ.qmd
+        # - file: lab/Experiment_04
+        # - file: lab/Experiment_05
+        # - file: lab/Experiment_06
+        # - file: lab/Experiment_07
+        # - file: lab/Experiment_08
+        # - file: lab/Experiment_09
+        # - file: lab/Experiment_10
+        # - file: lab/Experiment_11
+        # - file: lab/Experiment_12
+        # - file: lab/Experiment_13
+        # - file: lab/Experiment_14
+        # - file: lab/RedPitaya_Messautomatisierung
+          
+bibliography: _bibliography/references.bib
+
+format:
+  html:
+    theme: flatly
+  pdf:
+    documentclass: scrbook # scrreptrt
+#    lof: true
+#    lot: true
+    toc: true    
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+    hyperrefoptions:
+      - linktoc=all
+    colorlinks: true
+    linkcolor: "blue"
+    biblio-style: ieee
+    #    keep-tex: true
+    output-file: elk
+  epub:
+    theme: flatly
+    output-file: elk
+  
+execute:
+  freeze: auto
+

@@ -1,0 +1,8 @@
+# Unsyllabus {.unnumbered}
+
+| Name              | Description                      |
+|-------------------|----------------------------------|
+| Kursus            | M 6.9 Analoge Schaltungstechnik (ANS)           |
+| Semester          | SoSe25                          |
+| Dozent            | Prof. Dr.-Ing. M. Meiners        |
+| Seminar           | Die., 9:45 Uhr bis 13 Uhr, E 507    |
