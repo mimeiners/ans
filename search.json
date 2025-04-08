@@ -1,0 +1,507 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Analoge Schaltungstechnik",
+    "section": "",
+    "text": "Unsyllabus\n\n\n\nName\nDescription\n\n\n\n\nKursus\nM 6.9 Analoge Schaltungstechnik (ANS)\n\n\nSemester\nSoSe25\n\n\nDozent\nProf. Dr.-Ing. M. Meiners\n\n\nSeminar\nDie., 9:45 Uhr bis 13 Uhr, E 507",
+    "crumbs": [
+      "Unsyllabus"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html",
+    "href": "lec/lec-01-intro.html",
+    "title": "1  Einleitung und Übersicht",
+    "section": "",
+    "text": "1.1 Lernziele des Moduls\nIm Modul M 6.9 Analoge Schaltungen (ANS), im Bachelorstudiengang (B.Eng.) Elektrotechnik (ET) der Fakultät 4 der Hochschule Bremen (HSB), werden aus der Theorie des Schaltungsentwurfs gewonnene Kenntnisse im Labor experimentell erprobt (ASLK Pro Experimente) und mit KiCAD als eigene PCB-Designs umgesetzt. Für die erste Erprobung von Schaltungen wird das ASLK (Analog System Lab Kit) Pro der Firma MikroElektronika eingesetzt.\nZur Simulation werden Schaltungssimulatoren wie LTSpice und ngspice verwendet.\nDes Weiteren kommen die MATLAB Campus-Lizenz und Python als leistungsstarke Instrumente zur Modellierung und Verhaltensanalyse von Filtern- und Verstärkern beim Schaltungsentwurf zum Einsatz.\nFür die Charakterisierung der Schaltungen stehen im Labor sechs Meßplätze mit gängigen Gerätschaften wie Quellen, Signalgeneratoren, Oszilloskopen und dem integrierten Meßlabors STEMlab von RedPitaya zur Verfügung.",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#lernziele-des-moduls",
+    "href": "lec/lec-01-intro.html#lernziele-des-moduls",
+    "title": "1  Einleitung und Übersicht",
+    "section": "",
+    "text": "Ein tieferes Verständnis für das Verhalten von MOS-Elementen im analogen Schaltungsentwurf entwickeln und Ausblicke auf weiterführende Kurse im Master bekommen.\nFunktionsprinzipien und Charakterisierung von MOS-Elementen\nFundamentale integrierte analoge Schaltungen\nOperationsverstärker\nLernen, Grenzen und Tradeoffs analoger Schaltungen zu bewerten\nEntwickeln eines systematischen Entwurfsstils, auch anwendbar für andere Ingenieursdisziplinen\nLernen, einen Schaltungssimulator für den Entwurf einzusetzen.\nTechnisch-wissenschaftliche Dokumentation\nKonsoliderung der oberen Aspekte in Laborprojekten",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#voraussetzungen-des-moduls",
+    "href": "lec/lec-01-intro.html#voraussetzungen-des-moduls",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.2 Voraussetzungen des Moduls",
+    "text": "1.2 Voraussetzungen des Moduls\n\nDigitaltechnik\nGrundlagen der Halbleiterbauelemente\nNetzwerk- und Systemtheorie\nRegelungstechnik",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
+    "href": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft",
+    "text": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft\n\nPython\nMatlab\nGnu Octave\nCommand-line tools",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#schaltungssimulation-spice",
+    "href": "lec/lec-01-intro.html#schaltungssimulation-spice",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.4 Schaltungssimulation (SPICE)",
+    "text": "1.4 Schaltungssimulation (SPICE)\n\nLTspice Linear Technology\nngspice (open-source)\nELDO (Siemens EDA)\nSpectre (cadence)\nPrimeSim HSPICE (SYNOPSIS)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
+    "href": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)",
+    "text": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)\n\nShell\n\noh-my-zsh,\nbash-it\nSSH (Secure Shell)\n\nGIT (Versionskontrolle)\nCygwin",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#code-editoren",
+    "href": "lec/lec-01-intro.html#code-editoren",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.6 Code Editoren",
+    "text": "1.6 Code Editoren\n\nVisual Studio Code\nNotepad++ (Windows)\nEmacs\n\nVim",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#schreibst-du-noch-oder-texst-du-schon",
+    "href": "lec/lec-01-intro.html#schreibst-du-noch-oder-texst-du-schon",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.7 Schreibst Du noch oder TeXst Du schon?",
+    "text": "1.7 Schreibst Du noch oder TeXst Du schon?\n\nMikTeX (Windows, MacOS, Linux)\nMacTeX (MacOS)\nTeXLive (Linux)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#latex-editoren",
+    "href": "lec/lec-01-intro.html#latex-editoren",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.8 LaTeX Editoren",
+    "text": "1.8 LaTeX Editoren\n\nIDE’s\n\nTeXStudio\nTeXMaker\nTeXWorks\n\nKollaborative Frameworks\n\nShareLaTeX, Online LaTeX\nCoCalc - Online LaTeX",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#literaturverwaltung-und-latex",
+    "href": "lec/lec-01-intro.html#literaturverwaltung-und-latex",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.9 Literaturverwaltung und LaTeX",
+    "text": "1.9 Literaturverwaltung und LaTeX\n\nCitavi im Detail &gt; Titel exportieren &gt; Export nach BibTeX\nRefWorks - Library Guide Univ. Melbourne\nBenutzerdefinierte BibTex-Keys mit Zotero | nerdpause\nJabRef - Library Guide Univ. Melbourne\nEndNote - Library Guide Univ. Melbourne",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#labor",
+    "href": "lec/lec-01-intro.html#labor",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.10 Labor",
+    "text": "1.10 Labor\n\nAnwendung unterschiedlicher Beschreibungsebenen\n\nSystemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)\nSchaltungsebene (SPICE)\nCharakterisierung (Messungen)\n\nAnalog System Lab Kit – ASLK Pro\nMessautomatisierung Red Pitaya STEMlab 125-14/10",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#data-science",
+    "href": "lec/lec-01-intro.html#data-science",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.11 Data Science",
+    "text": "1.11 Data Science\n\nArbeitsordner auf dem Rechner (sandboxing, virtualenv)\nTabellenformat (ASCII, CSV)\nExceldatei (.xlsx ) oder OpenDocument (.ods)\nDatenspeicherung in speziellen Formaten, z.B. Apache Parquet\nDatenanalyse mit Datenbanken, z.B. DuckDB)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
+    "href": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.12 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic",
+    "text": "1.12 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic\nSchaltungsanalyse. * ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen * basierend auf einem einfachen, aber hinreichend genauen Modell * “Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird! * eine Schaltung \\(\\Rightarrow\\) eine Lösung\nSchaltungsdesign/-entwurf. * ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse. * eine Spezifikation \\(\\Rightarrow\\) viele Lösungen * Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#schöne-neue-welt",
+    "href": "lec/lec-01-intro.html#schöne-neue-welt",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.13 Schöne neue Welt",
+    "text": "1.13 Schöne neue Welt",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
+    "href": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.14 From Sand to Silicon (Infineon, Dresden)",
+    "text": "1.14 From Sand to Silicon (Infineon, Dresden)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#finfet-intel",
+    "href": "lec/lec-01-intro.html#finfet-intel",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.15 FinFET (Intel)",
+    "text": "1.15 FinFET (Intel)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
+    "href": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.16 TSMC Fab (Next Gen 7/5 nm)",
+    "text": "1.16 TSMC Fab (Next Gen 7/5 nm)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#es-war-einmal",
+    "href": "lec/lec-01-intro.html#es-war-einmal",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.17 Es war einmal …",
+    "text": "1.17 Es war einmal …",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#damals-und-heute",
+    "href": "lec/lec-01-intro.html#damals-und-heute",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.18 Damals und heute",
+    "text": "1.18 Damals und heute",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#systemhierarchie",
+    "href": "lec/lec-01-intro.html#systemhierarchie",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.19 Systemhierarchie",
+    "text": "1.19 Systemhierarchie\n\n\nNutzen Sie Hierarchien zur Beschreibung komplexer Systeme\nTeile und herrsche",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#system-assembly",
+    "href": "lec/lec-01-intro.html#system-assembly",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.20 System Assembly",
+    "text": "1.20 System Assembly",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
+    "href": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.21 Schnittstellen zur Aussenwelt",
+    "text": "1.21 Schnittstellen zur Aussenwelt",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#meeting-mit-einem-system",
+    "href": "lec/lec-01-intro.html#meeting-mit-einem-system",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.22 Meeting mit einem System",
+    "text": "1.22 Meeting mit einem System",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#system-in-a-package-sip",
+    "href": "lec/lec-01-intro.html#system-in-a-package-sip",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.23 System in a Package (SiP)",
+    "text": "1.23 System in a Package (SiP)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#backend-phasen",
+    "href": "lec/lec-01-intro.html#backend-phasen",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.24 Backend Phasen",
+    "text": "1.24 Backend Phasen\n\nPackaging\nZuverlässigkeit = Qualität auf Zeit\nTesting auf Wafer Level, known good die (KGD)\n\nBurn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)\nAutomatic Test Equipment (ATE)\n\nSystem Probe\nInterconnect Test\nBuild-in Self-Test (BIST)\n\n\nStatistische Datenanalyse und Yield Prognosen\n\nAusfallrate FIT (failure in time)\nBadewannenkurve",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#sie-werden-experte",
+    "href": "lec/lec-01-intro.html#sie-werden-experte",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.25 Sie werden Experte",
+    "text": "1.25 Sie werden Experte\nLeistungsmerkmale. * Hintergrundwissen * Systemverständnis, Architektur, Herstellungsverfahren, Implementation\n\nUnterbewusste Kompetenz\n\nAbgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen\n\nSpezialwissen\n\nBerufsspezifisches Wissen\n\nTeamwork Haltung\n\nKommunikationsfähigkeit, Berichtswesen und technische Präsentation\n\nKreativität\nTool-Kenntnisse",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#evolution-von-produkten",
+    "href": "lec/lec-01-intro.html#evolution-von-produkten",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.26 Evolution von Produkten",
+    "text": "1.26 Evolution von Produkten\n\nAngetrieben durch Technologieverbesserung\n\nKosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)\nLeistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)\n\nAngetrieben durch Verbesserung der Entwurfsmethodik\n\nArchitektur (Leistung, Funktionen)\nCAD (Entwicklungskosten, Time-to-Market)\n\nKomplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)\nRolle von CAD\n\nVerbesserung der Produktivität von Konstruktionsprozessen\nReduzierung der Komplexität für den Konstrukteur\nSicherstellung des ordnungsgemäßen Betriebs der Geräte",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#eda-kompetenz",
+    "href": "lec/lec-01-intro.html#eda-kompetenz",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.27 EDA Kompetenz",
+    "text": "1.27 EDA Kompetenz\n\nEDA-Anbieter (Tool-Entwickler)\n\nIdentifikation von Entwurfsaufgaben, Bedarf an Werkzeugen\nEntwicklung von Strategien und Algorithmen\nImplementierung von Software-Werkzeugen\nVerifikation der Stabilität und Funktionalität der Software-Tools\n\nIC-Hersteller\n\nEntscheidungsplanung, welches Tool die Produktivität steigern könnte\nEDA-Tool-Manager, Installation und Wartung\nExperten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung\n\nDozenten und Studenten\n\nJobchancen\nNotwendigkeit, auf dem Laufenden zu bleiben",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#ansichten-zur-hardware-i",
+    "href": "lec/lec-01-intro.html#ansichten-zur-hardware-i",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.28 Ansichten zur Hardware (I)",
+    "text": "1.28 Ansichten zur Hardware (I)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#ansichten-zur-hardware-ii",
+    "href": "lec/lec-01-intro.html#ansichten-zur-hardware-ii",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.29 Ansichten zur Hardware (II)",
+    "text": "1.29 Ansichten zur Hardware (II)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#abstraktionsebenen",
+    "href": "lec/lec-01-intro.html#abstraktionsebenen",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.30 Abstraktionsebenen",
+    "text": "1.30 Abstraktionsebenen",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#entwurfsablauf",
+    "href": "lec/lec-01-intro.html#entwurfsablauf",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.31 Entwurfsablauf",
+    "text": "1.31 Entwurfsablauf",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#verifikation",
+    "href": "lec/lec-01-intro.html#verifikation",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.32 Verifikation",
+    "text": "1.32 Verifikation\n\n\n1.32.1 Frontend vs. Backend (analog)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#frontend-vs.-backend-digital",
+    "href": "lec/lec-01-intro.html#frontend-vs.-backend-digital",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.33 Frontend vs. Backend (digital)",
+    "text": "1.33 Frontend vs. Backend (digital)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#design-entwurfsmethodik",
+    "href": "lec/lec-01-intro.html#design-entwurfsmethodik",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.34 Design-/Entwurfsmethodik",
+    "text": "1.34 Design-/Entwurfsmethodik\n\nFull Custom - vollständig manuell: ASIC\n\nÜberwiegend analoge Schaltungen\nEinfache digitale Gatter\nVolle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)\n\nSemi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen\n\nStandardzellen, Makrozellen, IP’s\nWiederverwendung von vordefinierten Blöcken oder Maskensätzen\nEingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)\n\nVollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs\n\nFPGA, PLA\nAusschließlich digitale Schaltungen\nSchnelles Prototyping",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#analog-design-entry",
+    "href": "lec/lec-01-intro.html#analog-design-entry",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.35 Analog Design Entry",
+    "text": "1.35 Analog Design Entry",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#netlist",
+    "href": "lec/lec-01-intro.html#netlist",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.36 Netlist",
+    "text": "1.36 Netlist",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#layout",
+    "href": "lec/lec-01-intro.html#layout",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.37 Layout",
+    "text": "1.37 Layout",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#digital-design-entry",
+    "href": "lec/lec-01-intro.html#digital-design-entry",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.38 Digital Design Entry",
+    "text": "1.38 Digital Design Entry",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#hardwarebeschreibungssprachen",
+    "href": "lec/lec-01-intro.html#hardwarebeschreibungssprachen",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.39 Hardwarebeschreibungssprachen",
+    "text": "1.39 Hardwarebeschreibungssprachen",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#technology-gates-und-netlisting",
+    "href": "lec/lec-01-intro.html#technology-gates-und-netlisting",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.40 Technology-Gates und Netlisting",
+    "text": "1.40 Technology-Gates und Netlisting",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#standard-cell-layout",
+    "href": "lec/lec-01-intro.html#standard-cell-layout",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.41 Standard Cell Layout",
+    "text": "1.41 Standard Cell Layout",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#nachhaltige-elektronik",
+    "href": "lec/lec-01-intro.html#nachhaltige-elektronik",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.42 Nachhaltige Elektronik …",
+    "text": "1.42 Nachhaltige Elektronik …\n\n\nGeekchester.",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
+    "href": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.43 Warum es sicht lohnt …",
+    "text": "1.43 Warum es sicht lohnt …\n\n\nCircuit Song.",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#und-ab-an-den-strand",
+    "href": "lec/lec-01-intro.html#und-ab-an-den-strand",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.44 Und ab an den Strand …",
+    "text": "1.44 Und ab an den Strand …\n\n\nViva la Electronica.",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  }
+]
