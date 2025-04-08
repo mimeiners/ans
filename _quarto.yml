@@ -32,8 +32,8 @@ book:
       This book was built with <a href="https://quarto.org/">Quarto</a>.
 #  cover-image: images/hsb-logo.png
 #  favicon: images/hsb-logo.png
-  site-url: https://mimeiners.github.io/elk/
-  repo-url: https://github.com/mimeiners/elk/
+  site-url: https://mimeiners.github.io/ans/
+  repo-url: https://github.com/mimeiners/ans/
   repo-branch: main
   repo-actions: [edit, issue]
   downloads: [pdf,epub]
@@ -44,15 +44,15 @@ book:
     - part: Seminar
       chapters:
         - lec/lec-01-intro.md
-        - lec/references.qmd
+#        - lec/references.qmd
     
-    - part: Labor
-      chapters:
-        - lab/Experiment_01.qmd
+#    - part: Labor
+#      chapters:
+#        - lab/Experiment_01.qmd
         # - file: lab/Experiment_02
-        - lab/Experiment_02_TZ.qmd
+#        - lab/Experiment_02_TZ.qmd
         # - file: lab/Experiment_03
-        - lab/Experiment_03_TZ.qmd
+#        - lab/Experiment_03_TZ.qmd
         # - file: lab/Experiment_04
         # - file: lab/Experiment_05
         # - file: lab/Experiment_06
@@ -73,8 +73,8 @@ format:
     theme: flatly
   pdf:
     documentclass: scrbook # scrreptrt
-#    lof: true
-#    lot: true
+    lof: true
+    lot: true
     toc: true    
     geometry:
       - top=30mm
@@ -85,7 +85,7 @@ format:
     colorlinks: true
     linkcolor: "blue"
     biblio-style: ieee
-    #    keep-tex: true
+#    keep-tex: true
     output-file: elk
   epub:
     theme: flatly

@@ -270,7 +270,7 @@ Verfügung.
 
 ## Ansichten zur Hardware (I)
 
-![](fig/lec_01-views_on_hardware_1.png)
+![](../images/lec_01-views_on_hardware_1.png)
 
 
 ## Ansichten zur Hardware (II)

@@ -5,15 +5,15 @@ root: index.md
 parts:
 - caption: Seminar
   chapters:
-    - file: lec/lec-01-intro
+    - file: lec/lec-01-intro.md
       title: Einleitung und Übersicht
 - caption: Labor
   chapters:
-    - file: lab/Experiment_01
+    - file: lab/Experiment_01.qmd
 #    - file: lab/Experiment_02
-    - file: lab/Experiment_02_TZ
+    - file: lab/Experiment_02_TZ.qmd
 #    - file: lab/Experiment_03
-    - file: lab/Experiment_03_TZ
+    - file: lab/Experiment_03_TZ.qmd
 #    - file: lab/Experiment_04
 #    - file: lab/Experiment_05
 #    - file: lab/Experiment_06
