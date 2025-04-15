@@ -1,0 +1,237 @@
+# Lecture 16Fundamentals of Feedback
+
+# Negative Feedback
+
+Harold S\. Black\, 1927
+
+Interesting case:
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Interpretation
+
+
+
+* As long as we have "large" gain in the forward path a\, the overall  gain will depend only on f
+* Since vout/vin ~1/f\, we often make f ≤ 1
+  * E\.g\. for a "closed loop" gain of two\, we need f=0\.5
+* f≤1 is easy to implement\, and ratiometric\!
+  * A "wire" \(f=1\) or resistive or capacitive voltage divider
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Example
+
+Case 1: a=1000
+
+Case 2: a=100
+
+10 x variation in forward gain\, and only about 1\.8% change in closed loop gain\!
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Gain Sensitivity
+
+
+
+* Define
+* Can show that
+* Fractional change in gain is reduced by product of a and f\, which can be made arbitrarily large \(conceptually\)
+  * Loop gain T
+* We will find that loop gain is a very meaningful parameter that will also appear in bandwidth and impedance calculations
+  * More later …
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Effect of Negative Feedback on Nonlinearity
+
+Substitute eq\. \(2\) into eq\. \(1\)\, then compare coefficients to get
+
+Linear term as expected\, reduced by \(1\+T\)
+
+Cubic term reduced by \(1\+T\)4\!
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Negative Feedback and Bandwidth
+
+Closed loop transfer function:
+
+
+
+* Bandwidth increases by \(1\+T\)\!
+  * But gain is reduced by \(1\+T\)
+* Product of gain and bandwidth remains constant
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Bode Plot Illustration
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Early Obstacles
+
+
+
+* Today we are taking the concept of negative feedback for granted
+* At the time of his "invention\," Harold Black had a hard time convincing his colleagues that negative feedback was indeed something useful
+  * It was very hard to make a "high gain" forward amplifier using vacuum tubes\.
+  * Why have large gain and then throw it away by applying negative feedback?
+* Long before negative feedback had been deemed useful\, positive feedback was routinely applied to increase the gain of amplifiers
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Positive Feedback
+
+Edwin H\. Armstrong\, 1915
+
+Example
+
+Tenfold increase in gain\!
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Armstrong: Genius and Showman
+
+
+
+* Positive Feedback has stability issues …\(so did Armstrong\)
+* But\, he was a genius and inventor with few peers:
+  * FM \(radio\)
+  * Heterodyning \(freq\. translation\)
+
+
+![](img/lec-16-fb1_0.png)
+
+![](img/lec-16-fb1_1.png)
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Feedback Using Ideal Opamp
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Inverting Configuration
+
+
+
+* Circuit does not map directly into generic block diagram
+  * Cannot directly identify a and f\, if we only use voltages    \(due to fact that O/A is voltage\-voltage; the feedback is current as a function of output voltage\)
+  * av ≠ g
+  * Two sample solutions \(examples = not yet methodology\)
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Sample Solution 1 - OpAmp Virtual Ground
+
+_Ideal _  _OpAmp_  _ Version_ :
+
+KCL at  _virtual ground_  node
+
+Vin/R1= \- Vout/R2
+
+_ Gain_ :
+
+Vout/Vin= \- R2/R1But\, what if it’s not an ideal OpAmp?
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Sample Solution 2 - Superposition
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Inverting Configuration
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Result
+
+
+
+* It can be quite tedious to try and morph arbitrary circuits into a generic "af" block diagram
+  * Especially when impedances come into play \(and with MOS they certainly do\)
+* Elegant alternative: "Return Ratio Analysis"
+  * More next lecture …
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# A word about OpAmps versus OTAs (1)
+
+Operational Amplifier
+
+Operational Transconductance Amplifier
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Opamps versus OTAs (2)
+
+Opamp
+
+"General Purpose"
+
+Ideally a voltage controlled voltage source
+
+Low output impedance
+
+Can drive resistive and capacitive loads
+
+Essentially OTA \+ buffer
+
+Buffer increases complexity and  _power_  dissipation
+
+OTA
+
+Most  _on\-chip amplifiers_  are OTAs
+
+Ideally a voltage controlled current source
+
+High output impedance
+
+Difficult to drive resistive loads
+
+Use capacitive \(switched capacitor\) feedback network
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Integrated Circuit Example
+
+E\.g\. switched capacitor A/D Converter for audio applications
+
+OTAs see capacitive loads only  high gain is maintained without the need for output buffers
+
+More on switched capacitor circuits in AMCD and CEMS \(MScEE\)
+
+![](img/lec-16-fb1_2.png)
+
+L\. Yao et al\. "A 1\-V 140\-μW 88\-dB audio sigma\-delta modulator in 90\-nm CMOS\," Solid\-State Circuits\, IEEE Journal of \, vol\.39\, no\.11\, pp\. 1809\-1818\, Nov\. 2004\.
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Single Ended vs. Fully Differential OTAs
+
+Relatively easy to bias & understand while learning the fundamentals
+
+Covered in ANS
+
+“The” way to implement precise and high performance feedback amplifiers in ICs
+
+Somewhat harder to bias
+
+Covered in AMCD/CEMS \(MScEE\)
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Next Lecture
+
+Stability of feedback circuits
+
+Some “very simple” examples to get started on feedback circuit analysis using return ratio
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+

@@ -1,0 +1,170 @@
+# Lecture 11 Common Drain Stage(Source Follower)
+
+# Common Drain Stage
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# CD Voltage Transfer
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Application 1: Level Shifter
+
+Output quiescent point is roughly Vt\+Vov lower than input quiescent point
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Application 2: Buffer
+
+
+
+* Low frequency voltage gain of the above circuit is ~gmRbig
+  * Would be ~gm\(Rsmall||Rbig\) without CD buffer stage
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Issues
+
+
+
+* Several sources of nonlinearity
+  * Vt is a function of Vo \(NMOS\, without S to B connection\)
+  * ID and thus Vov changes with Vo
+    * Gets worse with small RL
+* Reduced input and output voltage swing
+  * Consider e\.g\. VDD=1V\, Vt=0\.3V\, VOV=0\.2V
+    * CD buffer stage consumes 50% of supply headroom\!
+  * In low VDD applications that require large output swing\, using a CD buffer is often not possible
+  * CD buffers are more frequently used when the required swing is small
+    * E\.g\. pre\-amplifiers or LNAs that turn μV into mV at the output
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Application 3: Load Device
+
+
+
+* Advantages compared to resistor load
+  * "Ratiometric"
+    * Gain depends on ratio of similar parameters
+    * Reduced process and temperature variations
+  * First order cancellation of nonlinearities
+* Disadvantage
+  * Reduced swing
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Summary – Elementary Transistor Stages
+
+
+
+* Common source
+  * VCCS\, makes a good voltage amplifier when terminated with a high impedance
+* Common gate
+  * Typically low input impedance\, high output impedance
+  * Can be used to improve the intrinsic voltage gain of a common source stage
+    * "Cascode" stage
+* Common drain
+  * Typically high input impedance\, low output impedance
+  * Great for shifting the DC operating point of signals
+  * Useful as a voltage buffer when swing and nonlinearity are not an issue
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Low Frequency Gain
+
+
+
+* Interesting cases
+  * RL∞\, ro∞\, gmb=0
+    * _PMOS_ \, source tied to body\, ideal current source
+  * RL∞\, ro∞\,  <span style="color:#cc0000">g</span>  <span style="color:#cc0000">mb</span>  <span style="color:#cc0000">≠0</span>
+    * _NMOS_ \, ideal current source\)
+
+
+\(typically ≅ 0\.8\)
+
+
+
+  * Ro∞\, gmb=0\, RL finite
+    * _PMOS_ \, source tied to body\, load resistor
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# High Frequency Gain
+
+\(infinite bandwidth \!?\)
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# CD Input Impedance
+
+Hint\*: I=Cgs\(vi\-vo\)
+
+
+
+* Gain term av\(s\) is real and close to unity up to fairly high frequencies
+* Hence\, up to moderate frequencies\, we see a capacitor looking into the input
+  * A fairly small one\, Cgd \+ Cgb\, plus a fraction of Cgs
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# PMOS Stage with Body-Source Tie
+
+
+
+* Gate\-body capacitance is in parallel with Cgs
+* gmb generator inactive
+  * Low frequency gain very close to unity
+* Very small input capacitance
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# CD Output Impedance (1)
+
+
+
+* Let's first look at an analytically simple case
+  * Input driven by ideal voltage source
+* By inspection
+* Low output impedance
+  * Resistive up to very high frequencies
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+Now include finite source resistance
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+Two interesting cases
+
+<span style="color:#cc0000">Inductive behavior\!</span>
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Equivalent Circuit for Ri > 1/gm
+
+
+
+* This circuit is prone to ringing\!
+  * L forms an LC tank with any capacitance at the output
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Inclusion of Parasitic Input Capacitance*
+
+What happens to this result if we don’t neglect Ci=Cgd\+Cgb?
+
+\*Hint: on p\. 10 replace Ri with:
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+

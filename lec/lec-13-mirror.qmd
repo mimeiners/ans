@@ -1,0 +1,257 @@
+# Lecture 13Current Mirrors
+
+# Basic Analysis
+
+
+
+* M1 “computes” gate\-source voltage
+* M2 sees same VGS\, and therefore IO=II \(to first order\)
+  * Note that this result holds even with large variations in Vt or μCox that are common to M1 and M2
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Typical Design Objectives
+
+
+
+* Minimize error in IO
+* Minimize compliance voltage Vomin
+* Minimize capacitance Co
+* Maximize Ro
+* Want to be able to scale currents\, i\.e\. IO=K×II
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Current Scaling (1)
+
+
+
+* The above equation suggests that we can set K by scaling either or both the widths and lengths of the two MOSFETS
+  * This deserves a closer look
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+
+
+* The solid curve to the right shows how the current of a modern MOSFET changes with 1/L
+* Very different from our long channel model\, which predicts ID~1/L
+* Bottom line
+  * Impossible to make current mirrors with reasonable accuracy unless L1=L2
+
+
+long channel model
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+The remaining \(and only option\) for scaling the current is to use devices with different widths
+
+Basic possibility from a layout perspective \(e\.g\. K=2\)
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+Unfortunately\, transistors in modern technology do not resemble the rectangular boxes drawn on the previous slide
+
+Doubling the “drawn” width may not double the current
+
+The best we can do in this situation is to work with a number of unit devices that have the same nominal width
+
+![](img/lec-13-mirror_1.jpg)
+
+Courtesy A\. Bowling\, Texas Instruments
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Aside: Shared Drain Regions
+
+
+
+* Sometimes desirable \(and OK\) to share drain regions of unit devices
+  * Reduces junction capacitance
+
+
+Specific to each PDK and Simulator
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Error Sources
+
+
+
+* Systematic
+  * VDS2 ≅ VDS1
+  * IR drop in source connection
+* Random
+  * Mismatch in Vt
+  * Mismatch in μCoxW/L
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Inaccuracy due to ΔVDS
+
+
+
+* Example: λ=0\.1V\-1\, ΔVDS=1V\, ε=10%
+* Two options
+  * Use device with small λ \(large L\)
+  * Minimize ΔVDS
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# IR Drop in Source Connection
+
+
+
+* Want large VOV to mitigate errors due to wire IR drop
+  * Unfortunately this means large Vomin \(Vomin=VDSsat=VOV\)
+* Example: Vwire=10mV\, VOV=200mV  ε=10% \(\!\)
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Inaccuracy Due to Random Mismatch
+
+Example: VOV=200mV\, W=20μm\, L=1μm
+
+\(see lecture 12\)
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Higher Ro
+
+Can use cascode configuration to achieve very large Ro
+
+Even though the resistance is now high at the output node\, we still need  VX=VI to minimize the systematic errors due to ΔVDS between M1 and M2
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Solution 1
+
+
+
+* Note that ε≈0 in this configuration
+  * Why?
+  * Vx is a low impedance node\.
+
+
+Issue: Vomin is relatively large
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Solution 2
+
+Use some kind of "magic battery" that sets the cascode gate potential such that Vomin = 2VOV \(minimum possible\)
+
+"High swing" bias
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Magic Battery 1
+
+
+
+* Gate overdrive of ¼ device is twice as large as VOV of all other devices
+  * VCAS=Vt\+2VOV
+  * Vomin = 2VOV
+* Sensitive to back\-gate effect
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+
+
+* Less sensitive to back\-gate effect
+* Stacked device mimics transistor with length 4L
+  * May not match characteristics of devices with length L all that well
+  * In practice\, designers tend to use “W/3 device” for the bottom three devices in the stack
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Current Distribution (1)
+
+
+
+* Typically\, we'll only have one \(or a few\) reference current generators on a chip
+* Can generate/distribute currents across chip in two different ways
+  * Distribute gate voltage
+    * Can cause big problems\, e\.g\. due to IR drop and process gradients across the chip
+    * Usually limited to local distribution
+  * Distribute currents
+    * Have one global bias cell close to reference that sends currents into local biasing sub\-circuits
+    * Disadvantage: consumes additional current
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+
+
+* Since current distribution tends to “waste” some current in auxiliary branches\, one is often tempted to use large mirror ratios \(K\)
+* This can be troublesome for several reasons
+  * Consider e\.g\. the time constant at node VI
+  * R = 1/gm\, C ≅ \(1\+K\)Cgs
+  * RC ≅ \(1\+K\)Cgs/gm = \(1\+K\)/ωT
+  * If disturbed\, node VI will take a long time to settle when K is large
+* ANS rule
+  * K>20 is forbidden
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Current Scaling (5)
+
+Spice:    M1 d g s b w=10u l=1u    M2 d g s b   w=10u l=1u  <span style="color:#ff0000"> __m=2__ </span>
+
+
+
+* Rule
+  * Current mirrors must be built using unit devices \(use m\-factor in spice netlists\)
+  * Note that this restricts the scale factor to a rational number K=P/Q\, where P and Q are integers
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Magic Battery 2 (more details)
+
+Two drain currents must be equal;  W/L and operating conditions different
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Magic Battery 2 (continued)
+
+| k= | VB= |
+| :-: | :-: |
+| 3 | 2VOV\+VT |
+| 5 | 2\.45VOV\+VT |
+| 8 | 3VOV\+VT |
+
+typical numbers:
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+# Magic Battery 3
+
+Pro: no extra current branch
+
+Con: needs lots of voltage headroom on input side
+
+Sensitive to back\-gate effect
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
+
+
+* The previous circuits assumed that Lmirror=Lcascode
+  * Sometimes want Lmirror≠Lcascode
+* The above circuit makes Vcas =Vt2 \+ VOV2 \+ VOV1
+  * Vomin becomes VOV2 \+ VOV1\, as desired
+
+
+Quelle: EE114\, B\. Murmann\, Stanford Univ\.
+
