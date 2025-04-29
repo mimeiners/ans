@@ -42,7 +42,7 @@ book:
     - index.qmd
     - part: Seminar
       chapters:
-        - lec/lec-01-intro.md
+        - lec/lec-01-intro.qmd
         # - lec/lec-02-modelling.qmd
         # - lec/lec-03-cs_amp.qmd
         # - lec/lec-04-op_analysis.qmd
@@ -67,8 +67,8 @@ book:
         # - lec/lec-19-ota_fb_cir_ic.qmd
         # - lec/lec-20-integrators.qmd
         # - lec/lec-21-MCD6thEdChap12.qmd
-        # - lec/lec-22a-analog_filter_design.qmd
-        # - lec/lec-23a-biquads.qmd
+        - lec/lec-22a-analog_filter_design.qmd
+        - lec/lec-23a-biquads.qmd
         - lec/references.qmd
     # - part: Labor
     #   chapters:
