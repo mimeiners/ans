@@ -14,10 +14,10 @@ import time
 import redpitaya_scpi as scpi
 import numpy as np
 import pandas as pd
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 # %% Connection params
-IP = '192.168.111.183'
+IP = '192.168.111.184'
 rp_s = scpi.scpi(IP)
 
 # %% Measurement / Data Accquisition
@@ -97,7 +97,7 @@ DF_IN2.to_parquet(Data_IN2 + ".parquet", index=False)
 # DF_IN2.to_feather(Data_IN2 + ".feather")
 
 # %% Plot
-# plt.plot(DF_IN1['900'], label='IN1')
-# plt.plot(DF_IN2['900'], label='IN2')
-# plt.legend()
-# plt.show()
+plt.plot(DF_IN1['900'], label='IN1')
+plt.plot(DF_IN2['900'], label='IN2')
+plt.legend()
+plt.show()
