@@ -46,8 +46,8 @@ book:
         # - lec/lec-18a-MCD6thEdChap10.qmd
         # - lec/lec-18b-MCD6thEdChap11.qmd
         # - lec/lec-21-MCD6thEdChap12.qmd
-        - lec/lec-22a-analog_filter_design.qmd
-        - lec/lec-23a-biquads.qmd
+        # - lec/lec-22a-analog_filter_design.qmd
+        # - lec/lec-23a-biquads.qmd
         - lec/references.qmd
     - part: Labor
       chapters:
