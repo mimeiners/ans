@@ -51,9 +51,6 @@ book:
         - lec/references.qmd
     - part: Labor
       chapters:
-        # - lab/Experiment_01.qmd
-        # - lab/Experiment_02_TZ.qmd
-        # - lab/Experiment_03_TZ.qmd
         - lab/Experiment_04.qmd
         
 bibliography: _bibliography/references.bib

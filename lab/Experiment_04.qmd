@@ -1,4 +1,4 @@
-# Experiment 5 - Design of Analog Filters
+# Experiment 4 - Design of Analog Filters
 
 ## Brief theory and motivation
 Second order filters (or biquard filters) are important since they are the building blocks in the construction of $N^{th}$
@@ -29,21 +29,21 @@ $$
 * Highpass Filter (HPF):
 
 $$
-\frac{V_{01}}{V_i} = \frac{\left( H_0 \frac{s^2}{\omega_0^2} \right}
+\frac{V_{01}}{V_i} = \frac{\left( H_0 \frac{s^2}{\omega_0^2} \right)}
 {\left( 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega^2_0} \right)}
 $$
 
 * Bandpass Filter (BPF):
 
 $$
-\frac{V_{02}}{V_i} = \frac{\left( -H_0 \frac{s}{\omega_0} \right}
+\frac{V_{02}}{V_i} = \frac{\left( -H_0 \frac{s}{\omega_0} \right)}
 {\left( 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega^2_0} \right)}
 $$
 
 * Bandstop Filter (BSF):
 
 $$
-\frac{V_{01}}{V_i} = \frac{H_0 \left( 1 + \frac{s^2}{\omega_0^2} \right}
+\frac{V_{01}}{V_i} = \frac{H_0 \left( 1 + \frac{s^2}{\omega_0^2} \right)}
 {\left( 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega^2_0} \right)}
 $$
 
@@ -57,8 +57,8 @@ $$
 ## Specification
 
 Design a band-pass (BPF) and a band-stop (BSF) filter. 
-* For the BPF, assume $\f_0 = 1\,kHz$ and $Q=1$.
-* For the BSF, assume $\f_0 = 10\,kHz$ and $Q=10$.
+* For the BPF, assume $f_0 = 1\,kHz$ and $Q=1$.
+* For the BSF, assume $f_0 = 10\,kHz$ and $Q=10$.
 
 
 ## Measurements to be taken
