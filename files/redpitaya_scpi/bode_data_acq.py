@@ -71,8 +71,8 @@ for freq in freqs:
     rp_s.tx_txt('OUTPUT2:STATE OFF')
 
 # %% Data storage
-Data_IN1 = 'data/IN1_INT_IN'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
-Data_IN2 = 'data/IN2_INT_OUT'  #+ str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
+Data_IN1 = 'data/DF_IN1'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
+Data_IN2 = 'data/DF_IN2'  #+ str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
 
 # %% Store data on disk as comma-seperated-values
 DF_IN1.to_csv(Data_IN1 + '.csv', index=False)
@@ -89,13 +89,13 @@ DF_IN2.to_csv(Data_IN2 + '.csv', index=False)
 # %% Store data on disk as mat-file
 # Ref. https://blog.finxter.com/5-best-ways-to-convert-pandas-dataframe-to-matlab/
 
-# Convert the DataFrame to a dictionary with variable names as keys
-dict_IN1 = {'DF_IN1': DF_IN1.to_numpy()}
-dict_IN2 = {'DF_IN2': DF_IN2.to_numpy()}
+# Convert the DataFrame to a dictionary with col names as keys
+dict_IN1 = DF_IN1.to_dict('list')
+dict_IN2 = DF_IN2.to_dict('list')
 
 # Save the dictionary as a .mat file
-sio.savemat("DF_IN1.mat", dict_IN1)
-sio.savemat("DF_IN2.mat", dict_IN2)
+sio.savemat(DF_IN1 + '.mat', dict_IN1)
+sio.savemat(DF_IN2 + '.mat', dict_IN2)
 
 # %% Store data on disk as HDF5
 # DF_IN1.to_hdf(Data_IN1 + ".h5", "table", append=True)

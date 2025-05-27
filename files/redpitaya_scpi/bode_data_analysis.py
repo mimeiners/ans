@@ -27,9 +27,8 @@ t = np.linspace(0, 8.389e-3, N)
 ts = 8.389e-3 / N  # sampling time
 
 # %% Data storage
-Data_IN1 = 'data/IN1_INT_IN'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
-Data_IN2 = 'data/IN2_INT_OUT'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
-# Data_IN = 'data/IN_UB_VBS_VBP'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
+Data_IN1 = 'data/DF_IN1'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
+Data_IN2 = 'data/DF_IN2'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
 
 # %% Read CSV data from disk
 DF_IN1 = pd.read_csv(Data_IN1 + '.csv')
@@ -40,8 +39,8 @@ DF_IN2 = pd.read_csv(Data_IN2 + '.csv')
 # DF_IN2 = pd.read_parquet(Data_IN2 + '.parquet')
 
 # %% Read mat data from disk
-# sio.loadmat(Data_IN1 + '.mat')
-# sio.loadmat(Data_IN2 + '.mat')
+# DF_IN1 = sio.loadmat(Data_IN1 + '.mat')
+# DF_IN2 = sio.loadmat(Data_IN2 + '.mat')
 
 # %% Fitting and extraction of sine params
 # SigParam_IN1 = pd.DataFrame()
