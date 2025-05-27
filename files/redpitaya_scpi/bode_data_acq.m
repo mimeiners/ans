@@ -1,4 +1,4 @@
-%% STEMlab measurements for Bode plots
+%% STEMlab Measurements for Bode plots
 % @author: Mirco Meiners (HSB)
 % Input signal: DF_IN1
 % Output signal: DF_IN2
@@ -108,8 +108,8 @@ save('./data/IN_INT.mat', 'DF_IN1', 'DF_IN2');
 
 %% Save data as parquet file
 % parquet data is of type table, no matrix operations
-parquetwrite('data/IN1_INT.parquet', array2table(DF_IN1));
-parquetwrite('data/IN2_INT.parquet', array2table(DF_IN2));
+% parquetwrite('data/IN1_INT.parquet', array2table(DF_IN1));
+% parquetwrite('data/IN2_INT.parquet', array2table(DF_IN2));
 
 %% Save data as excel sheet
 % data is table data, no matrix operations

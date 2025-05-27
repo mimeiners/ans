@@ -14,9 +14,11 @@ import time
 import redpitaya_scpi as scpi
 import numpy as np
 import pandas as pd
+import scipy.io as sio
 import matplotlib.pyplot as plt
 
 # %% Connection params
+# IP of your STEMlab
 IP = '192.168.111.184'
 rp_s = scpi.scpi(IP)
 
@@ -84,20 +86,31 @@ DF_IN2.to_csv(Data_IN2 + '.csv', index=False)
 # DF_IN1.to_excel(Data_IN1 + '.xlsx', index=False)
 # DF_IN2.to_excel(Data_IN2 + '.xlsx', index=False)
 
+# %% Store data on disk as mat-file
+# Ref. https://blog.finxter.com/5-best-ways-to-convert-pandas-dataframe-to-matlab/
+
+# Convert the DataFrame to a dictionary with variable names as keys
+dict_IN1 = {'DF_IN1': DF_IN1.to_numpy()}
+dict_IN2 = {'DF_IN2': DF_IN2.to_numpy()}
+
+# Save the dictionary as a .mat file
+sio.savemat("DF_IN1.mat", dict_IN1)
+sio.savemat("DF_IN2.mat", dict_IN2)
+
 # %% Store data on disk as HDF5
 # DF_IN1.to_hdf(Data_IN1 + ".h5", "table", append=True)
 # DF_IN2.to_hdf(Data_IN2 + ".h5", "table", append=True)
 
 # %% Store data on disk as apache parquet
-DF_IN1.to_parquet(Data_IN1 + ".parquet", index=False)
-DF_IN2.to_parquet(Data_IN2 + ".parquet", index=False)
+# DF_IN1.to_parquet(Data_IN1 + ".parquet", index=False)
+# DF_IN2.to_parquet(Data_IN2 + ".parquet", index=False)
 
 # %% Store data on disk as apache feather
 # DF_IN1.to_feather(Data_IN1 + ".feather")
 # DF_IN2.to_feather(Data_IN2 + ".feather")
 
-# %% Plot
-plt.plot(DF_IN1['900'], label='IN1')
-plt.plot(DF_IN2['900'], label='IN2')
-plt.legend()
-plt.show()
+# %% Test plot
+# plt.plot(DF_IN1['900'], label='IN1')
+# plt.plot(DF_IN2['900'], label='IN2')
+# plt.legend()
+# plt.show()

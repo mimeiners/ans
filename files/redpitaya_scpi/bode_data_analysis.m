@@ -19,12 +19,12 @@ load('./data/IN_INT.mat');
 
 %% Load data from parquet file
 % parquet data is table data, no matrix operations
-T_IN1 = parquetread('./data/IN1_INT.parquet');
+% T_IN1 = parquetread('./data/IN1_INT.parquet');
 % table to matrix conversion, table2matrix
-DF_IN1 = T_IN1{:,:};
-T_IN2 = parquetread('./data/IN2_INT.parquet');
+% DF_IN1 = T_IN1{:,:};
+% T_IN2 = parquetread('./data/IN2_INT.parquet');
 % table to matrix conversion, table2matrix
-DF_IN2 = T_IN2{:,:};
+% DF_IN2 = T_IN2{:,:};
 
 
 %% Load data from excel sheet
@@ -35,11 +35,10 @@ DF_IN2 = T_IN2{:,:};
 
 
 %% Fitting and extraction of sine params
-
-for n = 1:length(freqs)
-    SigParam_IN1(:,n) = fit_sin(t, DF_IN1(:,n)');
-    SigParam_IN2(:,n) = fit_sin(t, DF_IN2(:,n)');
-end
+% for n = 1:length(freqs)
+%     SigParam_IN1(:,n) = fit_sin(t, DF_IN1(:,n)');
+%     SigParam_IN2(:,n) = fit_sin(t, DF_IN2(:,n)');
+% end
     
 
 %% Amplitudes via std
@@ -88,14 +87,13 @@ end
 
 
 %% Hilbert transform with dataframe
+% for n = 1:length(freqs)
+%     y1_h = hilbert(DF_IN1(:,n)');
+%     y2_h = hilbert(DF_IN2(:,n)');
 
-for n = 1:length(freqs)
-    y1_h = hilbert(DF_IN1(:,n)');
-    y2_h = hilbert(DF_IN2(:,n)');
-
-    phase_rad_h(n) = angle(y2_h/y1_h);
-    phase_deg_h = rad2deg(phase_rad_h);
-end
+%     phase_rad_h(n) = angle(y2_h/y1_h);
+%     phase_deg_h = rad2deg(phase_rad_h);
+% end
 
 %% Bode plot
 % magnitude

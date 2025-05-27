@@ -64,10 +64,10 @@ Design a band-pass (BPF) and a band-stop (BSF) filter.
 ## Measurements to be taken
 
 ### Steady-state response 
-Apply a square wave input (Try f = 1 k f = 10 kHz to both BPF and BSF circuits and observe the outputs.
+Apply a square wave input (Try $f$ = 1 kHz and $f$ = 10 kHz to both BPF and BSF circuits and observe the outputs.
    
 * Band-pass output will output the fundamental frequency of the square wave multiplied by the gain at the centre
-  frequency. The amplitude at this frequency is given by $ \frac{4 V_p}{\pi H_0 Q}$, where $V_p$ is the peak
+  frequency. The amplitude at this frequency is given by $\frac{4 V_p}{\pi H_0 Q}$, where $V_p$ is the peak
   amplitude of the input square wave. 
  
 * The band-stop filter’s output will carry all the harmonics of the square wave, other than fundamental. This
@@ -79,19 +79,35 @@ Apply a sine wave input and obtain the magnitude and the phase response.
 ## What you should submit
 
 ### Simulation with KiCad (ngspice)
-Simulate the circuits and obtain the Steady-State response and Frequency response.
+Simulate the circuits and obtain the steady-state response and frequency response.
 
 ### Measurements with STEMlab
 Take the plots of the steady-state and frequency response with STEMlab oscilloscope or SCPI and compare it with
 simulation results. For frequency response, apply a sine wave input and vary its input frequency to obtain the phase and
 magnitude error.
    
+#### SCPI mit Python
+
+```{python}
+
+{{< include ../files/redpitaya_scpi/bode_data_acq.py >}}
+
+```
+
+#### SCPI mit MATLAB
+
+```{matlab}
+
+{{< include ../files/redpitaya_scpi/bode_data_acq.m >}}
+
+```
+
 ## Exercise Set 4
 
 ### 3rd order butterworth
 Higher order filters are normally designed by cascading second order filters and, if needed, one first-order filter.
 Design a third order Butterworth lowpass filter using Python or Matlab and obtain the frequency response as well as the
-transient response of the filter. The specifications are bandwidth of the filter $\f_0 = 10\,kHz$ and gain $H_0=10$.
+transient response of the filter. The specifications are bandwidth of the filter $f_0 = 10\,kHz$ and gain $H_0=10$.
 
 ### Notch filter
 Design a notch filter (band-stop filter) to eliminate the $50\,H$z power life frequency. In order to test this circuit,
