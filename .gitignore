@@ -9,5 +9,4 @@ _build
 _book
 _freeze
 .quarto
-
-/.quarto/
+__pycache__

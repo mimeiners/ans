@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 
 # %% Connection params
 # IP of your STEMlab
-IP = '192.168.111.184'
+IP = '192.168.111.182'
 rp_s = scpi.scpi(IP)
 
 # %% Measurement / Data Accquisition
@@ -90,12 +90,12 @@ DF_IN2.to_csv(Data_IN2 + '.csv', index=False)
 # Ref. https://blog.finxter.com/5-best-ways-to-convert-pandas-dataframe-to-matlab/
 
 # Convert the DataFrame to a dictionary with col names as keys
-dict_IN1 = DF_IN1.to_dict('list')
-dict_IN2 = DF_IN2.to_dict('list')
+# dict_IN1 = DF_IN1.to_dict('list')
+# dict_IN2 = DF_IN2.to_dict('list')
 
 # Save the dictionary as a .mat file
-sio.savemat(DF_IN1 + '.mat', dict_IN1)
-sio.savemat(DF_IN2 + '.mat', dict_IN2)
+# sio.savemat(DF_IN1 + '.mat', dict_IN1)
+# sio.savemat(DF_IN2 + '.mat', dict_IN2)
 
 # %% Store data on disk as HDF5
 # DF_IN1.to_hdf(Data_IN1 + ".h5", "table", append=True)
