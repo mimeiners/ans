@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Analoge Schaltungstechnik",
     "section": "",
-    "text": "Unsyllabus\n\n\n\nName\nDescription\n\n\n\n\nKursus\nM 6.9 Analoge Schaltungstechnik (ANS)\n\n\nSemester\nSoSe25\n\n\nDozent\nProf. Dr.-Ing. M. Meiners\n\n\nSeminar\nDie., 9:45 Uhr bis 13 Uhr, E 507",
+    "text": "Unsyllabus\n\n\n\nName\nBeschreibung\n\n\n\n\nKursus\nM 6.9 Analoge Schaltungen (ANS)\n\n\nSemester\nSoSe25\n\n\nDozent\nProf. Dr.-Ing. M. Meiners\n\n\nSeminar\nDi., 09:45 Uhr - 13:00 Uhr, E 507",
     "crumbs": [
       "Unsyllabus"
     ]
@@ -25,7 +25,7 @@
     "href": "lec/lec-01-intro.html#lernziele-des-moduls",
     "title": "1  Einleitung und Übersicht",
     "section": "",
-    "text": "Ein tieferes Verständnis für das Verhalten von MOS-Elementen im analogen Schaltungsentwurf entwickeln und Ausblicke auf weiterführende Kurse im Master bekommen.\nFunktionsprinzipien und Charakterisierung von MOS-Elementen\nFundamentale integrierte analoge Schaltungen\nOperationsverstärker\nLernen, Grenzen und Tradeoffs analoger Schaltungen zu bewerten\nEntwickeln eines systematischen Entwurfsstils, auch anwendbar für andere Ingenieursdisziplinen\nLernen, einen Schaltungssimulator für den Entwurf einzusetzen.\nTechnisch-wissenschaftliche Dokumentation\nKonsoliderung der oberen Aspekte in Laborprojekten",
+    "text": "Ein tieferes Verständnis für das Verhalten von elektronischen Bauelementen und Baugruppen im analogen Schaltungsentwurf entwickeln und Ausblicke auf weiterführende Kurse im Master bekommen.\nFunktionsprinzipien und Charakterisierung von elektronischen Bauelementen\nFundamentale integrierte analoge Schaltungen\nOperationsverstärker\nLernen, Grenzen und Tradeoffs analoger Schaltungen zu bewerten\nEntwickeln eines systematischen Entwurfsstils, auch anwendbar für andere Ingenieursdisziplinen\nLernen, einen Schaltungssimulator für den Entwurf einzusetzen.\nTechnisch-wissenschaftliche Dokumentation\nKonsoliderung der oberen Aspekte in Laborprojekten",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -43,88 +43,44 @@
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
-    "href": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
+    "objectID": "lec/lec-01-intro.html#scientific-computing",
+    "href": "lec/lec-01-intro.html#scientific-computing",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft",
-    "text": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft\n\nPython\nMatlab\nGnu Octave\nCommand-line tools",
+    "section": "1.3 Scientific Computing",
+    "text": "1.3 Scientific Computing\n\nPython (Anaconda)\nMatlab (Campus Lizenz)\nCommand-line tools",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#schaltungssimulation-spice",
-    "href": "lec/lec-01-intro.html#schaltungssimulation-spice",
+    "objectID": "lec/lec-01-intro.html#eda-tools",
+    "href": "lec/lec-01-intro.html#eda-tools",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.4 Schaltungssimulation (SPICE)",
-    "text": "1.4 Schaltungssimulation (SPICE)\n\nLTspice Linear Technology\nngspice (open-source)\nELDO (Siemens EDA)\nSpectre (cadence)\nPrimeSim HSPICE (SYNOPSIS)",
+    "section": "1.4 EDA Tools",
+    "text": "1.4 EDA Tools\n\nPCB / System Design\n\nLTspice\nKiCad EDA\nAltium Designer\nSiemensEDA PCB tools\ncadence System Design & Analysis\n\nIC / Silicon Design\n\nIIC-OSIC-TOOLS (open-source)\nSiemensEDA IC tools\ncadence IC Design & Verification\nsynopsys silicon design (IC)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
-    "href": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
+    "objectID": "lec/lec-01-intro.html#os-tools",
+    "href": "lec/lec-01-intro.html#os-tools",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)",
-    "text": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)\n\nShell\n\noh-my-zsh,\nbash-it\nSSH (Secure Shell)\n\nGIT (Versionskontrolle)\nCygwin",
+    "section": "1.5 OS-Tools",
+    "text": "1.5 OS-Tools\n\nMicrosoft-Terminal\nMicrosoft-PowerShell\nMacOS-Terminal\nLinux/MacOS Shell zsh-tools,\ngit (Versionskontrolle)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#code-editoren",
-    "href": "lec/lec-01-intro.html#code-editoren",
+    "objectID": "lec/lec-01-intro.html#code-editors",
+    "href": "lec/lec-01-intro.html#code-editors",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.6 Code Editoren",
-    "text": "1.6 Code Editoren\n\nVisual Studio Code\nNotepad++ (Windows)\nEmacs\n\nVim",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#schreibst-du-noch-oder-texst-du-schon",
-    "href": "lec/lec-01-intro.html#schreibst-du-noch-oder-texst-du-schon",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.7 Schreibst Du noch oder TeXst Du schon?",
-    "text": "1.7 Schreibst Du noch oder TeXst Du schon?\n\nMikTeX (Windows, MacOS, Linux)\nMacTeX (MacOS)\nTeXLive (Linux)",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#latex-editoren",
-    "href": "lec/lec-01-intro.html#latex-editoren",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.8 LaTeX Editoren",
-    "text": "1.8 LaTeX Editoren\n\nIDE’s\n\nTeXStudio\nTeXMaker\nTeXWorks\n\nKollaborative Frameworks\n\nShareLaTeX, Online LaTeX\nCoCalc - Online LaTeX",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#literaturverwaltung-und-latex",
-    "href": "lec/lec-01-intro.html#literaturverwaltung-und-latex",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.9 Literaturverwaltung und LaTeX",
-    "text": "1.9 Literaturverwaltung und LaTeX\n\nCitavi im Detail &gt; Titel exportieren &gt; Export nach BibTeX\nRefWorks - Library Guide Univ. Melbourne\nBenutzerdefinierte BibTex-Keys mit Zotero | nerdpause\nJabRef - Library Guide Univ. Melbourne\nEndNote - Library Guide Univ. Melbourne",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#labor",
-    "href": "lec/lec-01-intro.html#labor",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.10 Labor",
-    "text": "1.10 Labor\n\nAnwendung unterschiedlicher Beschreibungsebenen\n\nSystemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)\nSchaltungsebene (SPICE)\nCharakterisierung (Messungen)\n\nAnalog System Lab Kit – ASLK Pro\nMessautomatisierung Red Pitaya STEMlab 125-14/10",
+    "section": "1.6 Code Editors",
+    "text": "1.6 Code Editors\n\nVisual Studio Code\nSpyder IDE\nThonny (Micro-)Python IDE\nEmacs\nVim",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -134,8 +90,63 @@
     "objectID": "lec/lec-01-intro.html#data-science",
     "href": "lec/lec-01-intro.html#data-science",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.11 Data Science",
-    "text": "1.11 Data Science\n\nArbeitsordner auf dem Rechner (sandboxing, virtualenv)\nTabellenformat (ASCII, CSV)\nExceldatei (.xlsx ) oder OpenDocument (.ods)\nDatenspeicherung in speziellen Formaten, z.B. Apache Parquet\nDatenanalyse mit Datenbanken, z.B. DuckDB)",
+    "section": "1.7 Data Science",
+    "text": "1.7 Data Science\n\nFile system: Files and directories\nTabular data: Comma/Tab-Separated-Values (CSV/TSV), Spreadsheet (.xlsx, .ods)\nSpecial formats, e.g. MATLAB mat, HDF5\nEmbedded Databases\n\nSQL, z.B. SQlite\nOLAP, z.B. DuckDB",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#publish-computational-content",
+    "href": "lec/lec-01-intro.html#publish-computational-content",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.8 Publish Computational Content",
+    "text": "1.8 Publish Computational Content\n\nJupyter-Book\nquarto\n\nManuscripts",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#are-you-writing-or-texing",
+    "href": "lec/lec-01-intro.html#are-you-writing-or-texing",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.9 Are you writing or TeXing?",
+    "text": "1.9 Are you writing or TeXing?\n\nMikTeX (Windows, MacOS, Linux)\nMacTeX (MacOS)\nTeXLive (Linux)",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#latex-editoren",
+    "href": "lec/lec-01-intro.html#latex-editoren",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.10 LaTeX Editoren",
+    "text": "1.10 LaTeX Editoren\n\nIDE’s\n\nTeXStudio\nTeXMaker\n\nCollaborative Frameworks\n\nOverleaf, Online LaTeX\nCoCalc - Online LaTeX",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#bibliography-and-latex",
+    "href": "lec/lec-01-intro.html#bibliography-and-latex",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.11 Bibliography and LaTeX",
+    "text": "1.11 Bibliography and LaTeX\n\nCitavi im Detail &gt; Titel exportieren &gt; Export nach BibTeX\nRefWorks - Library Guide Univ. Melbourne\nBenutzerdefinierte BibTex-Keys mit Zotero | nerdpause\nJabRef - Library Guide Univ. Melbourne\nEndNote - Library Guide Univ. Melbourne",
+    "crumbs": [
+      "Seminar",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lec/lec-01-intro.html#labor",
+    "href": "lec/lec-01-intro.html#labor",
+    "title": "1  Einleitung und Übersicht",
+    "section": "1.12 Labor",
+    "text": "1.12 Labor\n\nAnwendung unterschiedlicher Beschreibungsebenen\n\nSystemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)\nSchaltungsebene (SPICE)\nCharakterisierung (Messungen)\n\nAnalog System Lab Kit – ASLK Pro\nMessautomatisierung Red Pitaya STEMlab 125-14/10",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -145,8 +156,8 @@
     "objectID": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
     "href": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.12 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic",
-    "text": "1.12 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic\nSchaltungsanalyse. * ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen * basierend auf einem einfachen, aber hinreichend genauen Modell * “Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird! * eine Schaltung \\(\\Rightarrow\\) eine Lösung\nSchaltungsdesign/-entwurf. * ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse. * eine Spezifikation \\(\\Rightarrow\\) viele Lösungen * Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”",
+    "section": "1.13 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic",
+    "text": "1.13 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic\nSchaltungsanalyse. * ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen * basierend auf einem einfachen, aber hinreichend genauen Modell * “Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird! * eine Schaltung \\(\\Rightarrow\\) eine Lösung\nSchaltungsdesign/-entwurf. * ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse. * eine Spezifikation \\(\\Rightarrow\\) viele Lösungen * Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -156,8 +167,8 @@
     "objectID": "lec/lec-01-intro.html#schöne-neue-welt",
     "href": "lec/lec-01-intro.html#schöne-neue-welt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.13 Schöne neue Welt",
-    "text": "1.13 Schöne neue Welt",
+    "section": "1.14 Schöne neue Welt",
+    "text": "1.14 Schöne neue Welt",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -167,8 +178,8 @@
     "objectID": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
     "href": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.14 From Sand to Silicon (Infineon, Dresden)",
-    "text": "1.14 From Sand to Silicon (Infineon, Dresden)",
+    "section": "1.15 From Sand to Silicon (Infineon, Dresden)",
+    "text": "1.15 From Sand to Silicon (Infineon, Dresden)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -178,8 +189,8 @@
     "objectID": "lec/lec-01-intro.html#finfet-intel",
     "href": "lec/lec-01-intro.html#finfet-intel",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.15 FinFET (Intel)",
-    "text": "1.15 FinFET (Intel)",
+    "section": "1.16 FinFET (Intel)",
+    "text": "1.16 FinFET (Intel)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -189,8 +200,8 @@
     "objectID": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
     "href": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.16 TSMC Fab (Next Gen 7/5 nm)",
-    "text": "1.16 TSMC Fab (Next Gen 7/5 nm)",
+    "section": "1.17 TSMC Fab (Next Gen 7/5 nm)",
+    "text": "1.17 TSMC Fab (Next Gen 7/5 nm)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -200,8 +211,8 @@
     "objectID": "lec/lec-01-intro.html#es-war-einmal",
     "href": "lec/lec-01-intro.html#es-war-einmal",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.17 Es war einmal …",
-    "text": "1.17 Es war einmal …",
+    "section": "1.18 Es war einmal …",
+    "text": "1.18 Es war einmal …",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -211,8 +222,8 @@
     "objectID": "lec/lec-01-intro.html#damals-und-heute",
     "href": "lec/lec-01-intro.html#damals-und-heute",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.18 Damals und heute",
-    "text": "1.18 Damals und heute",
+    "section": "1.19 Damals und heute",
+    "text": "1.19 Damals und heute",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -222,8 +233,8 @@
     "objectID": "lec/lec-01-intro.html#systemhierarchie",
     "href": "lec/lec-01-intro.html#systemhierarchie",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.19 Systemhierarchie",
-    "text": "1.19 Systemhierarchie\n\n\nNutzen Sie Hierarchien zur Beschreibung komplexer Systeme\nTeile und herrsche",
+    "section": "1.20 Systemhierarchie",
+    "text": "1.20 Systemhierarchie\n\n\nNutzen Sie Hierarchien zur Beschreibung komplexer Systeme\nTeile und herrsche",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -233,8 +244,8 @@
     "objectID": "lec/lec-01-intro.html#system-assembly",
     "href": "lec/lec-01-intro.html#system-assembly",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.20 System Assembly",
-    "text": "1.20 System Assembly",
+    "section": "1.21 System Assembly",
+    "text": "1.21 System Assembly",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -244,8 +255,8 @@
     "objectID": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
     "href": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.21 Schnittstellen zur Aussenwelt",
-    "text": "1.21 Schnittstellen zur Aussenwelt",
+    "section": "1.22 Schnittstellen zur Aussenwelt",
+    "text": "1.22 Schnittstellen zur Aussenwelt",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -255,8 +266,8 @@
     "objectID": "lec/lec-01-intro.html#meeting-mit-einem-system",
     "href": "lec/lec-01-intro.html#meeting-mit-einem-system",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.22 Meeting mit einem System",
-    "text": "1.22 Meeting mit einem System",
+    "section": "1.23 Meeting mit einem System",
+    "text": "1.23 Meeting mit einem System",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -266,8 +277,8 @@
     "objectID": "lec/lec-01-intro.html#system-in-a-package-sip",
     "href": "lec/lec-01-intro.html#system-in-a-package-sip",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.23 System in a Package (SiP)",
-    "text": "1.23 System in a Package (SiP)",
+    "section": "1.24 System in a Package (SiP)",
+    "text": "1.24 System in a Package (SiP)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -277,8 +288,8 @@
     "objectID": "lec/lec-01-intro.html#backend-phasen",
     "href": "lec/lec-01-intro.html#backend-phasen",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.24 Backend Phasen",
-    "text": "1.24 Backend Phasen\n\nPackaging\nZuverlässigkeit = Qualität auf Zeit\nTesting auf Wafer Level, known good die (KGD)\n\nBurn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)\nAutomatic Test Equipment (ATE)\n\nSystem Probe\nInterconnect Test\nBuild-in Self-Test (BIST)\n\n\nStatistische Datenanalyse und Yield Prognosen\n\nAusfallrate FIT (failure in time)\nBadewannenkurve",
+    "section": "1.25 Backend Phasen",
+    "text": "1.25 Backend Phasen\n\nPackaging\nZuverlässigkeit = Qualität auf Zeit\nTesting auf Wafer Level, known good die (KGD)\n\nBurn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)\nAutomatic Test Equipment (ATE)\n\nSystem Probe\nInterconnect Test\nBuild-in Self-Test (BIST)\n\n\nStatistische Datenanalyse und Yield Prognosen\n\nAusfallrate FIT (failure in time)\nBadewannenkurve",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -288,8 +299,8 @@
     "objectID": "lec/lec-01-intro.html#sie-werden-experte",
     "href": "lec/lec-01-intro.html#sie-werden-experte",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.25 Sie werden Experte",
-    "text": "1.25 Sie werden Experte\nLeistungsmerkmale. * Hintergrundwissen * Systemverständnis, Architektur, Herstellungsverfahren, Implementation\n\nUnterbewusste Kompetenz\n\nAbgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen\n\nSpezialwissen\n\nBerufsspezifisches Wissen\n\nTeamwork Haltung\n\nKommunikationsfähigkeit, Berichtswesen und technische Präsentation\n\nKreativität\nTool-Kenntnisse",
+    "section": "1.26 Sie werden Experte",
+    "text": "1.26 Sie werden Experte\nLeistungsmerkmale. * Hintergrundwissen * Systemverständnis, Architektur, Herstellungsverfahren, Implementation\n\nUnterbewusste Kompetenz\n\nAbgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen\n\nSpezialwissen\n\nBerufsspezifisches Wissen\n\nTeamwork Haltung\n\nKommunikationsfähigkeit, Berichtswesen und technische Präsentation\n\nKreativität\nTool-Kenntnisse",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -299,8 +310,8 @@
     "objectID": "lec/lec-01-intro.html#evolution-von-produkten",
     "href": "lec/lec-01-intro.html#evolution-von-produkten",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.26 Evolution von Produkten",
-    "text": "1.26 Evolution von Produkten\n\nAngetrieben durch Technologieverbesserung\n\nKosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)\nLeistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)\n\nAngetrieben durch Verbesserung der Entwurfsmethodik\n\nArchitektur (Leistung, Funktionen)\nCAD (Entwicklungskosten, Time-to-Market)\n\nKomplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)\nRolle von CAD\n\nVerbesserung der Produktivität von Konstruktionsprozessen\nReduzierung der Komplexität für den Konstrukteur\nSicherstellung des ordnungsgemäßen Betriebs der Geräte",
+    "section": "1.27 Evolution von Produkten",
+    "text": "1.27 Evolution von Produkten\n\nAngetrieben durch Technologieverbesserung\n\nKosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)\nLeistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)\n\nAngetrieben durch Verbesserung der Entwurfsmethodik\n\nArchitektur (Leistung, Funktionen)\nCAD (Entwicklungskosten, Time-to-Market)\n\nKomplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)\nRolle von CAD\n\nVerbesserung der Produktivität von Konstruktionsprozessen\nReduzierung der Komplexität für den Konstrukteur\nSicherstellung des ordnungsgemäßen Betriebs der Geräte",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -310,74 +321,8 @@
     "objectID": "lec/lec-01-intro.html#eda-kompetenz",
     "href": "lec/lec-01-intro.html#eda-kompetenz",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.27 EDA Kompetenz",
-    "text": "1.27 EDA Kompetenz\n\nEDA-Anbieter (Tool-Entwickler)\n\nIdentifikation von Entwurfsaufgaben, Bedarf an Werkzeugen\nEntwicklung von Strategien und Algorithmen\nImplementierung von Software-Werkzeugen\nVerifikation der Stabilität und Funktionalität der Software-Tools\n\nIC-Hersteller\n\nEntscheidungsplanung, welches Tool die Produktivität steigern könnte\nEDA-Tool-Manager, Installation und Wartung\nExperten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung\n\nDozenten und Studenten\n\nJobchancen\nNotwendigkeit, auf dem Laufenden zu bleiben",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#ansichten-zur-hardware-i",
-    "href": "lec/lec-01-intro.html#ansichten-zur-hardware-i",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.28 Ansichten zur Hardware (I)",
-    "text": "1.28 Ansichten zur Hardware (I)",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#ansichten-zur-hardware-ii",
-    "href": "lec/lec-01-intro.html#ansichten-zur-hardware-ii",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.29 Ansichten zur Hardware (II)",
-    "text": "1.29 Ansichten zur Hardware (II)",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#abstraktionsebenen",
-    "href": "lec/lec-01-intro.html#abstraktionsebenen",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.30 Abstraktionsebenen",
-    "text": "1.30 Abstraktionsebenen",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#entwurfsablauf",
-    "href": "lec/lec-01-intro.html#entwurfsablauf",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.31 Entwurfsablauf",
-    "text": "1.31 Entwurfsablauf",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#verifikation",
-    "href": "lec/lec-01-intro.html#verifikation",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.32 Verifikation",
-    "text": "1.32 Verifikation\n\n\n1.32.1 Frontend vs. Backend (analog)",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#frontend-vs.-backend-digital",
-    "href": "lec/lec-01-intro.html#frontend-vs.-backend-digital",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.33 Frontend vs. Backend (digital)",
-    "text": "1.33 Frontend vs. Backend (digital)",
+    "section": "1.28 EDA Kompetenz",
+    "text": "1.28 EDA Kompetenz\n\nEDA-Anbieter (Tool-Entwickler)\n\nIdentifikation von Entwurfsaufgaben, Bedarf an Werkzeugen\nEntwicklung von Strategien und Algorithmen\nImplementierung von Software-Werkzeugen\nVerifikation der Stabilität und Funktionalität der Software-Tools\n\nIC-Hersteller\n\nEntscheidungsplanung, welches Tool die Produktivität steigern könnte\nEDA-Tool-Manager, Installation und Wartung\nExperten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung\n\nDozenten und Studenten\n\nJobchancen\nNotwendigkeit, auf dem Laufenden zu bleiben",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -387,85 +332,8 @@
     "objectID": "lec/lec-01-intro.html#design-entwurfsmethodik",
     "href": "lec/lec-01-intro.html#design-entwurfsmethodik",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.34 Design-/Entwurfsmethodik",
-    "text": "1.34 Design-/Entwurfsmethodik\n\nFull Custom - vollständig manuell: ASIC\n\nÜberwiegend analoge Schaltungen\nEinfache digitale Gatter\nVolle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)\n\nSemi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen\n\nStandardzellen, Makrozellen, IP’s\nWiederverwendung von vordefinierten Blöcken oder Maskensätzen\nEingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)\n\nVollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs\n\nFPGA, PLA\nAusschließlich digitale Schaltungen\nSchnelles Prototyping",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#analog-design-entry",
-    "href": "lec/lec-01-intro.html#analog-design-entry",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.35 Analog Design Entry",
-    "text": "1.35 Analog Design Entry",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#netlist",
-    "href": "lec/lec-01-intro.html#netlist",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.36 Netlist",
-    "text": "1.36 Netlist",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#layout",
-    "href": "lec/lec-01-intro.html#layout",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.37 Layout",
-    "text": "1.37 Layout",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#digital-design-entry",
-    "href": "lec/lec-01-intro.html#digital-design-entry",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.38 Digital Design Entry",
-    "text": "1.38 Digital Design Entry",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#hardwarebeschreibungssprachen",
-    "href": "lec/lec-01-intro.html#hardwarebeschreibungssprachen",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.39 Hardwarebeschreibungssprachen",
-    "text": "1.39 Hardwarebeschreibungssprachen",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#technology-gates-und-netlisting",
-    "href": "lec/lec-01-intro.html#technology-gates-und-netlisting",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.40 Technology-Gates und Netlisting",
-    "text": "1.40 Technology-Gates und Netlisting",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#standard-cell-layout",
-    "href": "lec/lec-01-intro.html#standard-cell-layout",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.41 Standard Cell Layout",
-    "text": "1.41 Standard Cell Layout",
+    "section": "1.29 Design-/Entwurfsmethodik",
+    "text": "1.29 Design-/Entwurfsmethodik\n\nFull Custom - vollständig manuell: ASIC\n\nÜberwiegend analoge Schaltungen\nEinfache digitale Gatter\nVolle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)\n\nSemi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen\n\nStandardzellen, Makrozellen, IP’s\nWiederverwendung von vordefinierten Blöcken oder Maskensätzen\nEingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)\n\nVollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs\n\nFPGA, PLA\nAusschließlich digitale Schaltungen\nSchnelles Prototyping",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -475,8 +343,8 @@
     "objectID": "lec/lec-01-intro.html#nachhaltige-elektronik",
     "href": "lec/lec-01-intro.html#nachhaltige-elektronik",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.42 Nachhaltige Elektronik …",
-    "text": "1.42 Nachhaltige Elektronik …\n\n\nGeekchester.",
+    "section": "1.30 Nachhaltige Elektronik …",
+    "text": "1.30 Nachhaltige Elektronik …\n\n\nGeekchester.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -486,8 +354,8 @@
     "objectID": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
     "href": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.43 Warum es sicht lohnt …",
-    "text": "1.43 Warum es sicht lohnt …\n\n\nCircuit Song.",
+    "section": "1.31 Warum es sicht lohnt …",
+    "text": "1.31 Warum es sicht lohnt …\n\n\nCircuit Song.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -497,11 +365,99 @@
     "objectID": "lec/lec-01-intro.html#und-ab-an-den-strand",
     "href": "lec/lec-01-intro.html#und-ab-an-den-strand",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.44 Und ab an den Strand …",
-    "text": "1.44 Und ab an den Strand …\n\n\nViva la Electronica.",
+    "section": "1.32 Und ab an den Strand …",
+    "text": "1.32 Und ab an den Strand …\n\n\nViva la Electronica.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html",
+    "href": "lab/Experiment_04.html",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "",
+    "text": "2.1 Brief theory and motivation\nSecond order filters (or biquard filters) are important since they are the building blocks in the construction of \\(N^{th}\\) order filters, for \\(N &gt; 2\\). When \\(N\\) is odd, the \\(N^{th}\\) order filter can be realized using \\(N - 1\\) second order filters and one first order filter. When \\(N\\) is even, we need \\(N-1\\) second order filters. Please listen to the recorded lecture at [19] for a detailed explanation of active filters.\nSecond order filter can be used to construct four different types of filters. The transfer functions for the different filter types are shown in (tab-filter_tf?), where $f_0 = and \\(H_0\\) is the low frequency gain of the transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter), and BSF (bandstop filter).\nIn this experiment, we will describe a universal active filter, which provides all four filter functionalities. Abbildung 2.1 shows a second order universal filter realized using two integrators. Note that there are different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html#brief-theory-and-motivation",
+    "href": "lab/Experiment_04.html#brief-theory-and-motivation",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "",
+    "text": "Abbildung 2.1: A second-order universal active filter\n\n\n\n\n2.1.1 Transfer funtions of active filters\n\nLowpass Filter (LPF):\n\n\\[\n\\frac{V_{03}}{V_i} = \\frac{H_0}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nHighpass Filter (HPF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{\\left( H_0 \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandpass Filter (BPF):\n\n\\[\n\\frac{V_{02}}{V_i} = \\frac{\\left( -H_0 \\frac{s}{\\omega_0} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandstop Filter (BSF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{H_0 \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\n# -*- coding: utf-8 -*-\n\"\"\"\nMagnitude and phase response of active filters\n\n\"\"\"\n\n# %% Init\nimport numpy as np\n# https://docs.scipy.org/doc/scipy/reference/signal.html#\nimport scipy.signal as sig\nimport matplotlib.pyplot as plt\n\n# %% Definition der TFs\n# https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.tf2zpk.html#scipy.signal.tf2zpk\nH0 = 1\nQ = 10\nf0 = 1e3\nw0 = 2*np.pi*f0\nf = np.logspace(2, 4, 400)\n\nLPF = sig.lti([H0], [1/w0**2, 1/(w0*Q), 1])\nw, magLPF, phaseLPF = LPF.bode(2*np.pi*f)\n\nHPF = sig.lti([H0/w0**2, 0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magHPF, phaseHPF = HPF.bode(2*np.pi*f)\n\nBPF = sig.lti([-H0/w0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magBPF, phaseBPF = BPF.bode(2*np.pi*f)\n\nBSF = sig.lti([H0/w0**2, 0, H0], [1/w0**2, 1/(w0*Q), 1])\nw, magBSF, phaseBSF = BSF.bode(2*np.pi*f)\n\n# %% Erzeugen des Bode-Diagramms\nplt.subplot(2, 1, 1)\nplt.semilogx(f, magLPF, label='LPF')\nplt.semilogx(f, magHPF, label='HPF')\nplt.semilogx(f, magBPF, label='BPF')\nplt.semilogx(f, magBSF, label='BSF')\nplt.ylabel(r'$\\vert H_v \\vert$/dB')\nplt.grid()\nplt.legend()\nplt.subplot(2, 1, 2)\nplt.semilogx(f, phaseLPF, label='LPF')\nplt.semilogx(f, phaseHPF, label='HPF')\nplt.semilogx(f, phaseBPF, label='BPF')\nplt.semilogx(f, phaseBSF, label='BSF')\nplt.ylabel(r'$arg(H_v)$/deg')\nplt.xlabel('f/Hz')\nplt.grid()\nplt.show()",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html#specification",
+    "href": "lab/Experiment_04.html#specification",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "2.2 Specification",
+    "text": "2.2 Specification\nDesign a band-pass (BPF) and a band-stop (BSF) filter. * For the BPF, assume \\(f_0 = 1\\,kHz\\) and \\(Q=1\\). * For the BSF, assume \\(f_0 = 10\\,kHz\\) and \\(Q=10\\).",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html#measurements-to-be-taken",
+    "href": "lab/Experiment_04.html#measurements-to-be-taken",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "2.3 Measurements to be taken",
+    "text": "2.3 Measurements to be taken\n\n2.3.1 Steady-state response\nApply a square wave input (Try \\(f\\) = 1 kHz and \\(f\\) = 10 kHz to both BPF and BSF circuits and observe the outputs.\n\nBand-pass output will output the fundamental frequency of the square wave multiplied by the gain at the centre frequency. The amplitude at this frequency is given by \\(\\frac{4 V_p}{\\pi H_0 Q}\\), where \\(V_p\\) is the peak amplitude of the input square wave.\nThe band-stop filter’s output will carry all the harmonics of the square wave, other than fundamental. This illustrates the application of BSF as a distortion analyzer.\n\n\n\n2.3.2 Frequency response\nApply a sine wave input and obtain the magnitude and the phase response.",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html#what-you-should-submit",
+    "href": "lab/Experiment_04.html#what-you-should-submit",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "2.4 What you should submit",
+    "text": "2.4 What you should submit\n\n2.4.1 Simulation with KiCad (ngspice)\nSimulate the circuits and obtain the steady-state response and frequency response.\n\n\n2.4.2 Measurements with Redpitaya STEMlab\nTake the plots of the steady-state and frequency response with STEMlab oscilloscope or SCPI and compare it with simulation results. For frequency response, apply a sine wave input and vary its input frequency to obtain the phase and magnitude error.\n\n2.4.2.1 SCPI mit Python\n\n#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nMeasurements for Bode plots\nInput signal: DF_IN1\nOutput signal: DF_IN2\n\n@author: Mirco Meiners (HSB)\n\"\"\"\n\n# %% Init\nimport time\n# from datetime import datetime\nimport redpitaya_scpi as scpi\nimport numpy as np\nimport pandas as pd\nimport scipy.io as sio\nimport matplotlib.pyplot as plt\n\n# %% Connection params\n# IP of your STEMlab\nIP = '192.168.111.182'\nrp_s = scpi.scpi(IP)\n\n# %% Measurement / Data Accquisition\nDF_IN1 = pd.DataFrame()\nDF_IN2 = pd.DataFrame()\n\n# Parameters\nfunc = 'SINE'\nampl = 0.2\noffset = 0.0\nfreqs = np.arange(500, 2000, 100)\n\n\nfor freq in freqs:\n\n    rp_s.tx_txt('GEN:RST')  # Signal Generator reset\n    rp_s.tx_txt('SOUR1:FUNC ' + str(func).upper())  # Wave form\n    rp_s.tx_txt('SOUR1:VOLT ' + str(ampl))  # Magnitude\n    rp_s.tx_txt('SOUR1:VOLT:OFFS ' + str(offset))  # Offset\n    rp_s.tx_txt('SOUR1:FREQ:FIX ' + str(freq))  # Frequency\n    rp_s.tx_txt('OUTPUT1:STATE ON')  # Output\n    rp_s.tx_txt('SOUR1:TRig:INT')\n    time.sleep(1)\n\n    # Trigger\n    rp_s.tx_txt('ACQ:RST')  # Input reset\n    rp_s.tx_txt('ACQ:DEC 64')  # Decimation\n    rp_s.tx_txt('ACQ:TRIG:LEV 0.5')  # Trigger level\n    rp_s.tx_txt('ACQ:TRIG:DLY 8192')  # Delay\n    rp_s.tx_txt('ACQ:START')  # Start measurement\n    rp_s.tx_txt('ACQ:TRIG NOW')\n\n    # Input IN1\n    time.sleep(0.1)  # in seconds\n    rp_s.tx_txt('ACQ:SOUR1:DATA?')  # Readout buffer IN1\n    IN1str = rp_s.rx_txt()\n    IN1str = IN1str.strip('{}\\n\\r').replace(\"  \", \"\").split(',')\n    IN1 = np.array(list(map(float, IN1str)))\n    DF_IN1[str(freq)] = IN1\n\n    # Input IN2\n    time.sleep(0.1)  # in seconds\n    rp_s.tx_txt('ACQ:SOUR2:DATA?')  # Readout buffer IN2\n    IN2str = rp_s.rx_txt()\n    IN2str = IN2str.strip('{}\\n\\r').replace(\"  \", \"\").split(',')\n    IN2 = np.array(list(map(float, IN2str)))\n    DF_IN2[str(freq)] = IN2\n\n    rp_s.tx_txt('OUTPUT2:STATE OFF')\n\n# %% Data storage\nData_IN1 = 'data/DF_IN1'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))\nData_IN2 = 'data/DF_IN2'  #+ str(datetime.now().strftime('%Y-%m-%d_%H_%M'))\n\n# %% Store data on disk as comma-seperated-values\nDF_IN1.to_csv(Data_IN1 + '.csv', index=False)\nDF_IN2.to_csv(Data_IN2 + '.csv', index=False)\n\n# %% Store data on disk as excel sheet\n# with pd.ExcelWriter(Data_IN + '.xlsx') as writer:\n#     DF_IN1.to_excel(writer, sheet_name='IN1', index=False)\n#     DF_IN2.to_excel(writer, sheet_name='IN2', index=False)\n\n# DF_IN1.to_excel(Data_IN1 + '.xlsx', index=False)\n# DF_IN2.to_excel(Data_IN2 + '.xlsx', index=False)\n\n# %% Store data on disk as mat-file\n# Ref. https://blog.finxter.com/5-best-ways-to-convert-pandas-dataframe-to-matlab/\n\n# Convert the DataFrame to a dictionary with col names as keys\n# dict_IN1 = DF_IN1.to_dict('list')\n# dict_IN2 = DF_IN2.to_dict('list')\n\n# Save the dictionary as a .mat file\n# sio.savemat(DF_IN1 + '.mat', dict_IN1)\n# sio.savemat(DF_IN2 + '.mat', dict_IN2)\n\n# %% Store data on disk as HDF5\n# DF_IN1.to_hdf(Data_IN1 + \".h5\", \"table\", append=True)\n# DF_IN2.to_hdf(Data_IN2 + \".h5\", \"table\", append=True)\n\n# %% Store data on disk as apache parquet\n# DF_IN1.to_parquet(Data_IN1 + \".parquet\", index=False)\n# DF_IN2.to_parquet(Data_IN2 + \".parquet\", index=False)\n\n# %% Store data on disk as apache feather\n# DF_IN1.to_feather(Data_IN1 + \".feather\")\n# DF_IN2.to_feather(Data_IN2 + \".feather\")\n\n# %% Test plot\n# plt.plot(DF_IN1['900'], label='IN1')\n# plt.plot(DF_IN2['900'], label='IN2')\n# plt.legend()\n# plt.show()\n\n\n\n2.4.2.2 SCPI mit MATLAB\n\n%% STEMlab Measurements for Bode plots\n% @author: Mirco Meiners (HSB)\n% Input signal: DF_IN1\n% Output signal: DF_IN2\nclear;\n\n%% Define Red Pitaya as TCP client object\nIP = '192.168.111.183';  % IP of your Red Pitaya ...\nport = 5000;\nRP = tcpclient(IP, port);\nRP.InputBufferSize = 16384*32;\n\n%% Open connection to Red Pitaya\nRP.ByteOrder = \"big-endian\";\nconfigureTerminator(RP, \"CR/LF\");\n\nflush(RP);\n\n%% Generate continous signal\nfunc = \"SINE\";  % {sine, square, triangle, sawu, sawd, pwm}\nampl = 0.5;  % Set amplitude\noffset = 0.0;  % Set offset\nfreqs = [500:100:2000];  % Set frequencies\n\n\n%% Loop to measure multiple tones\nfor n = 1:length(freqs)\n    % Send SCPI command to Red Pitaya to turn ON generator\n    writeline(RP,'GEN:RST');  % Reset Generator\n    writeline(RP,strcat(\"SOUR1:FUNC \", func));  % Set function of output signal\n    writeline(RP,strcat(\"SOUR1:VOLT \", num2str(ampl)));  % Set amplitude\n    writeline(RP,strcat(\"SOUR1:VOLT:OFFS \", num2str(offset)));  % Set offset\n    writeline(RP,strcat(\"SOUR1:FREQ:FIX \", num2str(freqs(n))));  % Set frequency\n    writeline(RP,'OUTPUT1:STATE ON');  % Turn on output OUT2\n    \n    writeline(RP,'SOUR1:TRig:INT');  % Generate trigger\n    \n    pause(1);\n\n    % Trigger\n    writeline(RP,'ACQ:RST');  % Input reset\n    writeline(RP,'ACQ:DATA:FORMAT ASCII')\n    writeline(RP,'ACQ:DATA:UNITS VOLTS')\n    writeline(RP,'ACQ:DEC 64');  % Decimation 64\n    writeline(RP,'ACQ:TRIG:LEV 0.5');  % Trigger level\n    \n    % Set trigger delay to 0 samples\n    % 0 samples delay sets trigger to the center of the buffer\n    % Signal on your graph will have the trigger in the center (symmetrical)\n    % Samples from left to the center are samples before trigger\n    % Samples from center to the right are samples after trigger\n    \n    writeline(RP,'ACQ:TRIG:DLY 8192');  % Delay\n    writeline(RP,'ACQ:SOUR1:GAIN LV');  % Sets gain to LV/HV (should be the same as jumpers)\n    writeline(RP,'ACQ:SOUR2:GAIN LV');  % Sets gain to LV/HV (should be the same as jumpers)\n    \n    % Start & Trigger\n    % Trigger source setting must be after ACQ:START\n    % Set trigger to source 1 positive edge\n\n    writeline(RP,'ACQ:START');\n\n    % After acquisition is started some time delay is needed in order to acquire fresh samples in the buffer\n    pause(1);\n    % Here we have used time delay of one second, but you can calculate the exact value by taking into account buffer\n    % length and sampling rate\n\n    writeline(RP,'ACQ:TRIG NOW');  % Instant data aquisition\n        \n    % Wait for trigger\n    % Until trigger is true wait with acquiring\n    % Be aware of the while loop if trigger is not achieved\n    % Ctrl+C will stop code execution in MATLAB\n\n    while 1\n       trig_rsp = writeread(RP,'ACQ:TRIG:STAT?');\n       if strcmp('TD',trig_rsp(1:2))  % Read only TD\n           break;\n       end\n    end\n\n    % Read data from buffer\n    IN1 = writeread(RP,'ACQ:SOUR1:DATA?');\n    IN2 = writeread(RP,'ACQ:SOUR2:DATA?');\n\n    % Convert values to numbers.\n    % The first character in string is \"{\" and the last 3 are 2 spaces and \"}\".\n    \n    IN1_num = str2num(IN1(1, 2:length(IN1)-3));\n    DF_IN1(:,n) = IN1_num';\n\n    IN2_num = str2num(IN2(1, 2:length(IN2)-3));\n    DF_IN2(:,n) = IN2_num';\n    \n    % Turn off generator OUT1\n    writeline(RP,'OUTPUT1:STATE OFF');\nend\n\n    \n%% Close connection to Red Pitaya\nclear RP;\n\n\n%% Save data as mat file\nsave('./data/IN_INT.mat', 'DF_IN1', 'DF_IN2');\n% save('./data/IN1_INT.mat', 'DF_IN1');\n% save('./data/IN2_INT.mat', 'DF_IN2');\n\n%% Save data as parquet file\n% parquet data is of type table, no matrix operations\n% parquetwrite('data/IN1_INT.parquet', array2table(DF_IN1));\n% parquetwrite('data/IN2_INT.parquet', array2table(DF_IN2));\n\n%% Save data as excel sheet\n% data is table data, no matrix operations\n% writematrix(DF_IN1, './data/IN1_UB_VBS_mat.xlsx');\n% writematrix(DF_IN1, './data/IN2_UB_VBS_mat.xlsx');\n% writematrix(DF_IN1, './data/IN_UB_VBS_VBP_mat.xlsx', 'Sheet', 1);\n% writematrix(DF_IN2, './data/IN_UB_VBS_VBP_mat.xlsx', 'Sheet', 2);",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04.html#exercise-set-4",
+    "href": "lab/Experiment_04.html#exercise-set-4",
+    "title": "2  Experiment 4 - Design of Analog Filters",
+    "section": "2.5 Exercise Set 4",
+    "text": "2.5 Exercise Set 4\n\n2.5.1 3rd order butterworth\nHigher order filters are normally designed by cascading second order filters and, if needed, one first-order filter. Design a third order Butterworth lowpass filter using Python or Matlab and obtain the frequency response as well as the transient response of the filter. The specifications are bandwidth of the filter \\(f_0 = 10\\,kHz\\) and gain \\(H_0=10\\).\n\n\n2.5.2 Notch filter\nDesign a notch filter (band-stop filter) to eliminate the \\(50\\,H\\)z power life frequency. In order to test this circuit, synthesize a waveform \\(v(t) = \\sin(100\\pi t) + 0.1 \\sin(200 \\pi t)\\) Volts and use it as the input to the filter. What output did you obtain?",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04_NR.html",
+    "href": "lab/Experiment_04_NR.html",
+    "title": "3  Validation of Transfer Functions",
+    "section": "",
+    "text": "4 Mathematische Herleitung der Übertragungsfunktionen des Biquads\nZuerst wurden die einzelnen Gleichungen der Operationsverstärker aufgestellt:\nEinsetzen von Gleichung [eq:v1] in [eq:v2]:\nZusammenfassen ergibt:\nAuflösen nach \\(\\frac{V_2}{V_i}\\):\nEinsetzen von [eq:tf_v2] in [eq:v3]:\nEinsetzen von [eq:tf_v2] in [eq:v4]:\nHinweis Im Aufgabenheft wird hier\n\\[\n\\frac{V_4}{V_i} = \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2} }\n\\]\nangegeben, was einer Negierung meines Ergebnisses entspricht.\nAusgehend von Gleichung [eq:v1]: \\[V_1 = -(V_3 + V_4)\\]\nVerwendung der Übertragungsfunktion [eq:tf_v3] für \\(V_3\\):\n\\[\n\\frac{V_3}{V_i} = \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nFall 1: Verwendung der negierten Form der Übertragungsfunktion von \\(V_4\\) aus der eigenen Herleitung:\n\\[\n\\frac{V_4}{V_i} = - \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}}\n\\label{eq:tf_v4_neg}\n\\]\nEinsetzen von [eq:tf_v3] und [eq:tf_v4_neg] in [eq:v1] ergibt:\nFall 2: Verwendung der positiven Form der Übertragungsfunktion von \\(V_4\\) wie im Aufgabenheft angegeben:\n\\[\n\\frac{V_4}{V_i} = \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}} \\label{eq:tf_v4_aufg}\n\\]\nEinsetzen in [eq:v1]:\n$$\nAusgehend von der richtigen Funktion für \\(V_1\\) [eq:tf_v1_korrekt]:\n\\[\n\\frac{V_1}{V_i} = \\frac{ \\frac{s^2}{\\omega_0^2} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nVerwenden der bekannten Beziehung \\(V_2 = -\\frac{\\omega_0}{s} \\cdot V_1\\):\nEin Vergleich der beiden Übertragungsfunktionen \\(\\frac{V_2}{V_i}\\) (Gleichung [eq:tf_v2], [eq:V2_aus_V1]) zeigt, dass der entstandene Fehler auf die Gleichung \\(\\frac{V_4}{V_1}\\) zurückzuführen ist, da die Herleitung von \\(\\frac{V_1}{V_i}\\) korrekt bleibt.\nFazit: Nur die Verwendung der negierten Form von \\(\\frac{V_4}{V_i}\\) aus Gleichung [eq:tf_v4_neg] führt zu einem konsistenten Ergebnis für \\(\\frac{V_1}{V_i}\\) gemäß Gleichung [eq:tf_v1_korrekt]. Die Version aus dem Aufgabenheft (Gleichung [eq:tf_v4_aufg]) scheint daher fehlerhaft zu sein.",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lab/Experiment_04_NR.html#betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene",
+    "href": "lab/Experiment_04_NR.html#betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene",
+    "title": "3  Validation of Transfer Functions",
+    "section": "4.1 Betrachtung der Pole und Nullstellen innerhalb der S-Ebene",
+    "text": "4.1 Betrachtung der Pole und Nullstellen innerhalb der S-Ebene\nZur genaueren Analyse des Frequenzverhalten von analogen Biquad-Filtern bietet sich die Betrachtung der Pol- und Nullstellen in der komplexen \\(s\\)-Ebene an. Die Lage der Punkte liefert direktes Verständnis über Filtergüte, Resonanz- und Dämpfungsverhalten sowie Stabilität des Systems. Im Laplace-Bereich gilt: \\(s = \\sigma + j\\omega\\).\nAls Beispiel wird die Übertragungsfunktion \\(\\frac{V_2}{V_i}\\) des Bandpassfilters betrachtet:\n\\[\n\\frac{V_2}{V_i} = -\\frac{\\frac{s}{\\omega_0}H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\n\n4.1.1 Nullstellenbestimmung\nAus dem Zählerpolynom ergibt sich: \\[\n\\frac{s}{\\omega_0}H_0 = 0 \\Rightarrow s_{0} = 0\n\\]\nDies bedeutet, dass das System eine einfache Nullstelle im Ursprung besitzt. Gleichanteile im Eingangssignal (\\(s = 0\\), also \\(\\omega = 0\\)) werden somit vollständig unterdrückt.\n\n\n4.1.2 Polstellenbestimmung\nDie Pole ergeben sich durch Nullsetzen des Nenners:\n\\[\\begin{aligned}\n1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} &= 0 \\nonumber \\\\\ns^2 + \\frac{\\omega_0}{Q}s + \\omega_0^2 &= 0\n\\end{aligned}\\]\n$$\nAnwendung der pq-Formel: \\[\ns_{1,2} = -\\frac{\\omega_0}{2Q} \\pm \\sqrt{\\left(\\frac{\\omega_0}{2Q}\\right)^2 - \\omega_0^2}\n\\]\nVereinfachung des Radikanden: \\[\n\\sqrt{\\omega_0^2\\left(\\frac{1}{4Q^2} - 1\\right)} = \\omega_0\\sqrt{\\frac{1}{4Q^2} - 1}\n\\]\nDie Lage der Pole hängt somit direkt vom Gütefaktor \\(Q\\) ab. Solange \\(Q &gt; 0\\), befinden sich die Pole in der linken Halbebene der \\(s\\)-Ebene, was die Stabilität des Systems garantiert. Je nach Wert von \\(Q\\) lassen sich drei charakteristische Fälle unterscheiden:\n\nSchwingfall (\\(Q &gt; \\frac{1}{2}\\)): Komplex-konjugierte Pole, gedämpftes Schwingungsverhalten: \\[s_{1,2} = -\\frac{\\omega_0}{2Q} \\pm j\\omega_0\\sqrt{1 - \\frac{1}{4Q^2}}\\]\nAperiodischer Grenzfall (\\(Q = \\frac{1}{2}\\)): Doppelter reeller Pol, kritische Dämpfung: \\[s_{1,2} = -\\omega_0\\]\nKriechfall (\\(Q &lt; \\frac{1}{2}\\)): Zwei reelle Pole, träges (überdämpftes) Verhalten: \\[s_{1,2} = -\\frac{\\omega_0}{2Q} \\pm \\omega_0\\sqrt{\\frac{1}{4Q^2} - 1}\\]\n\n\n\n4.1.3 Einfluss von \\(Q\\) und \\(H_0\\) auf das Frequenzverhalten\nDie Pole bestimmen die Resonanzstelle, sowie die Bandbreite des Filters. Die Bandbreite \\(\\Delta\\omega\\) hängt direkt vom Gütefaktor ab:\n\\[\n\\Delta\\omega = \\frac{\\omega_0}{Q}\n\\]\nEin größerer \\(Q\\)-Faktor führt also zu einer schmaleren Durchlasskurve mit stärker ausgeprägter Resonanz. Bezogen auf die Lage der Pole in der \\(s\\)-Ebene bedeutet das, dass diese nahe an der Imaginären Achse liegen. Gleiches gilt auch für die anderen am Biquad auftretenden Filtertypen, da der Nenner der Übertragungsfunktion für alle Filter gleich ist. Der Parameter \\(H_0\\) bestimmt die maximale Verstärkung bei der Resonanzfrequenz und skaliert somit die Amplitude des Frequenzgangs, ohne dessen Form zu verändern. Die Lage der Pole verändert sich in \\(s\\)-Ebene somit auch nicht.\nSo ergibt sich für den Bandpass-Filter dieses Pol-Nullstellendiagramm:\n\n\n\nEnter Caption\n\n\nAngewandt auf die anderen Filtertypen ergibt sich dieses Pol-Nullstellendiagramm:\n\n\n\nPol- und Nullstellen in der S-Ebene",
+    "crumbs": [
+      "Labor",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
     ]
   }
 ]
