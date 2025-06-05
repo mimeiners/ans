@@ -36,7 +36,7 @@ book:
   repo-url: https://github.com/mimeiners/ans/
   repo-branch: main
   repo-actions: [edit,issue]
-  downloads: [pdf,epub]
+#  downloads: [pdf,epub]
     
   chapters:
     - index.qmd
@@ -52,33 +52,34 @@ book:
     - part: Labor
       chapters:
         - lab/Experiment_04.qmd
+        - lab/Experiment_04_NR.qmd
         
 bibliography: _bibliography/references.bib
 
 format:
   html:
     theme: flatly
-  pdf:
-    documentclass: scrbook 
-    # lof: true
-    # lot: true
-    toc: true    
-    geometry:
-      - top=30mm
-      - left=20mm
-      - heightrounded
-    hyperrefoptions:
-      - linktoc=all
-    colorlinks: true
-    linkcolor: "blue"
-    biblio-style: ieee
-    highlight-style: github
-    mainfont: "Calibri"
-    # keep-tex: true
-    output-file: ans
-  epub:
-    theme: flatly
-    output-file: ans
+  # pdf:
+  #   documentclass: scrbook 
+  #   # lof: true
+  #   # lot: true
+  #   toc: true    
+  #   geometry:
+  #     - top=30mm
+  #     - left=20mm
+  #     - heightrounded
+  #   hyperrefoptions:
+  #     - linktoc=all
+  #   colorlinks: true
+  #   linkcolor: "blue"
+  #   biblio-style: ieee
+  #   highlight-style: github
+  #   mainfont: "Calibri"
+  #   # keep-tex: true
+  #   output-file: ans
+  # epub:
+  #   theme: flatly
+  #   output-file: ans
   
 execute:
   freeze: auto

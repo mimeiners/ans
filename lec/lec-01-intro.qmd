@@ -21,10 +21,10 @@ Verfügung.
 
 ## Lernziele des Moduls
 
-* Ein tieferes Verständnis für das Verhalten von MOS-Elementen im analogen Schaltungsentwurf entwickeln und Ausblicke
-  auf weiterführende Kurse im Master bekommen.
+* Ein tieferes Verständnis für das Verhalten von elektronischen Bauelementen und Baugruppen im analogen
+  Schaltungsentwurf entwickeln und Ausblicke auf weiterführende Kurse im Master bekommen.
   
-* Funktionsprinzipien und Charakterisierung von MOS-Elementen
+* Funktionsprinzipien und Charakterisierung von elektronischen Bauelementen
 
 * Fundamentale integrierte analoge Schaltungen
 
@@ -42,6 +42,7 @@ Verfügung.
 
 
 ## Voraussetzungen des Moduls
+
 * Digitaltechnik
 
 * Grundlagen der Halbleiterbauelemente
@@ -50,65 +51,104 @@ Verfügung.
 
 * Regelungstechnik 
 
-## Wissenschaftliches Rechnen / Datenwissenschaft
-* [Python](https://www.anaconda.com/download/)
-* [Matlab](https://de.mathworks.com)
-* [Gnu Octave](https://www.gnu.org/software/octave/)
-* [Command-line tools](http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html) 
 
+## Scientific Computing
 
-## Schaltungssimulation (SPICE)
-* [LTspice Linear Technology](http://www.linear.com/designtools/software/)
-* [ngspice (open-source)](http://ngspice.sourceforge.net)
-* [ELDO (Siemens EDA)](https://eda.sw.siemens.com/en-US/eldo/)
-* [Spectre (cadence)](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-simulation-platform.html)
-* [PrimeSim HSPICE (SYNOPSIS)](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-hspice.html)
+-   [Python (Anaconda)](https://www.anaconda.com/download/)
 
+-   [Matlab (Campus Lizenz)](https://de.mathworks.com/academia/tah-portal/hochschule-bremen-31463273.html)
 
-## Betriebssystem (OS) - Werkzeuge (Tools)
-  * [Shell](https://en.wikipedia.org/wiki/Shell_%28computing%29)
-    * [oh-my-zsh](https://ohmyz.sh),
-    * [bash-it](https://bash-it.readthedocs.io/en/latest/)
-    * [SSH (Secure Shell)](https://de.wikipedia.org/wiki/Secure_Shell)
+-   [Command-line tools](https://jeroenjanssens.com/seven/)
 
-  * [GIT (Versionskontrolle)](https://git-scm.com)
-  * [Cygwin](https://cygwin.com)
+## EDA Tools
 
+-   PCB / System Design
+    -   [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+    -   [KiCad EDA](https://www.kicad.org/)
+    -   [Altium Designer](https://www.altium.com/de/altium-designer)
+    -   [SiemensEDA PCB tools](https://eda.sw.siemens.com/en-US/pcb/products/)
+    -   [cadence System Design & Analysis](https://www.cadence.com/en_US/home/tools/system-design-and-analysis.html)
+-   IC / Silicon Design
+    -   [IIC-OSIC-TOOLS (open-source)](https://github.com/iic-jku/IIC-OSIC-TOOLS)
+    -   [SiemensEDA IC tools](https://eda.sw.siemens.com/en-US/ic/products/)
+    -   [cadence IC Design & Verification](https://www.cadence.com/en_US/home/tools/design-excellence.html)
+    -   [synopsys silicon design (IC)](https://www.synopsys.com/silicon-design.html)
 
-## Code Editoren
-  * [Visual Studio Code](https://code.visualstudio.com)
-  * [Notepad++](https://notepad-plus-plus.org) (Windows)
-  * [Emacs](https://www.gnu.org/software/emacs/)	
-  * [Vim](https://www.vim.org)
+## OS-Tools
 
+-   [Microsoft-Terminal](https://github.com/microsoft/terminal)
 
-## Schreibst Du noch oder TeXst Du schon?
-  * [MikTeX (Windows, MacOS, Linux)](https://miktex.org/)
-  * [MacTeX (MacOS)](https://www.tug.org/mactex/)
-  * [TeXLive (Linux)](http://tug.org/texlive/)
+-   [Microsoft-PowerShell](https://learn.microsoft.com/de-de/powershell/scripting/learn/ps101/01-getting-started)
 
+-   [MacOS-Terminal](https://iterm2.com)
+
+-   [Linux/MacOS Shell zsh-tools](https://ohmyz.sh),
+
+-   [git (Versionskontrolle)](https://git-scm.com)
+
+## Code Editors
+
+-   [Visual Studio Code](https://code.visualstudio.com)
+
+-   [Spyder IDE](https://www.spyder-ide.org)
+
+-   [Thonny (Micro-)Python IDE](https://thonny.org)
+
+-   [Emacs](https://www.gnu.org/software/emacs/)
+
+-   [Vim](https://www.vim.org)
+
+## Data Science
+
+-   File system: Files and directories
+
+-   Tabular data: Comma/Tab-Separated-Values (CSV/TSV), Spreadsheet (.xlsx, .ods)
+
+-   Special formats, e.g. MATLAB mat, HDF5
+
+-   Embedded [Databases](https://db-engines.com)
+
+    -   [SQL](https://en.wikipedia.org/wiki/SQL), z.B. [SQlite](https://en.wikipedia.org/wiki/SQLite)
+    -   [OLAP](https://en.wikipedia.org/wiki/Online_analytical_processing), z.B. [DuckDB](https://duckdb.org/why_duckdb)
+
+## Publish Computational Content
+
+-   [Jupyter-Book](https://jupyterbook.org/en/stable/intro.html)
+
+-   [quarto](https://quarto.org)
+    -   [Manuscripts](https://quarto.org/docs/manuscripts/)
+
+## Are you writing or TeXing?
+
+-   [MikTeX (Windows, MacOS, Linux)](https://miktex.org/)
+
+-   [MacTeX (MacOS)](https://www.tug.org/mactex/)
+
+-   [TeXLive (Linux)](http://tug.org/texlive/)
 
 ## LaTeX Editoren
-  * IDE's
-    * [TeXStudio](http://www.texstudio.org)
-    * [TeXMaker](http://www.xm1math.net/texmaker/)
-    * [TeXWorks](http://www.tug.org/texworks/)
 
-  * Kollaborative Frameworks
-    * [ShareLaTeX, Online LaTeX](https://www.sharelatex.com/)
-    * [CoCalc - Online LaTeX](https://cocalc.com/doc/latex-editor.html)
+-   IDE's
+    -   [TeXStudio](http://www.texstudio.org)
+    -   [TeXMaker](http://www.xm1math.net/texmaker/)
+-   Collaborative Frameworks
+    -   [Overleaf, Online LaTeX](https://www.overleaf.com/)
+    -   [CoCalc - Online LaTeX](https://cocalc.com/doc/latex-editor.html)
 
+## Bibliography and LaTeX
 
+-   [Citavi im Detail \> Titel exportieren \> Export nach BibTeX](https://www1.citavi.com/sub/manual5/de/exporting_to_bibtex.html)
 
-## Literaturverwaltung und LaTeX
-  * [Citavi im Detail > Titel exportieren > Export nach BibTeX](https://www1.citavi.com/sub/manual5/de/exporting_to_bibtex.html)
-  * [RefWorks - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734\&p=3912294)
-  * [Benutzerdefinierte BibTex-Keys mit Zotero | nerdpause](https://nerdpause.de/benutzerdefinierte-bibtex-keys-mit-zotero/)
-  * [JabRef - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734\&p=3897117)
-  * [EndNote - Library Guide Univ. Melbourne](https://unimelb.libguides.com/latexbibtex/endnote)
+-   [RefWorks - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734&p=3912294)
 
+-   [Benutzerdefinierte BibTex-Keys mit Zotero \| nerdpause](https://nerdpause.de/benutzerdefinierte-bibtex-keys-mit-zotero/)
+
+-   [JabRef - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734&p=3897117)
+
+-   [EndNote - Library Guide Univ. Melbourne](https://unimelb.libguides.com/latexbibtex/endnote)
 
 ## Labor
+
 * Anwendung unterschiedlicher Beschreibungsebenen
   * Systemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)
   * Schaltungsebene (SPICE)
@@ -117,15 +157,6 @@ Verfügung.
 * Analog System Lab Kit &ndash; [ASLK Pro](https://aslk-pro.readthedocs.io/de/latest/)
 
 * Messautomatisierung Red Pitaya [STEMlab 125-14/10](https://redpitaya.readthedocs.io/en/latest/developerGuide/125-14/top.html)
-
-
-
-## Data Science
-* Arbeitsordner auf dem Rechner (sandboxing, virtualenv)
-* Tabellenformat (ASCII, CSV)
-* Exceldatei (.xlsx ) oder OpenDocument (.ods)
-* Datenspeicherung in speziellen Formaten, z.B. Apache Parquet
-* Datenanalyse mit [Datenbanken](https://db-engines.com), z.B. [DuckDB](https://duckdb.org))
 
 
 ## Schaltungsanalyse/-entwurf $\neq$  Black Magic
@@ -213,13 +244,13 @@ Verfügung.
     * Interconnect Test
     * Build-in Self-Test (BIST)
 
-
 * Statistische Datenanalyse und Yield Prognosen
   * Ausfallrate FIT (failure in time)
   * Badewannenkurve
 
 
 ## Sie werden Experte
+
 *Leistungsmerkmale.* 
 * Hintergrundwissen
   * Systemverständnis, Architektur, Herstellungsverfahren, Implementation
@@ -235,6 +266,7 @@ Verfügung.
 
 * Kreativität
 * Tool-Kenntnisse
+
 
 ## Evolution von Produkten
 * Angetrieben durch Technologieverbesserung
@@ -268,42 +300,9 @@ Verfügung.
   * Jobchancen
   * Notwendigkeit, auf dem Laufenden zu bleiben
 
-## Ansichten zur Hardware (I)
-
-![](../images/lec-01-views_on_hardware_1.png)
-
-
-## Ansichten zur Hardware (II)
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-views_on_hardware_2.png)
-
-
-## Abstraktionsebenen
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-abstraction_layer.png)
-
-
-## Entwurfsablauf
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-design_flow.png)
-
-
-## Verifikation
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-verification.png)
-
-
-### Frontend vs. Backend (analog)
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-front-end_back-end_analog.png)
-
-
-## Frontend vs. Backend (digital)
-
-![<p><em>(c) M. Ortmanns, Univ. Ulm.</em></p>](../images/lec-01-front-end_back-end_digital.png)
-
 
 ## Design-/Entwurfsmethodik
+
 * Full Custom - vollständig manuell: ASIC
   * Überwiegend analoge Schaltungen
   * Einfache digitale Gatter
@@ -319,34 +318,6 @@ Verfügung.
   * Ausschließlich digitale Schaltungen
   * Schnelles Prototyping
 
-
-## Analog Design Entry
-
-![](../images/lec-01-design_entry_analog.png)
-
-## Netlist
-
-![](../images/lec-01-netlist.png)
-
-## Layout
-
-![](../images/lec-01-inverter_layout.png)
-
-## Digital Design Entry
-
-![](../images/lec-01-design_entry_digital.png)
-
-## Hardwarebeschreibungssprachen
-
-![](../images/lec-01-hdl_inv.png)
-
-## Technology-Gates und Netlisting
-
-![](../images/lec-01-technology_gate_netlist.png)
-
-## Standard Cell Layout
-
-![](../images/lec-01-standard_cell_layout.png)
 
 ## Nachhaltige Elektronik ...
 

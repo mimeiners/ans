@@ -10,3 +10,5 @@ _book
 _freeze
 .quarto
 __pycache__
+
+/.quarto/
