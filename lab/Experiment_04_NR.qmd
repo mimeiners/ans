@@ -23,7 +23,7 @@ date: last-modified
  
 # Mathematical derivation of the transfer functions of the biquad
 
-Zuerst wurden die einzelnen Gleichungen der Operationsverstärker aufgestellt: 
+First, the individual equations of the operational amplifiers were set up:
 
 \begin{aligned}
 V_1 &= -(V_3 + V_4) \label{eq:v1} \\
@@ -32,9 +32,9 @@ V_3 &= -\left(\frac{1}{s} \omega_0 \cdot V_2 \right) \\
 V_4 &= -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right) 
 \end{aligned}
 
-* Berechnung von $\frac{V_2}{V_i}$
+## Calculation of $\frac{V_2}{V_i}$
 
-Einsetzen von Gleichung [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} in
+Insert equation [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} into
 [\[eq:v2\]](#eq:v2){reference-type="eqref" reference="eq:v2"}: 
 
 
@@ -44,7 +44,7 @@ V_2 &= -\frac{\omega_0}{s} \cdot V_1 = -\frac{\omega_0}{s} \cdot (-V_3 - V_4) \n
 \end{aligned}
 
 
-Zusammenfassen ergibt: 
+Summarizing results in:
 
 \begin{aligned}
 V_2 &= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - \frac{\omega_0}{s} H_0 \cdot V_i \\
@@ -52,7 +52,7 @@ V_2 &= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - \fra
 \end{aligned}
 
 
-Auflösen nach $\frac{V_2}{V_i}$:
+Resolve to $\frac{V_2}{V_i}$:
 
 \begin{aligned}
 \frac{V_2}{V_i} = \frac{\frac{\omega_0}{s} H_0}{ -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right)} 
@@ -60,9 +60,9 @@ Auflösen nach $\frac{V_2}{V_i}$:
 \end{aligned}
 
 
-* Übertragungsfunktion $\frac{V_3}{V_i}$:
+## Transfer-function $\frac{V_3}{V_i}$:
 
-Einsetzen von [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} in
+Insert [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} into
 [\[eq:v3\]](#eq:v3){reference-type="eqref" reference="eq:v3"}:
 
 
@@ -73,9 +73,9 @@ V_3 &= -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\
 \end{aligned}
 
 
-* Übertragungsfunktion $\frac{V_4}{V_i}$:
+## Transfer-function $\frac{V_4}{V_i}$:
 
-Einsetzen von [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} in
+Insert [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} into
 [\[eq:v4\]](#eq:v4){reference-type="eqref" reference="eq:v4"}: 
 
 
@@ -90,28 +90,28 @@ V_4 &= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{
 \end{aligned}
 
 
-**Hinweis** Im Aufgabenheft wird hier
+**Note:** In the task booklet, the following equation is given here:
 
 $$
 \frac{V_4}{V_i} = \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2} }
 $$
 
-angegeben, was einer Negierung meines Ergebnisses entspricht.
+This corresponds to a negation of my own result.
 
 
-* Berechnung der Übertragungsfunktion $\frac{V_1}{V_i}$:
+## Calculation of the transfer function $\frac{V_1}{V_i}$:
 
-Ausgehend von Gleichung [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"}: $$V_1 = -(V_3 + V_4)$$
+Based on equation [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"}: $$V_1 = -(V_3 + V_4)$$
 
-Verwendung der Übertragungsfunktion
+Using the transfer-function
 [\[eq:tf_v3\]](#eq:tf_v3){reference-type="eqref" reference="eq:tf_v3"} für $V_3$:
 
 $$
 \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 $$
 
-**Fall 1: Verwendung der negierten Form der Übertragungsfunktion von $V_4$** aus der eigenen Herleitung:
+**Case 1: Use of the negated form of the transfer function of $V_4$ from my own derivation:** 
 
 $$
 \frac{V_4}{V_i} = - \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
@@ -119,9 +119,9 @@ $$
 \label{eq:tf_v4_neg}
 $$
 
-Einsetzen von [\[eq:tf_v3\]](#eq:tf_v3){reference-type="eqref" reference="eq:tf_v3"} und
-[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} in
-[\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} ergibt: 
+Inserting [\[eq:tf_v3\]](#eq:tf_v3){reference-type="eqref" reference="eq:tf_v3"} and
+[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} into
+[\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} results in: 
 
 \begin{aligned}
 V_1 &= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \left( -\frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0
@@ -133,7 +133,7 @@ Q} + \frac{s^2}{\omega_0^2} \\
 \end{aligned}
 
 
-**Fall 2: Verwendung der positiven Form der Übertragungsfunktion von $V_4$** wie im Aufgabenheft angegeben:
+**Case 2: Use the positive form of the transfer function of $V_4$ as specified in the task booklet:** 
 
 $$
 \frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
@@ -141,7 +141,7 @@ $$
 $$ 
 
 
-Einsetzen in [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"}: 
+Insert into [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"}: 
 
 \begin{aligned}
 V_1 &= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D}
@@ -150,19 +150,19 @@ V_1 &= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \fr
 \Rightarrow \frac{V_1}{V_i} &= - \frac{ \left( 2 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}} \label{eq:tf_v1_falsch}
 \end{aligned}
-$$
 
 
-* Wiederholte Berechnung der Ü-Funktion $\frac{V_2}{V_i}$ über $V_1$:
 
-Ausgehend von der richtigen Funktion für $V_1$ [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
+## Repeated calculation of the Transfer-function $\frac{V_2}{V_i}$ via $V_1$:
+
+Based on the correct function for $V_1$ [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
 reference="eq:tf_v1_korrekt"}: 
 
 $$
 \frac{V_1}{V_i} = \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 $$
 
-Verwenden der bekannten Beziehung $V_2 = -\frac{\omega_0}{s} \cdot V_1$:
+Using the known relationship $V_2 = -\frac{\omega_0}{s} \cdot V_1$:
 
 \begin{aligned}
 V_2 &= -\frac{\omega_0}{s} \cdot V_1 \notag \\
@@ -174,138 +174,13 @@ V_2 &= -\frac{\omega_0}{s} \cdot V_1 \notag \\
 \end{aligned}
 
 
-Ein Vergleich der beiden Übertragungsfunktionen $\frac{V_2}{V_i}$ (Gleichung
+A comparison of the two transfer functions $\frac{V_2}{V_i}$ (Gleichung
 [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"},
-[\[eq:V2_aus_V1\]](#eq:V2_aus_V1){reference-type="eqref" reference="eq:V2_aus_V1"}) zeigt, dass der entstandene Fehler
-auf die Gleichung $\frac{V_4}{V_1}$ zurückzuführen ist, da die Herleitung von $\frac{V_1}{V_i}$ korrekt bleibt.
+[\[eq:V2_aus_V1\]](#eq:V2_aus_V1){reference-type="eqref" reference="eq:V2_aus_V1"})  shows that the error is due to the equation $\frac{V_4}{V_1}$ since the derivation of $\frac{V_1}{V_i}$ remains correct.
 
 
-**Fazit:** Nur die Verwendung der negierten Form von $\frac{V_4}{V_i}$ aus Gleichung
-[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} führt zu einem konsistenten Ergebnis
-für $\frac{V_1}{V_i}$ gemäß Gleichung [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
-reference="eq:tf_v1_korrekt"}. Die Version  aus dem Aufgabenheft (Gleichung
+**#Conclusion:** Only the use of the negated form of $\frac{V_4}{V_i}$ from equation
+[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} leads to a consistent result for  $\frac{V_1}{V_i}$ according to equation [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
+reference="eq:tf_v1_korrekt"}. The version from the exercise booklet (equation 
 [\[eq:tf_v4_aufg\]](#eq:tf_v4_aufg){reference-type="eqref" 
-reference="eq:tf_v4_aufg"}) scheint daher fehlerhaft zu sein.
-
-
-# Herleitung einer Blockstruktur für ein analoges Biquad-Filter {#herleitung-einer-blockstruktur-für-ein-analoges-biquad-filter .unnumbered}
-
-Ein analoges Filter zweiter Ordnung lässt sich im Allgemeinen durch eine rationale Übertragungsfunktion der Form
-
-$$
-H(s) = \frac{V_2(s)}{V_i(s)} = -\frac{\dfrac{s}{\omega_0} H_0}{1 + \dfrac{s}{\omega_0 Q} + \dfrac{s^2}{\omega_0^2}}
-$$
-
-beschreiben. Diese entspricht einem sogenannten Biquad-Filter mit linearer Nullstelle im Zähler und zwei komplex
-konjugierten Polstellen im Nenner. Ziel ist es, aus dieser Übertragungsfunktion eine strukturierte Blockdarstellung zu
-entwickeln, die sich sowohl für die Analyse als auch für eine spätere Digitalisierung eignet.
-
-Der Nenner von Gleichung
-[\[eq:transferfunction\]](#eq:transferfunction){reference-type="eqref" reference="eq:transferfunction"} weist auf eine
-dynamische Ordnung von zwei hin. Dies legt nahe, das Systemzustandsbasiert über zwei Integratoren zu modellieren. Die
-dabei entstehenden Zustandsvariablen $x_1(s)$ und $x_2(s)$ entsprechen dabei den Ausgängen der ersten und zweiten
-Integration des Eingangssignals $V_i(s)$ nach Anwendung der Rückführungen. Durch gezielte Wahl der Rückführungspfade mit
-den Gewichtungen $1/(\omega_0 Q)$ (für die erste Ableitung) und $1/\omega_0^2$ (für den direkten Rückgriff auf $x_2$)
-lässt sich der Nenner exakt rekonstruieren.
-
-Der Ausgang $V_2(s)$ wird aus dem Zustand $x_1(s)$ über eine Vorwärtsverstärkung $H_0 / \omega_0$ gebildet, was der
-Zählerstruktur der Übertragungsfunktion entspricht. Damit ergibt sich eine vollständig äquivalente, strukturierte
-Darstellung der ursprünglichen Systemübertragung in Form eines Zustandsraum-kompatiblen Blockschaltbildes.
-
-Diese Darstellung bringt mehrere Vorteile mit sich: 
-
-Sie erlaubt eine direkte Ableitung der Zustandsraumdarstellung sowie eine einfache  Anwendung der
-Bilineartransformation zur Digitalisierung des Filters. Darüber hinaus ergibt sich eine numerisch stabile
-Implementierung, da alle Koeffizienten bereits auf die kanonische Normalform mit $a_0 = 1$ normiert sind. Die getrennte
-Behandlung von Rückführ- und Vorwärtszweigen erleichtert zudem die Modularisierung und den systematischen Entwurf
-komplexerer Filtersysteme, etwa durch Kaskadierung mehrerer Biquad-Abschnitte.
-
-![SOS der Bandpass Übertragungsfunktion](../images/BSB.png){#fig-bsb width=400}
-
-
-## Betrachtung der Pole und Nullstellen innerhalb der S-Ebene
-
-Zur genaueren Analyse des Frequenzverhalten von analogen Biquad-Filtern
-bietet sich die Betrachtung der Pol- und Nullstellen in der komplexen
-$s$-Ebene an. Die Lage der Punkte liefert direktes Verständnis über
-Filtergüte, Resonanz- und Dämpfungsverhalten sowie Stabilität des
-Systems. Im Laplace-Bereich gilt: $s = \sigma + j\omega$.
-
-Als Beispiel wird die Übertragungsfunktion $\frac{V_2}{V_i}$ des
-Bandpassfilters betrachtet:
-
-$$
-\frac{V_2}{V_i} = -\frac{\frac{s}{\omega_0}H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-$$
-
-### Nullstellenbestimmung
-
-Aus dem Zählerpolynom ergibt sich:
-$$
-\frac{s}{\omega_0}H_0 = 0 \Rightarrow s_{0} = 0
-$$
-
-Dies bedeutet, dass das System eine einfache Nullstelle im Ursprung
-besitzt. Gleichanteile im Eingangssignal ($s = 0$, also $\omega = 0$)
-werden somit vollständig unterdrückt.
-
-### Polstellenbestimmung
-
-Die Pole ergeben sich durch Nullsetzen des Nenners:
-
-\begin{aligned}
-1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} &= 0 \nonumber \\
-s^2 + \frac{\omega_0}{Q}s + \omega_0^2 &= 0
-\end{aligned}
-$$
-
-Anwendung der pq-Formel:
-$$
-s_{1,2} = -\frac{\omega_0}{2Q} \pm \sqrt{\left(\frac{\omega_0}{2Q}\right)^2 - \omega_0^2}
-$$
-
-Vereinfachung des Radikanden:
-$$
-\sqrt{\omega_0^2\left(\frac{1}{4Q^2} - 1\right)} = \omega_0\sqrt{\frac{1}{4Q^2} - 1}
-$$
-
-Die Lage der Pole hängt somit direkt vom Gütefaktor $Q$ ab. Solange
-$Q > 0$, befinden sich die Pole in der linken Halbebene der $s$-Ebene,
-was die Stabilität des Systems garantiert. Je nach Wert von $Q$ lassen
-sich drei charakteristische Fälle unterscheiden:
-
-*   **Schwingfall** ($Q > \frac{1}{2}$): Komplex-konjugierte Pole,
-    gedämpftes Schwingungsverhalten:
-    $$s_{1,2} = -\frac{\omega_0}{2Q} \pm j\omega_0\sqrt{1 - \frac{1}{4Q^2}}$$
-
-*   **Aperiodischer Grenzfall** ($Q = \frac{1}{2}$): Doppelter reeller
-    Pol, kritische Dämpfung: $$s_{1,2} = -\omega_0$$
-
-*   **Kriechfall** ($Q < \frac{1}{2}$): Zwei reelle Pole, träges
-    (überdämpftes) Verhalten:
-    $$s_{1,2} = -\frac{\omega_0}{2Q} \pm \omega_0\sqrt{\frac{1}{4Q^2} - 1}$$
-
-
-### Einfluss von $Q$ und $H_0$ auf das Frequenzverhalten
-
-Die Pole bestimmen die Resonanzstelle, sowie die Bandbreite des Filters.
-Die Bandbreite $\Delta\omega$ hängt direkt vom Gütefaktor ab:
-
-$$
-\Delta\omega = \frac{\omega_0}{Q}
-$$
-
-Ein größerer $Q$-Faktor führt also zu einer schmaleren Durchlasskurve mit stärker ausgeprägter Resonanz. Bezogen auf die
-Lage der Pole in der $s$-Ebene bedeutet das, dass diese nahe an der Imaginären Achse liegen. Gleiches gilt auch für die
-anderen am Biquad auftretenden Filtertypen, da der Nenner der Übertragungsfunktion für alle Filter gleich ist. Der
-Parameter $H_0$ bestimmt die maximale Verstärkung bei der Resonanzfrequenz und skaliert somit die Amplitude des
-Frequenzgangs, ohne dessen Form zu verändern. Die Lage der Pole verändert sich in $s$-Ebene somit auch nicht.
-
-So ergibt sich für den Bandpass-Filter dieses Pol-Nullstellendiagramm:
-
-![Enter Caption](../images/Figure_3.png){#fig:enter-label width="50%"}
-
-
-Angewandt auf die anderen Filtertypen ergibt sich dieses Pol-Nullstellendiagramm:
-
-![Pol- und Nullstellen in der S-Ebene](../images/s_ebene_filtertypen.png){#fig:enter-label width="100%"}
+reference="eq:tf_v4_aufg"}) therefore appears to be incorrect.
