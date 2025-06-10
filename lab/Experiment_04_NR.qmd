@@ -20,8 +20,8 @@ abstract: |
 
 date: last-modified
 ---
-
-# Mathematische Herleitung der Übertragungsfunktionen des Biquads
+ 
+# Mathematical derivation of the transfer functions of the biquad
 
 Zuerst wurden die einzelnen Gleichungen der Operationsverstärker aufgestellt: 
 
