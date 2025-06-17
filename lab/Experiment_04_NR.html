@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nils Renner">
+<meta name="dcterms.date" content="2025-06-17">
 
 <title>3&nbsp; Validation of Transfer Functions – Analoge Schaltungstechnik</title>
 <style>
@@ -57,17 +58,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Keine Treffer",
-    "search-matching-documents-text": "Treffer",
-    "search-copy-link-title": "Link in die Suche kopieren",
-    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
-    "search-more-match-text": "weitere Treffer in diesem Dokument",
-    "search-more-matches-text": "weitere Treffer in diesem Dokument",
-    "search-clear-button-title": "Zurücksetzen",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Abbrechen",
-    "search-submit-button-title": "Abschicken",
-    "search-label": "Suchen"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -109,13 +110,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/Experiment_04.html">Labor</a></li><li class="breadcrumb-item"><a href="../lab/Experiment_04_NR.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Validation of Transfer Functions</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -129,8 +130,8 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Analoge Schaltungstechnik</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/mimeiners/ans/" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
+    <a href="https://github.com/mimeiners/ans/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -140,7 +141,7 @@ window.Quarto = {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Suchen"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -155,7 +156,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Seminar</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -178,7 +179,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labor</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -204,21 +205,20 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#mathematische-herleitung-der-übertragungsfunktionen-des-biquads" id="toc-mathematische-herleitung-der-übertragungsfunktionen-des-biquads" class="nav-link active" data-scroll-target="#mathematische-herleitung-der-übertragungsfunktionen-des-biquads"><span class="header-section-number">4</span> Mathematische Herleitung der Übertragungsfunktionen des Biquads</a></li>
-  <li><a href="#herleitung-einer-blockstruktur-für-ein-analoges-biquad-filter" id="toc-herleitung-einer-blockstruktur-für-ein-analoges-biquad-filter" class="nav-link" data-scroll-target="#herleitung-einer-blockstruktur-für-ein-analoges-biquad-filter">Herleitung einer Blockstruktur für ein analoges Biquad-Filter</a>
+  <li><a href="#mathematical-derivation-of-the-transfer-functions-of-the-biquad" id="toc-mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="nav-link active" data-scroll-target="#mathematical-derivation-of-the-transfer-functions-of-the-biquad"><span class="header-section-number">4</span> Mathematical derivation of the transfer functions of the biquad</a>
   <ul class="collapse">
-  <li><a href="#betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene" id="toc-betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene" class="nav-link" data-scroll-target="#betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene"><span class="header-section-number">4.1</span> Betrachtung der Pole und Nullstellen innerhalb der S-Ebene</a>
-  <ul class="collapse">
-  <li><a href="#nullstellenbestimmung" id="toc-nullstellenbestimmung" class="nav-link" data-scroll-target="#nullstellenbestimmung"><span class="header-section-number">4.1.1</span> Nullstellenbestimmung</a></li>
-  <li><a href="#polstellenbestimmung" id="toc-polstellenbestimmung" class="nav-link" data-scroll-target="#polstellenbestimmung"><span class="header-section-number">4.1.2</span> Polstellenbestimmung</a></li>
-  <li><a href="#einfluss-von-q-und-h_0-auf-das-frequenzverhalten" id="toc-einfluss-von-q-und-h_0-auf-das-frequenzverhalten" class="nav-link" data-scroll-target="#einfluss-von-q-und-h_0-auf-das-frequenzverhalten"><span class="header-section-number">4.1.3</span> Einfluss von <span class="math inline">\(Q\)</span> und <span class="math inline">\(H_0\)</span> auf das Frequenzverhalten</a></li>
-  </ul></li>
+  <li><a href="#calculation-of-fracv_2v_i" id="toc-calculation-of-fracv_2v_i" class="nav-link" data-scroll-target="#calculation-of-fracv_2v_i"><span class="header-section-number">4.1</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></a></li>
+  <li><a href="#transfer-function-fracv_3v_i" id="toc-transfer-function-fracv_3v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_3v_i"><span class="header-section-number">4.2</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</a></li>
+  <li><a href="#transfer-function-fracv_4v_i" id="toc-transfer-function-fracv_4v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_4v_i"><span class="header-section-number">4.3</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</a></li>
+  <li><a href="#calculation-of-the-transfer-function-fracv_1v_i" id="toc-calculation-of-the-transfer-function-fracv_1v_i" class="nav-link" data-scroll-target="#calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">4.4</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</a></li>
+  <li><a href="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" id="toc-repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="nav-link" data-scroll-target="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">4.5</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.6</span> Conclusion</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -230,8 +230,8 @@ window.Quarto = {
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autor:in</div>
-  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
     <p class="author">Nils Renner <a href="mailto:nrenner@stud.hs-bremen.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
@@ -249,9 +249,9 @@ window.Quarto = {
 
       
     <div>
-    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">5. Juni 2025</p>
+      <p class="date">June 17, 2025</p>
     </div>
   </div>
   
@@ -260,7 +260,7 @@ window.Quarto = {
   
 <div>
   <div class="abstract">
-    <div class="block-title">Zusammenfassung</div>
+    <div class="block-title">Abstract</div>
     <p>Lorem ipsum</p>
   </div>
 </div>
@@ -269,47 +269,57 @@ window.Quarto = {
 </header>
 
 
-<section id="mathematische-herleitung-der-übertragungsfunktionen-des-biquads" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Mathematische Herleitung der Übertragungsfunktionen des Biquads</h1>
-<p>Zuerst wurden die einzelnen Gleichungen der Operationsverstärker aufgestellt:</p>
-<span class="math display">\[\begin{aligned}
-V_1 &amp;= -(V_3 + V_4) \label{eq:v1} \\
-V_2 &amp;= -\left(\frac{1}{s} \omega_0 \cdot V_1 \right) \\
-V_3 &amp;= -\left(\frac{1}{s} \omega_0 \cdot V_2 \right) \\
-V_4 &amp;= -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right)
-\end{aligned}\]</span>
-<ul>
-<li>Berechnung von <span class="math inline">\(\frac{V_2}{V_i}\)</span></li>
-</ul>
-<p>Einsetzen von Gleichung <a href="#eq:v1" data-reference-type="eqref" data-reference="eq:v1">[eq:v1]</a> in <a href="#eq:v2" data-reference-type="eqref" data-reference="eq:v2">[eq:v2]</a>:</p>
-<span class="math display">\[\begin{aligned}
+<section id="mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Mathematical derivation of the transfer functions of the biquad</h1>
+<p>First, the individual equations of the operational amplifiers were set up:</p>
+<p><span id="eq-v1"><span class="math display">\[
+V_1 = -(V_3 + V_4)
+\tag{4.1}\]</span></span></p>
+<p><span id="eq-v2"><span class="math display">\[
+V_2 = -\left(\frac{1}{s} \omega_0 \cdot V_1 \right)
+\tag{4.2}\]</span></span></p>
+<p><span id="eq-v3"><span class="math display">\[
+V_3 = -\left(\frac{1}{s} \omega_0 \cdot V_2 \right)
+\tag{4.3}\]</span></span></p>
+<p><span id="eq-v4"><span class="math display">\[
+V_4 = -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right)
+\tag{4.4}\]</span></span></p>
+<section id="calculation-of-fracv_2v_i" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="calculation-of-fracv_2v_i"><span class="header-section-number">4.1</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></h2>
+<p>Insert <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> into <a href="#eq-v2" class="quarto-xref">Equation&nbsp;<span>4.2</span></a> :</p>
+<p><span class="math display">\[\begin{align}
 V_2 &amp;= -\frac{\omega_0}{s} \cdot V_1 = -\frac{\omega_0}{s} \cdot (-V_3 - V_4) \nonumber \\
 &amp;= -\frac{\omega_0}{s} \cdot \left( \frac{\omega_0}{s} \cdot V_2 + \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) \label{eq:v2_expanded}
-\end{aligned}\]</span>
-<p>Zusammenfassen ergibt:</p>
-<span class="math display">\[\begin{aligned}
+\end{align}\]</span></p>
+<p>Summarizing results in:</p>
+<p><span class="math display">\[\begin{align}
 V_2 &amp;= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - \frac{\omega_0}{s} H_0 \cdot V_i \\
 \Rightarrow \frac{\omega_0}{s} H_0 \cdot V_i &amp;= -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right) V_2
-\end{aligned}\]</span>
-<p>Auflösen nach <span class="math inline">\(\frac{V_2}{V_i}\)</span>:</p>
-<span class="math display">\[\begin{aligned}
+\end{align}\]</span></p>
+<p>Resolve to <span class="math inline">\(\frac{V_2}{V_i}\)</span>:</p>
+<p><span id="eq-tf_v2"><span class="math display">\[
 \frac{V_2}{V_i} = \frac{\frac{\omega_0}{s} H_0}{ -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right)}
-= -\frac{ \frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \label{eq:tf_v2}
-\end{aligned}\]</span>
-<ul>
-<li>Übertragungsfunktion <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</li>
-</ul>
-<p>Einsetzen von <a href="#eq:tf_v2" data-reference-type="eqref" data-reference="eq:tf_v2">[eq:tf_v2]</a> in <a href="#eq:v3" data-reference-type="eqref" data-reference="eq:v3">[eq:v3]</a>:</p>
-<span class="math display">\[\begin{aligned}
-V_3 &amp;= -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right) \nonumber \\
-&amp;= \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \right) V_i \\
-\Rightarrow \frac{V_3}{V_i} &amp;= \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\end{aligned}\]</span>
-<ul>
-<li>Übertragungsfunktion <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</li>
-</ul>
-<p>Einsetzen von <a href="#eq:tf_v2" data-reference-type="eqref" data-reference="eq:tf_v2">[eq:tf_v2]</a> in <a href="#eq:v4" data-reference-type="eqref" data-reference="eq:v4">[eq:v4]</a>:</p>
-<span class="math display">\[\begin{aligned}
+= -\frac{ \frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} }
+\tag{4.5}\]</span></span></p>
+</section>
+<section id="transfer-function-fracv_3v_i" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="transfer-function-fracv_3v_i"><span class="header-section-number">4.2</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</h2>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> into <a href="#eq-v3" class="quarto-xref">Equation&nbsp;<span>4.3</span></a> :</p>
+<p><span class="math display">\[
+V_3 = -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 +
+\frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right)
+\]</span></p>
+<p><span class="math display">\[
+V_3 = \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \right) V_i
+\]</span></p>
+<p><span id="eq-tf_v3"><span class="math display">\[
+\Rightarrow \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
+\tag{4.6}\]</span></span></p>
+</section>
+<section id="transfer-function-fracv_4v_i" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="transfer-function-fracv_4v_i"><span class="header-section-number">4.3</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</h2>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> into <a href="#eq-v4" class="quarto-xref">Equation&nbsp;<span>4.4</span></a> :</p>
+<p><span class="math display">\[\begin{align}
 V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{Q} \cdot \left( -\frac{
 \frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \right) + H_0 \cdot V_i \right)
 \nonumber \\
@@ -317,149 +327,80 @@ V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac
 &amp;= \left( \frac{ \frac{s}{\omega_0 Q} - \left(1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} \right) }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot H_0 \right) V_i \\
 &amp;= - \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \\
 \Rightarrow \frac{V_4}{V_i} &amp;= - \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} }
-\end{aligned}\]</span>
-<p><strong>Hinweis</strong> Im Aufgabenheft wird hier</p>
+\end{align}\]</span></p>
+<p><strong>Note:</strong> In the task booklet, the following equation is given here:</p>
 <p><span class="math display">\[
 \frac{V_4}{V_i} = \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2} }
 \]</span></p>
-<p>angegeben, was einer Negierung meines Ergebnisses entspricht.</p>
-<ul>
-<li>Berechnung der Übertragungsfunktion <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</li>
-</ul>
-<p>Ausgehend von Gleichung <a href="#eq:v1" data-reference-type="eqref" data-reference="eq:v1">[eq:v1]</a>: <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
-<p>Verwendung der Übertragungsfunktion <a href="#eq:tf_v3" data-reference-type="eqref" data-reference="eq:tf_v3">[eq:tf_v3]</a> für <span class="math inline">\(V_3\)</span>:</p>
+<p>This corresponds to a negation of my own result.</p>
+</section>
+<section id="calculation-of-the-transfer-function-fracv_1v_i" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">4.4</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</h2>
+<p>Based on equation <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> : <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
+<p>Using the transfer-function <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>4.6</span></a> for <span class="math inline">\(V_3\)</span>:</p>
 <p><span class="math display">\[
 \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
-<p><strong>Fall 1: Verwendung der negierten Form der Übertragungsfunktion von <span class="math inline">\(V_4\)</span></strong> aus der eigenen Herleitung:</p>
-<p><span class="math display">\[
+<p><strong>Case 1: Use of the negated form of the transfer function of <span class="math inline">\(V_4\)</span> from my own derivation:</strong></p>
+<p><span id="eq-tf_v4_neg"><span class="math display">\[
 \frac{V_4}{V_i} = - \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}}
-\label{eq:tf_v4_neg}
-\]</span></p>
-<p>Einsetzen von <a href="#eq:tf_v3" data-reference-type="eqref" data-reference="eq:tf_v3">[eq:tf_v3]</a> und <a href="#eq:tf_v4_neg" data-reference-type="eqref" data-reference="eq:tf_v4_neg">[eq:tf_v4_neg]</a> in <a href="#eq:v1" data-reference-type="eqref" data-reference="eq:v1">[eq:v1]</a> ergibt:</p>
-<span class="math display">\[\begin{aligned}
-V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \left( -\frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0
-}{D} \right) \right) V_i \nonumber \\
-&amp;= \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \quad \text{mit } D = 1 + \frac{s}{\omega_0
-Q} + \frac{s^2}{\omega_0^2} \\
-\Rightarrow \frac{V_1}{V_i} &amp;= \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
-\frac{s^2}{\omega_0^2}} \label{eq:tf_v1_korrekt}
-\end{aligned}\]</span>
-<p><strong>Fall 2: Verwendung der positiven Form der Übertragungsfunktion von <span class="math inline">\(V_4\)</span></strong> wie im Aufgabenheft angegeben:</p>
+\tag{4.7}\]</span></span></p>
+<p>Inserting <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>4.6</span></a> and <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>4.7</span></a> into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> results in:</p>
 <p><span class="math display">\[
-\frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
-\frac{s^2}{\omega_0^2}} \label{eq:tf_v4_aufg}
+V_1 = -\left( V_3 + V_4 \right)
 \]</span></p>
-<p>Einsetzen in <a href="#eq:v1" data-reference-type="eqref" data-reference="eq:v1">[eq:v1]</a>:</p>
-<span class="math display">\[\begin{aligned}
+<p><span class="math display">\[
+V_1 = -\left( \frac{H_0}{D} + \left( -\frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) \right) V_i
+\]</span></p>
+<p><span class="math display">\[
+V_1 = \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \quad \text{mit } D = 1 +
+\frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}
+\]</span></p>
+<p><span id="eq-tf_v1_korrekt"><span class="math display">\[
+\Rightarrow \frac{V_1}{V_i} = \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
+\tag{4.8}\]</span></span></p>
+<p><strong>Case 2: Use the positive form of the transfer function of <span class="math inline">\(V_4\)</span> as specified in the task booklet:</strong></p>
+<p><span id="eq-tf_v4_aufg"><span class="math display">\[
+\frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 frac} + Q{s^2}{\omega_0^2}}
+\tag{4.9}\]</span></span></p>
+<p>Insert into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> :</p>
+<p><span class="math display">\[\begin{align}
 V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D}
 \right) V_i \nonumber \\
 &amp;= -\left( \frac{ \left( 2 + \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \\
 \Rightarrow \frac{V_1}{V_i} &amp;= - \frac{ \left( 2 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}} \label{eq:tf_v1_falsch}
-\end{aligned}\]</span>
-<p>$$</p>
-<ul>
-<li>Wiederholte Berechnung der Ü-Funktion <span class="math inline">\(\frac{V_2}{V_i}\)</span> über <span class="math inline">\(V_1\)</span>:</li>
-</ul>
-<p>Ausgehend von der richtigen Funktion für <span class="math inline">\(V_1\)</span> <a href="#eq:tf_v1_korrekt" data-reference-type="eqref" data-reference="eq:tf_v1_korrekt">[eq:tf_v1_korrekt]</a>:</p>
+\end{align}\]</span></p>
+</section>
+<section id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">4.5</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</h2>
+<p>Based on the correct function for <span class="math inline">\(V_1\)</span> <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>4.8</span></a> :</p>
 <p><span class="math display">\[
 \frac{V_1}{V_i} = \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
-<p>Verwenden der bekannten Beziehung <span class="math inline">\(V_2 = -\frac{\omega_0}{s} \cdot V_1\)</span>:</p>
-<span class="math display">\[\begin{aligned}
-V_2 &amp;= -\frac{\omega_0}{s} \cdot V_1 \notag \\
-&amp;= -\frac{\omega_0}{s} \cdot \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} +
-\frac{s^2}{\omega_0^2}} \cdot V_i \notag \\
-&amp;= -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \\
-\Rightarrow \frac{V_2}{V_i} &amp;= - \frac{\frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\label{eq:V2_aus_V1}
-\end{aligned}\]</span>
-<p>Ein Vergleich der beiden Übertragungsfunktionen <span class="math inline">\(\frac{V_2}{V_i}\)</span> (Gleichung <a href="#eq:tf_v2" data-reference-type="eqref" data-reference="eq:tf_v2">[eq:tf_v2]</a>, <a href="#eq:V2_aus_V1" data-reference-type="eqref" data-reference="eq:V2_aus_V1">[eq:V2_aus_V1]</a>) zeigt, dass der entstandene Fehler auf die Gleichung <span class="math inline">\(\frac{V_4}{V_1}\)</span> zurückzuführen ist, da die Herleitung von <span class="math inline">\(\frac{V_1}{V_i}\)</span> korrekt bleibt.</p>
-<p><strong>Fazit:</strong> Nur die Verwendung der negierten Form von <span class="math inline">\(\frac{V_4}{V_i}\)</span> aus Gleichung <a href="#eq:tf_v4_neg" data-reference-type="eqref" data-reference="eq:tf_v4_neg">[eq:tf_v4_neg]</a> führt zu einem konsistenten Ergebnis für <span class="math inline">\(\frac{V_1}{V_i}\)</span> gemäß Gleichung <a href="#eq:tf_v1_korrekt" data-reference-type="eqref" data-reference="eq:tf_v1_korrekt">[eq:tf_v1_korrekt]</a>. Die Version aus dem Aufgabenheft (Gleichung <a href="#eq:tf_v4_aufg" data-reference-type="eqref" data-reference="eq:tf_v4_aufg">[eq:tf_v4_aufg]</a>) scheint daher fehlerhaft zu sein.</p>
-</section>
-<section id="herleitung-einer-blockstruktur-für-ein-analoges-biquad-filter" class="level1 unnumbered">
-<h1 class="unnumbered">Herleitung einer Blockstruktur für ein analoges Biquad-Filter</h1>
-<p>Ein analoges Filter zweiter Ordnung lässt sich im Allgemeinen durch eine rationale Übertragungsfunktion der Form</p>
+<p>Using the known relationship <span class="math inline">\(V_2 = -\frac{\omega_0}{s} \cdot V_1\)</span>:</p>
 <p><span class="math display">\[
-H(s) = \frac{V_2(s)}{V_i(s)} = -\frac{\dfrac{s}{\omega_0} H_0}{1 + \dfrac{s}{\omega_0 Q} + \dfrac{s^2}{\omega_0^2}}
+V_2 = -\frac{\omega_0}{s} \cdot V_1
 \]</span></p>
-<p>beschreiben. Diese entspricht einem sogenannten Biquad-Filter mit linearer Nullstelle im Zähler und zwei komplex konjugierten Polstellen im Nenner. Ziel ist es, aus dieser Übertragungsfunktion eine strukturierte Blockdarstellung zu entwickeln, die sich sowohl für die Analyse als auch für eine spätere Digitalisierung eignet.</p>
-<p>Der Nenner von Gleichung <a href="#eq:transferfunction" data-reference-type="eqref" data-reference="eq:transferfunction">[eq:transferfunction]</a> weist auf eine dynamische Ordnung von zwei hin. Dies legt nahe, das Systemzustandsbasiert über zwei Integratoren zu modellieren. Die dabei entstehenden Zustandsvariablen <span class="math inline">\(x_1(s)\)</span> und <span class="math inline">\(x_2(s)\)</span> entsprechen dabei den Ausgängen der ersten und zweiten Integration des Eingangssignals <span class="math inline">\(V_i(s)\)</span> nach Anwendung der Rückführungen. Durch gezielte Wahl der Rückführungspfade mit den Gewichtungen <span class="math inline">\(1/(\omega_0 Q)\)</span> (für die erste Ableitung) und <span class="math inline">\(1/\omega_0^2\)</span> (für den direkten Rückgriff auf <span class="math inline">\(x_2\)</span>) lässt sich der Nenner exakt rekonstruieren.</p>
-<p>Der Ausgang <span class="math inline">\(V_2(s)\)</span> wird aus dem Zustand <span class="math inline">\(x_1(s)\)</span> über eine Vorwärtsverstärkung <span class="math inline">\(H_0 / \omega_0\)</span> gebildet, was der Zählerstruktur der Übertragungsfunktion entspricht. Damit ergibt sich eine vollständig äquivalente, strukturierte Darstellung der ursprünglichen Systemübertragung in Form eines Zustandsraum-kompatiblen Blockschaltbildes.</p>
-<p>Diese Darstellung bringt mehrere Vorteile mit sich:</p>
-<p>Sie erlaubt eine direkte Ableitung der Zustandsraumdarstellung sowie eine einfache Anwendung der Bilineartransformation zur Digitalisierung des Filters. Darüber hinaus ergibt sich eine numerisch stabile Implementierung, da alle Koeffizienten bereits auf die kanonische Normalform mit <span class="math inline">\(a_0 = 1\)</span> normiert sind. Die getrennte Behandlung von Rückführ- und Vorwärtszweigen erleichtert zudem die Modularisierung und den systematischen Entwurf komplexerer Filtersysteme, etwa durch Kaskadierung mehrerer Biquad-Abschnitte.</p>
-<div id="fig-bsb" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-bsb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/BSB.png" class="img-fluid figure-img" width="400">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bsb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;4.1: SOS der Bandpass Übertragungsfunktion
-</figcaption>
-</figure>
-</div>
-<section id="betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="betrachtung-der-pole-und-nullstellen-innerhalb-der-s-ebene"><span class="header-section-number">4.1</span> Betrachtung der Pole und Nullstellen innerhalb der S-Ebene</h2>
-<p>Zur genaueren Analyse des Frequenzverhalten von analogen Biquad-Filtern bietet sich die Betrachtung der Pol- und Nullstellen in der komplexen <span class="math inline">\(s\)</span>-Ebene an. Die Lage der Punkte liefert direktes Verständnis über Filtergüte, Resonanz- und Dämpfungsverhalten sowie Stabilität des Systems. Im Laplace-Bereich gilt: <span class="math inline">\(s = \sigma + j\omega\)</span>.</p>
-<p>Als Beispiel wird die Übertragungsfunktion <span class="math inline">\(\frac{V_2}{V_i}\)</span> des Bandpassfilters betrachtet:</p>
 <p><span class="math display">\[
-\frac{V_2}{V_i} = -\frac{\frac{s}{\omega_0}H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
+V_2 = -\frac{\omega_0}{s} \cdot \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} +
+\frac{s^2}{\omega_0^2}} \cdot V_i
 \]</span></p>
-<section id="nullstellenbestimmung" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="nullstellenbestimmung"><span class="header-section-number">4.1.1</span> Nullstellenbestimmung</h3>
-<p>Aus dem Zählerpolynom ergibt sich: <span class="math display">\[
-\frac{s}{\omega_0}H_0 = 0 \Rightarrow s_{0} = 0
-\]</span></p>
-<p>Dies bedeutet, dass das System eine einfache Nullstelle im Ursprung besitzt. Gleichanteile im Eingangssignal (<span class="math inline">\(s = 0\)</span>, also <span class="math inline">\(\omega = 0\)</span>) werden somit vollständig unterdrückt.</p>
-</section>
-<section id="polstellenbestimmung" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="polstellenbestimmung"><span class="header-section-number">4.1.2</span> Polstellenbestimmung</h3>
-<p>Die Pole ergeben sich durch Nullsetzen des Nenners:</p>
-<span class="math display">\[\begin{aligned}
-1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} &amp;= 0 \nonumber \\
-s^2 + \frac{\omega_0}{Q}s + \omega_0^2 &amp;= 0
-\end{aligned}\]</span>
-<p>$$</p>
-<p>Anwendung der pq-Formel: <span class="math display">\[
-s_{1,2} = -\frac{\omega_0}{2Q} \pm \sqrt{\left(\frac{\omega_0}{2Q}\right)^2 - \omega_0^2}
-\]</span></p>
-<p>Vereinfachung des Radikanden: <span class="math display">\[
-\sqrt{\omega_0^2\left(\frac{1}{4Q^2} - 1\right)} = \omega_0\sqrt{\frac{1}{4Q^2} - 1}
-\]</span></p>
-<p>Die Lage der Pole hängt somit direkt vom Gütefaktor <span class="math inline">\(Q\)</span> ab. Solange <span class="math inline">\(Q &gt; 0\)</span>, befinden sich die Pole in der linken Halbebene der <span class="math inline">\(s\)</span>-Ebene, was die Stabilität des Systems garantiert. Je nach Wert von <span class="math inline">\(Q\)</span> lassen sich drei charakteristische Fälle unterscheiden:</p>
-<ul>
-<li><p><strong>Schwingfall</strong> (<span class="math inline">\(Q &gt; \frac{1}{2}\)</span>): Komplex-konjugierte Pole, gedämpftes Schwingungsverhalten: <span class="math display">\[s_{1,2} = -\frac{\omega_0}{2Q} \pm j\omega_0\sqrt{1 - \frac{1}{4Q^2}}\]</span></p></li>
-<li><p><strong>Aperiodischer Grenzfall</strong> (<span class="math inline">\(Q = \frac{1}{2}\)</span>): Doppelter reeller Pol, kritische Dämpfung: <span class="math display">\[s_{1,2} = -\omega_0\]</span></p></li>
-<li><p><strong>Kriechfall</strong> (<span class="math inline">\(Q &lt; \frac{1}{2}\)</span>): Zwei reelle Pole, träges (überdämpftes) Verhalten: <span class="math display">\[s_{1,2} = -\frac{\omega_0}{2Q} \pm \omega_0\sqrt{\frac{1}{4Q^2} - 1}\]</span></p></li>
-</ul>
-</section>
-<section id="einfluss-von-q-und-h_0-auf-das-frequenzverhalten" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="einfluss-von-q-und-h_0-auf-das-frequenzverhalten"><span class="header-section-number">4.1.3</span> Einfluss von <span class="math inline">\(Q\)</span> und <span class="math inline">\(H_0\)</span> auf das Frequenzverhalten</h3>
-<p>Die Pole bestimmen die Resonanzstelle, sowie die Bandbreite des Filters. Die Bandbreite <span class="math inline">\(\Delta\omega\)</span> hängt direkt vom Gütefaktor ab:</p>
 <p><span class="math display">\[
-\Delta\omega = \frac{\omega_0}{Q}
+V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i
 \]</span></p>
-<p>Ein größerer <span class="math inline">\(Q\)</span>-Faktor führt also zu einer schmaleren Durchlasskurve mit stärker ausgeprägter Resonanz. Bezogen auf die Lage der Pole in der <span class="math inline">\(s\)</span>-Ebene bedeutet das, dass diese nahe an der Imaginären Achse liegen. Gleiches gilt auch für die anderen am Biquad auftretenden Filtertypen, da der Nenner der Übertragungsfunktion für alle Filter gleich ist. Der Parameter <span class="math inline">\(H_0\)</span> bestimmt die maximale Verstärkung bei der Resonanzfrequenz und skaliert somit die Amplitude des Frequenzgangs, ohne dessen Form zu verändern. Die Lage der Pole verändert sich in <span class="math inline">\(s\)</span>-Ebene somit auch nicht.</p>
-<p>So ergibt sich für den Bandpass-Filter dieses Pol-Nullstellendiagramm:</p>
-<div id="fig:enter-label" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../images/Figure_3.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>Enter Caption</figcaption>
-</figure>
-</div>
-<p>Angewandt auf die anderen Filtertypen ergibt sich dieses Pol-Nullstellendiagramm:</p>
-<div id="fig:enter-label" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../images/s_ebene_filtertypen.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Pol- und Nullstellen in der S-Ebene</figcaption>
-</figure>
-</div>
+<p><span id="eq-V2_aus_V1"><span class="math display">\[
+\Rightarrow \frac{V_2}{V_i} = - \frac{\frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
+\tag{4.10}\]</span></span></p>
+<p>A comparison of the two transfer functions <span class="math inline">\(\frac{V_2}{V_i}\)</span> <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> and <a href="#eq-V2_aus_V1" class="quarto-xref">Equation&nbsp;<span>4.10</span></a> shows that the error is due to equation <span class="math inline">\(\frac{V_4}{V_1}\)</span> since the derivation of <span class="math inline">\(\frac{V_1}{V_i}\)</span> remains correct.</p>
+</section>
+<section id="conclusion" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.6</span> Conclusion</h2>
+<p>Only the use of the negated form of <span class="math inline">\(\frac{V_4}{V_i}\)</span> from <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>4.7</span></a> leads to a consistent result for <span class="math inline">\(\frac{V_1}{V_i}\)</span> according to <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>4.8</span></a> . The version from the exercise booklet (<a href="#eq-tf_v4_aufg" class="quarto-xref">Equation&nbsp;<span>4.9</span></a>) therefore appears to be incorrect.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -489,12 +430,12 @@ s_{1,2} = -\frac{\omega_0}{2Q} \pm \sqrt{\left(\frac{\omega_0}{2Q}\right)^2 - \o
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Kopiert");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Kopiert");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -880,7 +821,7 @@ s_{1,2} = -\frac{\omega_0}{2Q} \pm \sqrt{\left(\frac{\omega_0}{2Q}\right)^2 - \o
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
