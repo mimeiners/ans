@@ -244,7 +244,7 @@ window.Quarto = {
   <ul>
   <li><a href="#brief-theory-and-motivation" id="toc-brief-theory-and-motivation" class="nav-link active" data-scroll-target="#brief-theory-and-motivation"><span class="header-section-number">2.1</span> Brief theory and motivation</a>
   <ul class="collapse">
-  <li><a href="#transfer-funtions-of-active-filters" id="toc-transfer-funtions-of-active-filters" class="nav-link" data-scroll-target="#transfer-funtions-of-active-filters"><span class="header-section-number">2.1.1</span> Transfer funtions of active filters</a></li>
+  <li><a href="#sec-filter_tf" id="toc-sec-filter_tf" class="nav-link" data-scroll-target="#sec-filter_tf"><span class="header-section-number">2.1.1</span> Transfer funtions of active filters</a></li>
   </ul></li>
   <li><a href="#specification" id="toc-specification" class="nav-link" data-scroll-target="#specification"><span class="header-section-number">2.2</span> Specification</a></li>
   <li><a href="#measurements-to-be-taken" id="toc-measurements-to-be-taken" class="nav-link" data-scroll-target="#measurements-to-be-taken"><span class="header-section-number">2.3</span> Measurements to be taken</a>
@@ -289,31 +289,10 @@ window.Quarto = {
 
 <section id="brief-theory-and-motivation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="brief-theory-and-motivation"><span class="header-section-number">2.1</span> Brief theory and motivation</h2>
-<p>Second order filters (or biquard filters) are important since they are the building blocks in the construction of <span class="math inline">\(N^{th}\)</span> order filters, for <span class="math inline">\(N &gt; 2\)</span>. When <span class="math inline">\(N\)</span> is odd, the <span class="math inline">\(N^{th}\)</span> order filter can be realized using <span class="math inline">\(N - 1\)</span> second order filters and one first order filter. When <span class="math inline">\(N\)</span> is even, we need <span class="math inline">\(N-1\)</span> second order filters. Please listen to the recorded lecture at [19] for a detailed explanation of active filters.</p>
-<p>Second order filter can be used to construct four different types of filters. The transfer functions for the different filter types are shown in <a href="#fig-lab-04-tfs" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>, where $f_0 = and <span class="math inline">\(H_0\)</span> is the low frequency gain of the transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter), and BSF (bandstop filter).</p>
-<div id="fig-lab-04-tfs" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lab-04-tfs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/lab-04-tfs.svg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lab-04-tfs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Filter Transfer Functions
-</figcaption>
-</figure>
-</div>
-<p>In this experiment, we will describe a universal active filter, which provides all four filter functionalities. <a href="#fig-lab-04-biquad" class="quarto-xref">Figure&nbsp;<span>2.2</span></a> shows a second order universal filter realized using two integrators. Note that there are different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.</p>
-<div id="fig-lab-04-biquad" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lab-04-biquad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/lab-04-biquad.svg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lab-04-biquad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: A second-order universal active filter
-</figcaption>
-</figure>
-</div>
-<section id="transfer-funtions-of-active-filters" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="transfer-funtions-of-active-filters"><span class="header-section-number">2.1.1</span> Transfer funtions of active filters</h3>
+<p>Second order filters (or biquard filters) are important since they are the building blocks in the construction of <span class="math inline">\(N^{th}\)</span> order filters, for <span class="math inline">\(N &gt; 2\)</span>. When <span class="math inline">\(N\)</span> is odd, the <span class="math inline">\(N^{th}\)</span> order filter can be realized using <span class="math inline">\(N - 1\)</span> second order filters and one first order filter. When <span class="math inline">\(N\)</span> is even, we need <span class="math inline">\(N-1\)</span> second order filters.</p>
+<p>Second order filter can be used to construct four different types of filters. The transfer functions for the different filter types are shown in <a href="#sec-filter_tf" class="quarto-xref"><span>Section 2.1.1</span></a>, where <span class="math inline">\(f_0 = \frac{1}{2 \pi RC}\)</span> and <span class="math inline">\(H_0\)</span> is the low frequency gain of the transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter), and BSF (bandstop filter).</p>
+<section id="sec-filter_tf" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="sec-filter_tf"><span class="header-section-number">2.1.1</span> Transfer funtions of active filters</h3>
 <ul>
 <li>Lowpass Filter (LPF):</li>
 </ul>
@@ -342,7 +321,7 @@ Figure&nbsp;2.2: A second-order universal active filter
 \frac{V_{01}}{V_i} = \frac{H_0 \left( 1 + \frac{s^2}{\omega_0^2} \right)}
 {\left( 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega^2_0} \right)}
 \]</span></p>
-<div id="81b34e37" class="cell" data-execution_count="1">
+<div id="4d458ac3" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># -*- coding: utf-8 -*-</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">Magnitude and phase response of active filters</span></span>
@@ -400,6 +379,17 @@ Figure&nbsp;2.2: A second-order universal active filter
 </figure>
 </div>
 </div>
+</div>
+<p>In this experiment, we will describe a universal active filter, which provides all four filter functionalities. <a href="#fig-lab-04-biquad" class="quarto-xref">Figure&nbsp;<span>2.1</span></a> shows a second order universal filter realized using two integrators. Note that there are different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.</p>
+<div id="fig-lab-04-biquad" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lab-04-biquad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-04-biquad.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lab-04-biquad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: A second-order universal active filter
+</figcaption>
+</figure>
 </div>
 </section>
 </section>
