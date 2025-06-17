@@ -829,7 +829,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".control\nset controlswait\nwrite schaltungsentwurf_no1.raw all\n.endc"
+	(text ".control\nset controlswait\nwrite biquad.raw all\n.endc"
 		(exclude_from_sim no)
 		(at 138.43 77.724 0)
 		(effects
@@ -1993,7 +1993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26e32207-a2c8-4aac-a4d0-32d26ba86fe3")
-		(property "Reference" "VIN"
+		(property "Reference" "VIN1"
 			(at 78.74 105.2801 0)
 			(effects
 				(font
@@ -2084,7 +2084,7 @@
 		(instances
 			(project ""
 				(path "/c6c07df8-04b2-428a-b6be-e0bc04b23e84"
-					(reference "VIN")
+					(reference "VIN1")
 					(unit 1)
 				)
 			)

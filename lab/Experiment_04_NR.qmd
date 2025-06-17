@@ -25,39 +25,48 @@ date: last-modified
 
 First, the individual equations of the operational amplifiers were set up:
 
-\begin{aligned}
-V_1 &= -(V_3 + V_4) \label{eq:v1} \\
-V_2 &= -\left(\frac{1}{s} \omega_0 \cdot V_1 \right) \\
-V_3 &= -\left(\frac{1}{s} \omega_0 \cdot V_2 \right) \\
-V_4 &= -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right) 
-\end{aligned}
+$$
+V_1 = -(V_3 + V_4)
+$$ {#eq-v1}
+
+$$
+V_2 = -\left(\frac{1}{s} \omega_0 \cdot V_1 \right)
+$$ {#eq-v2}
+
+$$
+V_3 = -\left(\frac{1}{s} \omega_0 \cdot V_2 \right)
+$$
+
+$$
+V_4 = -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right) 
+$$
+
 
 ## Calculation of $\frac{V_2}{V_i}$
 
-Insert equation [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} into
-[\[eq:v2\]](#eq:v2){reference-type="eqref" reference="eq:v2"}: 
+Insert equation @eq-v1 into @eq-v2 : 
 
 
-\begin{aligned}
+\begin{align}
 V_2 &= -\frac{\omega_0}{s} \cdot V_1 = -\frac{\omega_0}{s} \cdot (-V_3 - V_4) \nonumber \\
 &= -\frac{\omega_0}{s} \cdot \left( \frac{\omega_0}{s} \cdot V_2 + \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) \label{eq:v2_expanded}
-\end{aligned}
+\end{align}
 
 
 Summarizing results in:
 
-\begin{aligned}
+\begin{align}
 V_2 &= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - \frac{\omega_0}{s} H_0 \cdot V_i \\
 \Rightarrow \frac{\omega_0}{s} H_0 \cdot V_i &= -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right) V_2
-\end{aligned}
+\end{align}
 
 
 Resolve to $\frac{V_2}{V_i}$:
 
-\begin{aligned}
+\begin{align}
 \frac{V_2}{V_i} = \frac{\frac{\omega_0}{s} H_0}{ -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right)} 
 = -\frac{ \frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \label{eq:tf_v2}
-\end{aligned}
+\end{align}
 
 
 ## Transfer-function $\frac{V_3}{V_i}$:
@@ -66,11 +75,12 @@ Insert [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} in
 [\[eq:v3\]](#eq:v3){reference-type="eqref" reference="eq:v3"}:
 
 
-\begin{aligned}
-V_3 &= -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right) \nonumber \\
-&= \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \right) V_i \\
-\Rightarrow \frac{V_3}{V_i} &= \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\end{aligned}
+\begin{align}
+V_3 &= -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 +
+\frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right) \nonumber \\ 
+&= \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \right) V_i \\ 
+\Rightarrow \frac{V_3}{V_i} &= \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} 
+\end{align}
 
 
 ## Transfer-function $\frac{V_4}{V_i}$:
@@ -79,7 +89,7 @@ Insert [\[eq:tf_v2\]](#eq:tf_v2){reference-type="eqref" reference="eq:tf_v2"} in
 [\[eq:v4\]](#eq:v4){reference-type="eqref" reference="eq:v4"}: 
 
 
-\begin{aligned}
+\begin{align}
 V_4 &= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{Q} \cdot \left( -\frac{
 \frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \right) + H_0 \cdot V_i \right)
 \nonumber \\ 
@@ -87,7 +97,7 @@ V_4 &= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{
 &= \left( \frac{ \frac{s}{\omega_0 Q} - \left(1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} \right) }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot H_0 \right) V_i \\
 &= - \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \\
 \Rightarrow \frac{V_4}{V_i} &= - \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} }
-\end{aligned}
+\end{align}
 
 
 **Note:** In the task booklet, the following equation is given here:
@@ -123,14 +133,14 @@ Inserting [\[eq:tf_v3\]](#eq:tf_v3){reference-type="eqref" reference="eq:tf_v3"}
 [\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} into
 [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"} results in: 
 
-\begin{aligned}
+\begin{align}
 V_1 &= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \left( -\frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0
 }{D} \right) \right) V_i \nonumber \\ 
 &= \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \quad \text{mit } D = 1 + \frac{s}{\omega_0
 Q} + \frac{s^2}{\omega_0^2} \\
 \Rightarrow \frac{V_1}{V_i} &= \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}} \label{eq:tf_v1_korrekt}
-\end{aligned}
+\end{align}
 
 
 **Case 2: Use the positive form of the transfer function of $V_4$ as specified in the task booklet:** 
@@ -143,13 +153,13 @@ $$
 
 Insert into [\[eq:v1\]](#eq:v1){reference-type="eqref" reference="eq:v1"}: 
 
-\begin{aligned}
+\begin{align}
 V_1 &= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D}
 \right) V_i \nonumber \\ 
 &= -\left( \frac{ \left( 2 + \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \\ 
 \Rightarrow \frac{V_1}{V_i} &= - \frac{ \left( 2 + \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}} \label{eq:tf_v1_falsch}
-\end{aligned}
+\end{align}
 
 
 
@@ -164,14 +174,14 @@ $$
 
 Using the known relationship $V_2 = -\frac{\omega_0}{s} \cdot V_1$:
 
-\begin{aligned}
+\begin{align}
 V_2 &= -\frac{\omega_0}{s} \cdot V_1 \notag \\
 &= -\frac{\omega_0}{s} \cdot \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}} \cdot V_i \notag \\ 
 &= -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \\ 
 \Rightarrow \frac{V_2}{V_i} &= - \frac{\frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \label{eq:V2_aus_V1} 
-\end{aligned}
+\end{align}
 
 
 A comparison of the two transfer functions $\frac{V_2}{V_i}$ (Gleichung
@@ -179,8 +189,10 @@ A comparison of the two transfer functions $\frac{V_2}{V_i}$ (Gleichung
 [\[eq:V2_aus_V1\]](#eq:V2_aus_V1){reference-type="eqref" reference="eq:V2_aus_V1"})  shows that the error is due to the equation $\frac{V_4}{V_1}$ since the derivation of $\frac{V_1}{V_i}$ remains correct.
 
 
-**#Conclusion:** Only the use of the negated form of $\frac{V_4}{V_i}$ from equation
-[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} leads to a consistent result for  $\frac{V_1}{V_i}$ according to equation [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
-reference="eq:tf_v1_korrekt"}. The version from the exercise booklet (equation 
-[\[eq:tf_v4_aufg\]](#eq:tf_v4_aufg){reference-type="eqref" 
-reference="eq:tf_v4_aufg"}) therefore appears to be incorrect.
+## Conclusion 
+Only the use of the negated form of $\frac{V_4}{V_i}$ from equation
+[\[eq:tf_v4_neg\]](#eq:tf_v4_neg){reference-type="eqref" reference="eq:tf_v4_neg"} leads to a consistent result for
+$\frac{V_1}{V_i}$ according to equation [\[eq:tf_v1_korrekt\]](#eq:tf_v1_korrekt){reference-type="eqref"
+reference="eq:tf_v1_korrekt"}. The version from the exercise booklet (equation
+[\[eq:tf_v4_aufg\]](#eq:tf_v4_aufg){reference-type="eqref" reference="eq:tf_v4_aufg"}) therefore appears to be
+incorrect.

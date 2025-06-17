@@ -249,7 +249,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "schaltungsentwurf_no1.kicad_pro",
+    "filename": "biquad.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -400,8 +400,8 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 1,
-      "workbook_filename": "schaltungsentwurf_no1.wbk"
+      "model_mode": 4,
+      "workbook_filename": "biquad.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
