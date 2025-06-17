@@ -7,15 +7,17 @@ filters and one first order filter. When $N$ is even, we need $N-1$ second order
 lecture at [19] for a detailed explanation of active filters.
 
 Second order filter can be used to construct four different types of filters. The transfer functions for the different
-filter types are shown in @tab-filter_tf, where	$f_0 = \frac{1}{2 \pi RC} and $H_0$ is the low frequency gain of the transfer
-function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter),
-and BSF (bandstop filter). 
+filter types are shown in @fig-lab-04-tfs, where	$f_0 = \frac{1}{2 \pi RC} and $H_0$ is the low frequency gain of the
+transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass
+filter), and BSF (bandstop filter). 
+
+![Filter Transfer Functions](../images/lab-04-tfs){#fig-lab-04-tfs}
 
 In this experiment, we will describe a universal active filter, which provides all four filter functionalities.
 @fig-lab-04-biquad shows a second order universal filter realized using two integrators. Note that there are
 different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.
 
-![A second-order universal active filter](../images/lab-04-biquad.pdf){#fig-lab-04-biquad}
+![A second-order universal active filter](../images/lab-04-biquad){#fig-lab-04-biquad}
 
 ### Transfer funtions of active filters
 

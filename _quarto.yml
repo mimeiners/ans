@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: _book
   
-lang: de
+# lang: de
 
 book:
   title: "Analoge Schaltungstechnik"
@@ -59,6 +59,7 @@ bibliography: _bibliography/references.bib
 format:
   html:
     theme: flatly
+    default-image-extension: svg
   # pdf:
   #   documentclass: scrbook 
   #   # lof: true
@@ -79,6 +80,7 @@ format:
   #   output-file: ans
   # epub:
   #   theme: flatly
+  #   default-image-extension: svg
   #   output-file: ans
   
 execute:
