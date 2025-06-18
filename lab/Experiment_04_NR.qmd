@@ -145,7 +145,7 @@ V_1 = -\left( \frac{H_0}{D} + \left( -\frac{ \left( 1 + \frac{s^2}{\omega_0^2} \
 $$
 
 $$
-V_1 = \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \quad \text{mit } D = 1 +
+V_1 = \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \quad \text{where } D = 1 +
 \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}
 $$
 
