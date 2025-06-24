@@ -158,7 +158,7 @@ $$ {#eq-tf_v1_korrekt}
 **Case 2: Use the positive form of the transfer function of $V_4$ as specified in the task booklet:** 
 
 $$
-\frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 frac} + Q{s^2}{\omega_0^2}}
+\frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 $$ {#eq-tf_v4_aufg}
 
 
