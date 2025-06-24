@@ -208,15 +208,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#mathematical-derivation-of-the-transfer-functions-of-the-biquad" id="toc-mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="nav-link active" data-scroll-target="#mathematical-derivation-of-the-transfer-functions-of-the-biquad"><span class="header-section-number">4</span> Mathematical derivation of the transfer functions of the biquad</a>
-  <ul class="collapse">
-  <li><a href="#calculation-of-fracv_2v_i" id="toc-calculation-of-fracv_2v_i" class="nav-link" data-scroll-target="#calculation-of-fracv_2v_i"><span class="header-section-number">4.1</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></a></li>
-  <li><a href="#transfer-function-fracv_3v_i" id="toc-transfer-function-fracv_3v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_3v_i"><span class="header-section-number">4.2</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</a></li>
-  <li><a href="#transfer-function-fracv_4v_i" id="toc-transfer-function-fracv_4v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_4v_i"><span class="header-section-number">4.3</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</a></li>
-  <li><a href="#calculation-of-the-transfer-function-fracv_1v_i" id="toc-calculation-of-the-transfer-function-fracv_1v_i" class="nav-link" data-scroll-target="#calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">4.4</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</a></li>
-  <li><a href="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" id="toc-repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="nav-link" data-scroll-target="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">4.5</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.6</span> Conclusion</a></li>
-  </ul></li>
+  <li><a href="#mathematical-derivation-of-the-transfer-functions-of-the-biquad" id="toc-mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="nav-link active" data-scroll-target="#mathematical-derivation-of-the-transfer-functions-of-the-biquad"><span class="header-section-number">3.1</span> Mathematical derivation of the transfer functions of the biquad</a></li>
+  <li><a href="#calculation-of-fracv_2v_i" id="toc-calculation-of-fracv_2v_i" class="nav-link" data-scroll-target="#calculation-of-fracv_2v_i"><span class="header-section-number">3.2</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></a></li>
+  <li><a href="#transfer-function-fracv_3v_i" id="toc-transfer-function-fracv_3v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_3v_i"><span class="header-section-number">3.3</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</a></li>
+  <li><a href="#transfer-function-fracv_4v_i" id="toc-transfer-function-fracv_4v_i" class="nav-link" data-scroll-target="#transfer-function-fracv_4v_i"><span class="header-section-number">3.4</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</a></li>
+  <li><a href="#calculation-of-the-transfer-function-fracv_1v_i" id="toc-calculation-of-the-transfer-function-fracv_1v_i" class="nav-link" data-scroll-target="#calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">3.5</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</a></li>
+  <li><a href="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" id="toc-repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="nav-link" data-scroll-target="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">3.6</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.7</span> Conclusion</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -269,24 +267,25 @@ window.Quarto = {
 </header>
 
 
-<section id="mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Mathematical derivation of the transfer functions of the biquad</h1>
+<section id="mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="mathematical-derivation-of-the-transfer-functions-of-the-biquad"><span class="header-section-number">3.1</span> Mathematical derivation of the transfer functions of the biquad</h2>
 <p>First, the individual equations of the operational amplifiers were set up:</p>
 <p><span id="eq-v1"><span class="math display">\[
 V_1 = -(V_3 + V_4)
-\tag{4.1}\]</span></span></p>
+\tag{3.1}\]</span></span></p>
 <p><span id="eq-v2"><span class="math display">\[
 V_2 = -\left(\frac{1}{s} \omega_0 \cdot V_1 \right)
-\tag{4.2}\]</span></span></p>
+\tag{3.2}\]</span></span></p>
 <p><span id="eq-v3"><span class="math display">\[
 V_3 = -\left(\frac{1}{s} \omega_0 \cdot V_2 \right)
-\tag{4.3}\]</span></span></p>
+\tag{3.3}\]</span></span></p>
 <p><span id="eq-v4"><span class="math display">\[
 V_4 = -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right)
-\tag{4.4}\]</span></span></p>
-<section id="calculation-of-fracv_2v_i" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="calculation-of-fracv_2v_i"><span class="header-section-number">4.1</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></h2>
-<p>Insert <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> into <a href="#eq-v2" class="quarto-xref">Equation&nbsp;<span>4.2</span></a> :</p>
+\tag{3.4}\]</span></span></p>
+</section>
+<section id="calculation-of-fracv_2v_i" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="calculation-of-fracv_2v_i"><span class="header-section-number">3.2</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></h2>
+<p>Insert <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> into <a href="#eq-v2" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_2 &amp;= -\frac{\omega_0}{s} \cdot V_1 = -\frac{\omega_0}{s} \cdot (-V_3 - V_4) \nonumber \\
 &amp;= -\frac{\omega_0}{s} \cdot \left( \frac{\omega_0}{s} \cdot V_2 + \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) \label{eq:v2_expanded}
@@ -300,11 +299,11 @@ V_2 &amp;= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - 
 <p><span id="eq-tf_v2"><span class="math display">\[
 \frac{V_2}{V_i} = \frac{\frac{\omega_0}{s} H_0}{ -\left( \frac{\omega_0^2}{s^2} + \frac{\omega_0}{s Q} + 1 \right)}
 = -\frac{ \frac{s}{\omega_0} H_0 }{ 1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} }
-\tag{4.5}\]</span></span></p>
+\tag{3.5}\]</span></span></p>
 </section>
-<section id="transfer-function-fracv_3v_i" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="transfer-function-fracv_3v_i"><span class="header-section-number">4.2</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</h2>
-<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> into <a href="#eq-v3" class="quarto-xref">Equation&nbsp;<span>4.3</span></a> :</p>
+<section id="transfer-function-fracv_3v_i" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="transfer-function-fracv_3v_i"><span class="header-section-number">3.3</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</h2>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> into <a href="#eq-v3" class="quarto-xref">Equation&nbsp;<span>3.3</span></a> :</p>
 <p><span class="math display">\[
 V_3 = -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 +
 \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right)
@@ -314,11 +313,11 @@ V_3 = \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \righ
 \]</span></p>
 <p><span id="eq-tf_v3"><span class="math display">\[
 \Rightarrow \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\tag{4.6}\]</span></span></p>
+\tag{3.6}\]</span></span></p>
 </section>
-<section id="transfer-function-fracv_4v_i" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="transfer-function-fracv_4v_i"><span class="header-section-number">4.3</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</h2>
-<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> into <a href="#eq-v4" class="quarto-xref">Equation&nbsp;<span>4.4</span></a> :</p>
+<section id="transfer-function-fracv_4v_i" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="transfer-function-fracv_4v_i"><span class="header-section-number">3.4</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</h2>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> into <a href="#eq-v4" class="quarto-xref">Equation&nbsp;<span>3.4</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{Q} \cdot \left( -\frac{
 \frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \right) + H_0 \cdot V_i \right)
@@ -335,10 +334,10 @@ V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac
 \]</span></p>
 <p>This corresponds to a negation of my own result.</p>
 </section>
-<section id="calculation-of-the-transfer-function-fracv_1v_i" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">4.4</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</h2>
-<p>Based on equation <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> : <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
-<p>Using the transfer-function <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>4.6</span></a> for <span class="math inline">\(V_3\)</span>:</p>
+<section id="calculation-of-the-transfer-function-fracv_1v_i" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">3.5</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</h2>
+<p>Based on equation <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> : <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
+<p>Using the transfer-function <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>3.6</span></a> for <span class="math inline">\(V_3\)</span>:</p>
 <p><span class="math display">\[
 \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
@@ -346,8 +345,8 @@ V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac
 <p><span id="eq-tf_v4_neg"><span class="math display">\[
 \frac{V_4}{V_i} = - \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}}
-\tag{4.7}\]</span></span></p>
-<p>Inserting <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>4.6</span></a> and <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>4.7</span></a> into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> results in:</p>
+\tag{3.7}\]</span></span></p>
+<p>Inserting <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>3.6</span></a> and <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>3.7</span></a> into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> results in:</p>
 <p><span class="math display">\[
 V_1 = -\left( V_3 + V_4 \right)
 \]</span></p>
@@ -360,12 +359,12 @@ V_1 = \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \
 \]</span></p>
 <p><span id="eq-tf_v1_korrekt"><span class="math display">\[
 \Rightarrow \frac{V_1}{V_i} = \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\tag{4.8}\]</span></span></p>
+\tag{3.8}\]</span></span></p>
 <p><strong>Case 2: Use the positive form of the transfer function of <span class="math inline">\(V_4\)</span> as specified in the task booklet:</strong></p>
 <p><span id="eq-tf_v4_aufg"><span class="math display">\[
 \frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\tag{4.9}\]</span></span></p>
-<p>Insert into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> :</p>
+\tag{3.9}\]</span></span></p>
+<p>Insert into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D}
 \right) V_i \nonumber \\
@@ -374,9 +373,9 @@ V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 +
 \frac{s^2}{\omega_0^2}} \label{eq:tf_v1_falsch}
 \end{align}\]</span></p>
 </section>
-<section id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">4.5</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</h2>
-<p>Based on the correct function for <span class="math inline">\(V_1\)</span> <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>4.8</span></a> :</p>
+<section id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">3.6</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</h2>
+<p>Based on the correct function for <span class="math inline">\(V_1\)</span> <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>3.8</span></a> :</p>
 <p><span class="math display">\[
 \frac{V_1}{V_i} = \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
@@ -393,15 +392,14 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
 \]</span></p>
 <p><span id="eq-V2_aus_V1"><span class="math display">\[
 \Rightarrow \frac{V_2}{V_i} = - \frac{\frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
-\tag{4.10}\]</span></span></p>
-<p>A comparison of the two transfer functions <span class="math inline">\(\frac{V_2}{V_i}\)</span> <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>4.5</span></a> and <a href="#eq-V2_aus_V1" class="quarto-xref">Equation&nbsp;<span>4.10</span></a> shows that the error is due to equation <span class="math inline">\(\frac{V_4}{V_1}\)</span> since the derivation of <span class="math inline">\(\frac{V_1}{V_i}\)</span> remains correct.</p>
+\tag{3.10}\]</span></span></p>
+<p>A comparison of the two transfer functions <span class="math inline">\(\frac{V_2}{V_i}\)</span> <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> and <a href="#eq-V2_aus_V1" class="quarto-xref">Equation&nbsp;<span>3.10</span></a> shows that the error is due to equation <span class="math inline">\(\frac{V_4}{V_1}\)</span> since the derivation of <span class="math inline">\(\frac{V_1}{V_i}\)</span> remains correct.</p>
 </section>
-<section id="conclusion" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.6</span> Conclusion</h2>
-<p>Only the use of the negated form of <span class="math inline">\(\frac{V_4}{V_i}\)</span> from <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>4.7</span></a> leads to a consistent result for <span class="math inline">\(\frac{V_1}{V_i}\)</span> according to <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>4.8</span></a> . The version from the exercise booklet (<a href="#eq-tf_v4_aufg" class="quarto-xref">Equation&nbsp;<span>4.9</span></a>) therefore appears to be incorrect.</p>
+<section id="conclusion" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.7</span> Conclusion</h2>
+<p>Only the use of the negated form of <span class="math inline">\(\frac{V_4}{V_i}\)</span> from <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>3.7</span></a> leads to a consistent result for <span class="math inline">\(\frac{V_1}{V_i}\)</span> according to <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>3.8</span></a> . The version from the exercise booklet (<a href="#eq-tf_v4_aufg" class="quarto-xref">Equation&nbsp;<span>3.9</span></a>) therefore appears to be incorrect.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
