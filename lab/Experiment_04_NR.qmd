@@ -21,7 +21,7 @@ abstract: |
 date: last-modified
 ---
  
-# Mathematical derivation of the transfer functions of the biquad
+## Mathematical derivation of the transfer functions of the biquad
 
 First, the individual equations of the operational amplifiers were set up:
 
