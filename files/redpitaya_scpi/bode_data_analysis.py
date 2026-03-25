@@ -11,7 +11,7 @@ Output signal: DF_IN2
 import numpy as np
 import scipy.signal as sig
 import pandas as pd
-import scipy.io as sio
+# import scipy.io as sio
 import matplotlib.pyplot as plt
 
 # %% Array of tones (GEN):

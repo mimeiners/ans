@@ -3,7 +3,7 @@
 | Name     | Beschreibung                                 |
 |----------|----------------------------------------------|
 | Kursus   | M 6.9 Analoge Schaltungen (ANS)              |
-| Semester | SoSe25                                       |
+| Semester | SoSe2026                                     |
 | Dozent   | Prof. Dr.-Ing. M. Meiners                    |
-| Seminar  | Di., 09:45 Uhr - 13:00 Uhr, E 507            |
+| Seminar  | Do., 08:00 Uhr - 11:15 Uhr, E 507            |
 

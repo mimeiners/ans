@@ -10,5 +10,7 @@ _book
 _freeze
 .quarto
 __pycache__
+fp-info-cache
+*-backups
+*.zip
 
-/.quarto/
