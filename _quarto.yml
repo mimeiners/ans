@@ -48,9 +48,6 @@ book:
     - part: Seminar
       chapters:
         - lec/lec-01-intro.qmd
-        # - lec/lec-18a-MCD6thEdChap10.qmd
-        # - lec/lec-18b-MCD6thEdChap11.qmd
-        # - lec/lec-21-MCD6thEdChap12.qmd
         # - lec/lec-22a-analog_filter_design.qmd
         # - lec/lec-23a-biquads.qmd
     
