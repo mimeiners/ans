@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Data analysis for Bode plots
+Data analysis for bode plots
 Input signal: DF_IN1
 Output signal: DF_IN2
 
 @author: Mirco Meiners (HSB)
 """
 
+# %% Imports
 import numpy as np
 import scipy.signal as sig
 import pandas as pd
@@ -34,6 +35,10 @@ Data_IN2 = 'data/DF_IN2'  # + str(datetime.now().strftime('%Y-%m-%d_%H_%M'))
 DF_IN1 = pd.read_csv(Data_IN1 + '.csv')
 DF_IN2 = pd.read_csv(Data_IN2 + '.csv')
 
+# %% Read feather data from disk
+# DF_IN1 = pd.read_feather(Data_IN1 + '.feather')
+# DF_IN2 = pd.read_feather(Data_IN2 + '.feather')
+
 # %% Read parquet data from disk
 # DF_IN1 = pd.read_parquet(Data_IN1 + '.parquet')
 # DF_IN2 = pd.read_parquet(Data_IN2 + '.parquet')
@@ -41,6 +46,10 @@ DF_IN2 = pd.read_csv(Data_IN2 + '.csv')
 # %% Read mat data from disk
 # DF_IN1 = sio.loadmat(Data_IN1 + '.mat')
 # DF_IN2 = sio.loadmat(Data_IN2 + '.mat')
+
+# %% Read HDF5 data from disk
+# DF_IN1 = pd.read_hdf(Data_IN1 + '.h5')
+# DF_IN2 = pd.read_hdf(Data_IN2 + '.h5')
 
 # %% Fitting and extraction of sine params
 # SigParam_IN1 = pd.DataFrame()
