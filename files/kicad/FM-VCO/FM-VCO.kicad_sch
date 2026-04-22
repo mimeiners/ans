@@ -16285,7 +16285,7 @@
 	(sheet
 		(at 199.39 25.4)
 		(size 33.02 50.8)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -16381,7 +16381,7 @@
 	(sheet
 		(at 208.28 96.52)
 		(size 33.02 40.64)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
