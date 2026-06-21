@@ -66,12 +66,12 @@
 .MODEL BAS116 D(BV=75 CJO=1.83p EG=1.11 FC=0.5 IBV=100u IS=1.48E-13 M=0.262 N=1.33 RS=8.48E-01 TT=8.66n VJ=3.44E-01 XTI=3 type=silicon)
 .MODEL BAS216 D (IS=6.0289E-9 N=2.1283 RS=1.0000E-3 IKF=37.638E-3 CJO=593.63E-15 M=.1 VJ=.68774 ISR=2.0646E-9 NR=4.9950 BV=113.60 IBV=10 TT=4.5n mfg=Philips type=silicon )
 .MODEL BAS316 D IS=6.0289n N=2.1283 RS=1m IKF=37.638m CJO=593.63f M=.1 VJ=.68774 ISR=2.0646n NR=4.995 BV=113.6 IBV=10 TT=4.5n Iave=200m Vpk=75 mfg=NXP type=silicon
-.MODEL ES1C D IS=123n RS=42.0m BV=150 IBV=5.00u CJO=18.5p M=0.333 N=2.12 TT=28.8n Vpk=150V Iave=1 mfg=DiodesInc type=silicon )
-.model bas70 D is=3n rs=29 n=1.06 tt=25p cjo=1.55p vj=.36 m=.29 eg=.68 xti=1.8 fc=.5 bv=70 ibv=100n Vpk=70 type=Schottky
-.model HSMS-2820 d BV=15 CJO=.7p EG=.69 IBV=100u IS=22n N=1.08 RS=6 VJ=.65 XTI=2 M=.5 Vpk=15 type=Schottky mfg=Agilent
-.model HSMS_2820 d BV=15 CJO=.7p EG=.69 IBV=100u IS=22n N=1.08 RS=6 VJ=.65 XTI=2 M=.5 Vpk=15 type=Schottky mfg=Agilent
-.MODEL HSMS-285x D (IS=3u RS=25 N=1.06 BV=3.8 IBV=300u CJO=.18P VJ=.35 M=.5 EG=.69 XTI=2 TT=72P type=Schottky mfg=Agilent)
-.MODEL HSMS_285x D (IS=3u RS=25 N=1.06 BV=3.8 IBV=300u CJO=.18P VJ=.35 M=.5 EG=.69 XTI=2 TT=72P type=Schottky mfg=Agilent)
+.MODEL ES1C (D IS=123n RS=42.0m BV=150 IBV=5.00u CJO=18.5p M=0.333 N=2.12 TT=28.8n Vpk=150V Iave=1 mfg=DiodesInc type=silicon )
+.model bas70 (D is=3n rs=29 n=1.06 tt=25p cjo=1.55p vj=.36 m=.29 eg=.68 xti=1.8 fc=.5 bv=70 ibv=100n Vpk=70 type=Schottky
+.model HSMS-2820 (d BV=15 CJO=.7p EG=.69 IBV=100u IS=22n N=1.08 RS=6 VJ=.65 XTI=2 M=.5 Vpk=15 type=Schottky mfg=Agilent
+.model HSMS_2820 (d BV=15 CJO=.7p EG=.69 IBV=100u IS=22n N=1.08 RS=6 VJ=.65 XTI=2 M=.5 Vpk=15 type=Schottky mfg=Agilent
+.MODEL HSMS-285x (D (IS=3u RS=25 N=1.06 BV=3.8 IBV=300u CJO=.18P VJ=.35 M=.5 EG=.69 XTI=2 TT=72P type=Schottky mfg=Agilent)
+.MODEL HSMS_285x (D (IS=3u RS=25 N=1.06 BV=3.8 IBV=300u CJO=.18P VJ=.35 M=.5 EG=.69 XTI=2 TT=72P type=Schottky mfg=Agilent)
 .model APT1608SURCK d(IS=2.01E-17 N=2.139 RS=2 m=0.431 Vj=2.32 Cjo=35pF IBV=10u BV=5 EG=2.26 XTI=3 Iave=30mA Vpk=5 mfg=Kingbright type=LED)
 .model PT-121-B D(Is=4.352e-7 Rs=.032 N=8.37 Cjo=5n Xti=100 Iave=20A Vpk=5.3 mfg=Luminus type=LED)
 .model AOT-2015 D(Is=5.961e-10 Rs=1.07 N=6.222 Cjo=.5n Xti=200 Iave=175mA Vpk=5 mfg=AOT type=LED)

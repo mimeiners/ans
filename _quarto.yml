@@ -58,11 +58,11 @@ book:
 
     - references.qmd
 
-    output-file: "ans"
+  output-file: "ans"
     
 # Bibliography
-bibliography: _bibliography/references.bib
-csl: _bibliography/ieee.csl
+bibliography: "bibliography/references.bib"
+csl: "bibliography/ieee.csl"
 
 
 format:
@@ -76,59 +76,61 @@ format:
     # fontcolor: "black"
     highlight-style: github
 
-  epub:
-    theme: flatly
-    fontsize: 1.2em
-    linestretch: 1.7
-    # mainfont: Helvetica Neue, Helvetica, Arial, sans
-    # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
-    # backgroundcolor: "white"
-    # fontcolor: "black"
-    highlight-style: github
-
-  pdf:
-    documentclass: scrbook
-    classoption: [twoside]
-
-    keep-tex: true
-
-    toc: true
-    toc-depth: 3
-    # toc-title: "Table of contents"
-    # lof: true
-    # lot: true
-
-    number-sections: true
-    number-depth: 2
-        
-    papersize: a4
-        
-    geometry:
-      - inner=3cm
-      - outer=4cm
-      - top=3cm
-      - bottom=4cm
-      - headsep=22pt
-      - headheight=11pt
-      - footskip=33pt
-      - ignorehead
-      - ignorefoot
-      - heightrounded
-
-    fontsize: 11pt
-    pdfengine: xelatex
-
-    mainfont: "Calibri"
-    # mainfont: "Times New Roman"
-    # sansfont: "Arial"
-    # monofont: "Courier New"
-    mathfont: "TeX Gyre Termes Math"
+  typst: default
     
-    # include-in-header:
-    #   - frontmatter/header.tex
-    # template-partials:
-    # - frontmatter/before-body.tex
-    # - frontmatter/toc.tex
+  # epub:
+  #   theme: flatly
+  #   fontsize: 1.2em
+  #   linestretch: 1.7
+  #   # mainfont: Helvetica Neue, Helvetica, Arial, sans
+  #   # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+  #   # backgroundcolor: "white"
+  #   # fontcolor: "black"
+  #   highlight-style: github
+
+  # pdf:
+  #   documentclass: scrbook
+  #   classoption: [twoside]
+
+  #   keep-tex: true
+
+  #   toc: true
+  #   toc-depth: 3
+  #   # toc-title: "Table of contents"
+  #   # lof: true
+  #   # lot: true
+
+  #   number-sections: true
+  #   number-depth: 2
+        
+  #   papersize: a4
+        
+  #   geometry:
+  #     - inner=3cm
+  #     - outer=4cm
+  #     - top=3cm
+  #     - bottom=4cm
+  #     - headsep=22pt
+  #     - headheight=11pt
+  #     - footskip=33pt
+  #     - ignorehead
+  #     - ignorefoot
+  #     - heightrounded
+
+  #   fontsize: 11pt
+  #   pdfengine: xelatex
+
+  #   mainfont: "Calibri"
+  #   # mainfont: "Times New Roman"
+  #   # sansfont: "Arial"
+  #   # monofont: "Courier New"
+  #   mathfont: "TeX Gyre Termes Math"
+    
+  #   # include-in-header:
+  #   #   - frontmatter/header.tex
+  #   # template-partials:
+  #   # - frontmatter/before-body.tex
+  #   # - frontmatter/toc.tex
 
 
     
