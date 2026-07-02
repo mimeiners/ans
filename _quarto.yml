@@ -40,7 +40,7 @@ book:
   repo-url: https://github.com/mimeiners/ans/
   repo-branch: main
   repo-actions: [edit,issue]
-  downloads: [pdf,epub]
+  downloads: [pdf]
     
   chapters:
     - index.qmd
@@ -63,6 +63,7 @@ book:
 # Bibliography
 bibliography: "bibliography/references.bib"
 csl: "bibliography/ieee.csl"
+# csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl"
 
 format:
 

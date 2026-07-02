@@ -45,20 +45,21 @@ Verfügung.
 
 * Digitaltechnik
 
-* Grundlagen der Halbleiterbauelemente
+* Elektronik
 
 * Netzwerk- und Systemtheorie
 
 * Regelungstechnik 
 
 
-## Scientific Computing
+## Wissenschaftliches Rechnen / Datenwissenschaft
 
--   [Python (Anaconda)](https://www.anaconda.com/download/)
+* [Python](https://www.anaconda.com/download/)
 
--   [Matlab (Campus Lizenz)](https://de.mathworks.com/academia/tah-portal/hochschule-bremen-31463273.html)
+* [Matlab](https://de.mathworks.com)
 
--   [Command-line tools](https://jeroenjanssens.com/seven/)
+* [Command-line tools](https://jeroenjanssens.com/dsatcl/) 
+
 
 ## EDA Tools
 
@@ -74,78 +75,57 @@ Verfügung.
     -   [cadence IC Design & Verification](https://www.cadence.com/en_US/home/tools/design-excellence.html)
     -   [synopsys silicon design (IC)](https://www.synopsys.com/silicon-design.html)
 
-## OS-Tools
 
--   [Microsoft-Terminal](https://github.com/microsoft/terminal)
+## Betriebssystem (OS) - Werkzeuge (Tools)
+* [SSH (Secure Shell)](https://de.wikipedia.org/wiki/Secure_Shell)
+* [Microsoft-Terminal](https://github.com/microsoft/terminal)
+* [Microsoft-PowerShell](https://learn.microsoft.com/de-de/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.4)
+* [MacOS-Terminal](https://iterm2.com)
+* [Linux/MacOS zsh-tools](https://ohmyz.sh)
+* [Linux/MacOS bash-it](https://bash-it.readthedocs.io/en/latest/)
+* [Git (Versionskontrolle)](https://git-scm.com)
+* [TortoiseGit – Windows Shell Interface to Git](https://tortoisegit.org/)
 
--   [Microsoft-PowerShell](https://learn.microsoft.com/de-de/powershell/scripting/learn/ps101/01-getting-started)
 
--   [MacOS-Terminal](https://iterm2.com)
+## Code Editoren
+* [Visual Studio Code](https://code.visualstudio.com)
+* [Spyder IDE](https://www.spyder-ide.org)
+* [Thonny (Micro-)Python IDE](https://thonny.org)
+* [Emacs](https://www.gnu.org/software/emacs/)
+* [Vim](https://www.vim.org)
 
--   [Linux/MacOS Shell zsh-tools](https://ohmyz.sh),
 
--   [git (Versionskontrolle)](https://git-scm.com)
+## Berichtswesen / Laborberichte
 
-## Code Editors
+* [quarto](https://quarto.org)
+   * [Manuscripts](https://quarto.org/docs/manuscripts/)
 
--   [Visual Studio Code](https://code.visualstudio.com)
+* LaTeX
+  * [MikTeX (Windows, MacOS, Linux)](https://miktex.org/)
+  * [MacTeX (MacOS)](https://www.tug.org/mactex/)
+  * [TeXLive (Linux)](http://tug.org/texlive/)
 
--   [Spyder IDE](https://www.spyder-ide.org)
+* LaTeX Editoren
+  * [TeXStudio](http://www.texstudio.org)
+  * [TeXMaker](http://www.xm1math.net/texmaker/)
+  * [TeXWorks](http://www.tug.org/texworks/)
 
--   [Thonny (Micro-)Python IDE](https://thonny.org)
+* Kollaborative Frameworks
+  * [ShareLaTeX, Online LaTeX](https://www.sharelatex.com/)
+  * [CoCalc - Online LaTeX](https://cocalc.com/doc/latex-editor.html)
+	* ein Service der [AcademicCloud](https://academiccloud.de)
 
--   [Emacs](https://www.gnu.org/software/emacs/)
+* Literaturverwaltung
+  * [Zotero](https://www.suub.uni-bremen.de/service-beratung/literaturverwaltung/zotero/) 
+  * [Citavi](https://www.suub.uni-bremen.de/service-beratung/literaturverwaltung/citavi-2/)
 
--   [Vim](https://www.vim.org)
+* Datenverarbeitung
+  * Dateisystem Ordner und Dateien
+  * Comma-Separated-Values (CSV), Tab-Separated-Values (TSV)
+	* [csvkit](https://github.com/wireservice/csvkit)
+	* [miller](https://github.com/johnkerl/miller)
+  * Spreadsheet (.xlsx, .ods)
 
-## Data Science
-
--   File system: Files and directories
-
--   Tabular data: Comma/Tab-Separated-Values (CSV/TSV), Spreadsheet (.xlsx, .ods)
-
--   Special formats, e.g. MATLAB mat, HDF5
-
--   Embedded [Databases](https://db-engines.com)
-
-    -   [SQL](https://en.wikipedia.org/wiki/SQL), z.B. [SQlite](https://en.wikipedia.org/wiki/SQLite)
-    -   [OLAP](https://en.wikipedia.org/wiki/Online_analytical_processing), z.B. [DuckDB](https://duckdb.org/why_duckdb)
-
-## Publish Computational Content
-
--   [Jupyter-Book](https://jupyterbook.org/en/stable/intro.html)
-
--   [quarto](https://quarto.org)
-    -   [Manuscripts](https://quarto.org/docs/manuscripts/)
-
-## Are you writing or TeXing?
-
--   [MikTeX (Windows, MacOS, Linux)](https://miktex.org/)
-
--   [MacTeX (MacOS)](https://www.tug.org/mactex/)
-
--   [TeXLive (Linux)](http://tug.org/texlive/)
-
-## LaTeX Editoren
-
--   IDE's
-    -   [TeXStudio](http://www.texstudio.org)
-    -   [TeXMaker](http://www.xm1math.net/texmaker/)
--   Collaborative Frameworks
-    -   [Overleaf, Online LaTeX](https://www.overleaf.com/)
-    -   [CoCalc - Online LaTeX](https://cocalc.com/doc/latex-editor.html)
-
-## Bibliography and LaTeX
-
--   [Citavi im Detail \> Titel exportieren \> Export nach BibTeX](https://www1.citavi.com/sub/manual5/de/exporting_to_bibtex.html)
-
--   [RefWorks - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734&p=3912294)
-
--   [Benutzerdefinierte BibTex-Keys mit Zotero \| nerdpause](https://nerdpause.de/benutzerdefinierte-bibtex-keys-mit-zotero/)
-
--   [JabRef - Library Guide Univ. Melbourne](https://unimelb.libguides.com/c.php?g=565734&p=3897117)
-
--   [EndNote - Library Guide Univ. Melbourne](https://unimelb.libguides.com/latexbibtex/endnote)
 
 ## Labor
 
@@ -153,6 +133,7 @@ Verfügung.
   * Systemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)
   * Schaltungsebene (SPICE)
   * Charakterisierung (Messungen)
+  * PCB/Board-Level Design
 
 * Analog System Lab Kit &ndash; [ASLK Pro](https://aslk-pro.readthedocs.io/de/latest/)
 
