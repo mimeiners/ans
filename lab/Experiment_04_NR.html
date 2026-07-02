@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nils Renner">
-<meta name="dcterms.date" content="2025-06-24">
 
 <title>3&nbsp; Validation of Transfer Functions – Analoge Schaltungstechnik</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../references.html" rel="next">
 <link href="../lab/Experiment_04.html" rel="prev">
 <link href="../images/hsb-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e22fbe6e69edb8577f7b7bd0719516f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c17bf2369ec451fec7864fad2b46db76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -58,22 +61,22 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -86,7 +89,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -110,13 +113,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/Experiment_04.html">Labor</a></li><li class="breadcrumb-item"><a href="../lab/Experiment_04_NR.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Validation of Transfer Functions</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -129,9 +132,10 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Analoge Schaltungstechnik</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/mimeiners/ans/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/mimeiners/ans/" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
+    <a href="../ans.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -141,7 +145,7 @@ window.Quarto = {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -156,7 +160,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Seminar</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -167,19 +171,13 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Einleitung und Übersicht</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lec/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literaturverzeichnis</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labor</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -198,6 +196,12 @@ window.Quarto = {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literaturverzeichnis</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -205,7 +209,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
   <li><a href="#mathematical-derivation-of-the-transfer-functions-of-the-biquad" id="toc-mathematical-derivation-of-the-transfer-functions-of-the-biquad" class="nav-link active" data-scroll-target="#mathematical-derivation-of-the-transfer-functions-of-the-biquad"><span class="header-section-number">3.1</span> Mathematical derivation of the transfer functions of the biquad</a></li>
@@ -216,7 +220,7 @@ window.Quarto = {
   <li><a href="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" id="toc-repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="nav-link" data-scroll-target="#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">3.6</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.7</span> Conclusion</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -228,8 +232,8 @@ window.Quarto = {
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
   
     <div class="quarto-title-meta-contents">
     <p class="author">Nils Renner <a href="mailto:nrenner@stud.hs-bremen.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
@@ -247,9 +251,9 @@ window.Quarto = {
 
       
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 24, 2025</p>
+      <p class="date">24. Juni 2025</p>
     </div>
   </div>
   
@@ -258,7 +262,7 @@ window.Quarto = {
   
 <div>
   <div class="abstract">
-    <div class="block-title">Abstract</div>
+    <div class="block-title">Zusammenfassung</div>
     <p>Lorem ipsum</p>
   </div>
 </div>
@@ -285,7 +289,7 @@ V_4 = -\left( \frac{V_2}{Q} + H_0 \cdot V_i \right)
 </section>
 <section id="calculation-of-fracv_2v_i" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="calculation-of-fracv_2v_i"><span class="header-section-number">3.2</span> Calculation of <span class="math inline">\(\frac{V_2}{V_i}\)</span></h2>
-<p>Insert <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> into <a href="#eq-v2" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> :</p>
+<p>Insert <a href="#eq-v1" class="quarto-xref">Gleichung&nbsp;<span>3.1</span></a> into <a href="#eq-v2" class="quarto-xref">Gleichung&nbsp;<span>3.2</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_2 &amp;= -\frac{\omega_0}{s} \cdot V_1 = -\frac{\omega_0}{s} \cdot (-V_3 - V_4) \nonumber \\
 &amp;= -\frac{\omega_0}{s} \cdot \left( \frac{\omega_0}{s} \cdot V_2 + \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) \label{eq:v2_expanded}
@@ -303,7 +307,7 @@ V_2 &amp;= -\frac{\omega_0^2}{s^2} \cdot V_2 - \frac{\omega_0}{s Q} \cdot V_2 - 
 </section>
 <section id="transfer-function-fracv_3v_i" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="transfer-function-fracv_3v_i"><span class="header-section-number">3.3</span> Transfer-function <span class="math inline">\(\frac{V_3}{V_i}\)</span>:</h2>
-<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> into <a href="#eq-v3" class="quarto-xref">Equation&nbsp;<span>3.3</span></a> :</p>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Gleichung&nbsp;<span>3.5</span></a> into <a href="#eq-v3" class="quarto-xref">Gleichung&nbsp;<span>3.3</span></a> :</p>
 <p><span class="math display">\[
 V_3 = -\frac{\omega_0}{s} \cdot V_2 = -\frac{\omega_0}{s} \cdot \left( -\frac{\frac{s}{\omega_0} H_0 }{ 1 +
 \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2} } \cdot V_i \right)
@@ -317,7 +321,7 @@ V_3 = \left( \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \righ
 </section>
 <section id="transfer-function-fracv_4v_i" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="transfer-function-fracv_4v_i"><span class="header-section-number">3.4</span> Transfer-function <span class="math inline">\(\frac{V_4}{V_i}\)</span>:</h2>
-<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> into <a href="#eq-v4" class="quarto-xref">Equation&nbsp;<span>3.4</span></a> :</p>
+<p>Insert <a href="#eq-tf_v2" class="quarto-xref">Gleichung&nbsp;<span>3.5</span></a> into <a href="#eq-v4" class="quarto-xref">Gleichung&nbsp;<span>3.4</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac{1}{Q} \cdot \left( -\frac{
 \frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}} \cdot V_i \right) + H_0 \cdot V_i \right)
@@ -336,8 +340,8 @@ V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac
 </section>
 <section id="calculation-of-the-transfer-function-fracv_1v_i" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="calculation-of-the-transfer-function-fracv_1v_i"><span class="header-section-number">3.5</span> Calculation of the transfer function <span class="math inline">\(\frac{V_1}{V_i}\)</span>:</h2>
-<p>Based on equation <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> : <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
-<p>Using the transfer-function <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>3.6</span></a> for <span class="math inline">\(V_3\)</span>:</p>
+<p>Based on equation <a href="#eq-v1" class="quarto-xref">Gleichung&nbsp;<span>3.1</span></a> : <span class="math display">\[V_1 = -(V_3 + V_4)\]</span></p>
+<p>Using the transfer-function <a href="#eq-tf_v3" class="quarto-xref">Gleichung&nbsp;<span>3.6</span></a> for <span class="math inline">\(V_3\)</span>:</p>
 <p><span class="math display">\[
 \frac{V_3}{V_i} = \frac{H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
@@ -346,7 +350,7 @@ V_4 &amp;= -\left( \frac{1}{Q} \cdot V_2 + H_0 \cdot V_i \right) = -\left( \frac
 \frac{V_4}{V_i} = - \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} +
 \frac{s^2}{\omega_0^2}}
 \tag{3.7}\]</span></span></p>
-<p>Inserting <a href="#eq-tf_v3" class="quarto-xref">Equation&nbsp;<span>3.6</span></a> and <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>3.7</span></a> into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> results in:</p>
+<p>Inserting <a href="#eq-tf_v3" class="quarto-xref">Gleichung&nbsp;<span>3.6</span></a> and <a href="#eq-tf_v4_neg" class="quarto-xref">Gleichung&nbsp;<span>3.7</span></a> into <a href="#eq-v1" class="quarto-xref">Gleichung&nbsp;<span>3.1</span></a> results in:</p>
 <p><span class="math display">\[
 V_1 = -\left( V_3 + V_4 \right)
 \]</span></p>
@@ -364,7 +368,7 @@ V_1 = \left( \frac{ \left( \frac{s^2}{\omega_0^2} \right) H_0 }{D} \right) V_i \
 <p><span id="eq-tf_v4_aufg"><span class="math display">\[
 \frac{V_4}{V_i} = \frac{\left(1 + \frac{s^2}{\omega_0^2} \right) \cdot H_0}{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \tag{3.9}\]</span></span></p>
-<p>Insert into <a href="#eq-v1" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> :</p>
+<p>Insert into <a href="#eq-v1" class="quarto-xref">Gleichung&nbsp;<span>3.1</span></a> :</p>
 <p><span class="math display">\[\begin{align}
 V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 + \frac{s^2}{\omega_0^2} \right) H_0 }{D}
 \right) V_i \nonumber \\
@@ -375,7 +379,7 @@ V_1 &amp;= -\left( V_3 + V_4 \right) = -\left( \frac{H_0}{D} + \frac{ \left( 1 +
 </section>
 <section id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1"><span class="header-section-number">3.6</span> Repeated calculation of the Transfer-function <span class="math inline">\(\frac{V_2}{V_i}\)</span> via <span class="math inline">\(V_1\)</span>:</h2>
-<p>Based on the correct function for <span class="math inline">\(V_1\)</span> <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>3.8</span></a> :</p>
+<p>Based on the correct function for <span class="math inline">\(V_1\)</span> <a href="#eq-tf_v1_korrekt" class="quarto-xref">Gleichung&nbsp;<span>3.8</span></a> :</p>
 <p><span class="math display">\[
 \frac{V_1}{V_i} = \frac{ \frac{s^2}{\omega_0^2} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \]</span></p>
@@ -393,11 +397,11 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
 <p><span id="eq-V2_aus_V1"><span class="math display">\[
 \Rightarrow \frac{V_2}{V_i} = - \frac{\frac{s}{\omega_0} H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^2}{\omega_0^2}}
 \tag{3.10}\]</span></span></p>
-<p>A comparison of the two transfer functions <span class="math inline">\(\frac{V_2}{V_i}\)</span> <a href="#eq-tf_v2" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> and <a href="#eq-V2_aus_V1" class="quarto-xref">Equation&nbsp;<span>3.10</span></a> shows that the error is due to equation <span class="math inline">\(\frac{V_4}{V_1}\)</span> since the derivation of <span class="math inline">\(\frac{V_1}{V_i}\)</span> remains correct.</p>
+<p>A comparison of the two transfer functions <span class="math inline">\(\frac{V_2}{V_i}\)</span> <a href="#eq-tf_v2" class="quarto-xref">Gleichung&nbsp;<span>3.5</span></a> and <a href="#eq-V2_aus_V1" class="quarto-xref">Gleichung&nbsp;<span>3.10</span></a> shows that the error is due to equation <span class="math inline">\(\frac{V_4}{V_1}\)</span> since the derivation of <span class="math inline">\(\frac{V_1}{V_i}\)</span> remains correct.</p>
 </section>
 <section id="conclusion" class="level2" data-number="3.7">
 <h2 data-number="3.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.7</span> Conclusion</h2>
-<p>Only the use of the negated form of <span class="math inline">\(\frac{V_4}{V_i}\)</span> from <a href="#eq-tf_v4_neg" class="quarto-xref">Equation&nbsp;<span>3.7</span></a> leads to a consistent result for <span class="math inline">\(\frac{V_1}{V_i}\)</span> according to <a href="#eq-tf_v1_korrekt" class="quarto-xref">Equation&nbsp;<span>3.8</span></a> . The version from the exercise booklet (<a href="#eq-tf_v4_aufg" class="quarto-xref">Equation&nbsp;<span>3.9</span></a>) therefore appears to be incorrect.</p>
+<p>Only the use of the negated form of <span class="math inline">\(\frac{V_4}{V_i}\)</span> from <a href="#eq-tf_v4_neg" class="quarto-xref">Gleichung&nbsp;<span>3.7</span></a> leads to a consistent result for <span class="math inline">\(\frac{V_1}{V_i}\)</span> according to <a href="#eq-tf_v1_korrekt" class="quarto-xref">Gleichung&nbsp;<span>3.8</span></a> . The version from the exercise booklet (<a href="#eq-tf_v4_aufg" class="quarto-xref">Gleichung&nbsp;<span>3.9</span></a>) therefore appears to be incorrect.</p>
 
 
 </section>
@@ -428,12 +432,12 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -454,13 +458,14 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -809,6 +814,9 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../references.html" class="pagination-link" aria-label="Literaturverzeichnis">
+        <span class="nav-page-text">Literaturverzeichnis</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -819,7 +827,7 @@ V_2 = -\frac{ \frac{s}{\omega_0} \cdot H_0 }{1 + \frac{s}{\omega_0 Q} + \frac{s^
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mimeiners/ans/edit/main/lab/Experiment_04_NR.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/mimeiners/ans/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

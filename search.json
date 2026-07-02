@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Analoge Schaltungstechnik",
     "section": "",
-    "text": "Unsyllabus\n\n\n\nName\nBeschreibung\n\n\n\n\nKursus\nM 6.9 Analoge Schaltungen (ANS)\n\n\nSemester\nSoSe25\n\n\nDozent\nProf. Dr.-Ing. M. Meiners\n\n\nSeminar\nDi., 09:45 Uhr - 13:00 Uhr, E 507",
+    "text": "Unsyllabus\n\n\n\nName\nBeschreibung\n\n\n\n\nKursus\nM 6.9 Analoge Schaltungen (ANS)\n\n\nSemester\nSoSe2026\n\n\nDozent\nProf. Dr.-Ing. M. Meiners\n\n\nSeminar\nDo., 08:00 Uhr - 11:15 Uhr, E 507",
     "crumbs": [
       "Unsyllabus"
     ]
@@ -36,18 +36,18 @@
     "href": "lec/lec-01-intro.html#voraussetzungen-des-moduls",
     "title": "1  Einleitung und Übersicht",
     "section": "1.2 Voraussetzungen des Moduls",
-    "text": "1.2 Voraussetzungen des Moduls\n\nDigitaltechnik\nGrundlagen der Halbleiterbauelemente\nNetzwerk- und Systemtheorie\nRegelungstechnik",
+    "text": "1.2 Voraussetzungen des Moduls\n\nDigitaltechnik\nElektronik\nNetzwerk- und Systemtheorie\nRegelungstechnik",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#scientific-computing",
-    "href": "lec/lec-01-intro.html#scientific-computing",
+    "objectID": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
+    "href": "lec/lec-01-intro.html#wissenschaftliches-rechnen-datenwissenschaft",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.3 Scientific Computing",
-    "text": "1.3 Scientific Computing\n\nPython (Anaconda)\nMatlab (Campus Lizenz)\nCommand-line tools",
+    "section": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft",
+    "text": "1.3 Wissenschaftliches Rechnen / Datenwissenschaft\n\nPython\nMatlab\nCommand-line tools",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -65,77 +65,33 @@
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#os-tools",
-    "href": "lec/lec-01-intro.html#os-tools",
+    "objectID": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
+    "href": "lec/lec-01-intro.html#betriebssystem-os---werkzeuge-tools",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.5 OS-Tools",
-    "text": "1.5 OS-Tools\n\nMicrosoft-Terminal\nMicrosoft-PowerShell\nMacOS-Terminal\nLinux/MacOS Shell zsh-tools,\ngit (Versionskontrolle)",
+    "section": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)",
+    "text": "1.5 Betriebssystem (OS) - Werkzeuge (Tools)\n\nSSH (Secure Shell)\nMicrosoft-Terminal\nMicrosoft-PowerShell\nMacOS-Terminal\nLinux/MacOS zsh-tools\nLinux/MacOS bash-it\nGit (Versionskontrolle)\nTortoiseGit – Windows Shell Interface to Git",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#code-editors",
-    "href": "lec/lec-01-intro.html#code-editors",
+    "objectID": "lec/lec-01-intro.html#code-editoren",
+    "href": "lec/lec-01-intro.html#code-editoren",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.6 Code Editors",
-    "text": "1.6 Code Editors\n\nVisual Studio Code\nSpyder IDE\nThonny (Micro-)Python IDE\nEmacs\nVim",
+    "section": "1.6 Code Editoren",
+    "text": "1.6 Code Editoren\n\nVisual Studio Code\nSpyder IDE\nThonny (Micro-)Python IDE\nEmacs\nVim",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
     ]
   },
   {
-    "objectID": "lec/lec-01-intro.html#data-science",
-    "href": "lec/lec-01-intro.html#data-science",
+    "objectID": "lec/lec-01-intro.html#berichtswesen-laborberichte",
+    "href": "lec/lec-01-intro.html#berichtswesen-laborberichte",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.7 Data Science",
-    "text": "1.7 Data Science\n\nFile system: Files and directories\nTabular data: Comma/Tab-Separated-Values (CSV/TSV), Spreadsheet (.xlsx, .ods)\nSpecial formats, e.g. MATLAB mat, HDF5\nEmbedded Databases\n\nSQL, z.B. SQlite\nOLAP, z.B. DuckDB",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#publish-computational-content",
-    "href": "lec/lec-01-intro.html#publish-computational-content",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.8 Publish Computational Content",
-    "text": "1.8 Publish Computational Content\n\nJupyter-Book\nquarto\n\nManuscripts",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#are-you-writing-or-texing",
-    "href": "lec/lec-01-intro.html#are-you-writing-or-texing",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.9 Are you writing or TeXing?",
-    "text": "1.9 Are you writing or TeXing?\n\nMikTeX (Windows, MacOS, Linux)\nMacTeX (MacOS)\nTeXLive (Linux)",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#latex-editoren",
-    "href": "lec/lec-01-intro.html#latex-editoren",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.10 LaTeX Editoren",
-    "text": "1.10 LaTeX Editoren\n\nIDE’s\n\nTeXStudio\nTeXMaker\n\nCollaborative Frameworks\n\nOverleaf, Online LaTeX\nCoCalc - Online LaTeX",
-    "crumbs": [
-      "Seminar",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
-    ]
-  },
-  {
-    "objectID": "lec/lec-01-intro.html#bibliography-and-latex",
-    "href": "lec/lec-01-intro.html#bibliography-and-latex",
-    "title": "1  Einleitung und Übersicht",
-    "section": "1.11 Bibliography and LaTeX",
-    "text": "1.11 Bibliography and LaTeX\n\nCitavi im Detail &gt; Titel exportieren &gt; Export nach BibTeX\nRefWorks - Library Guide Univ. Melbourne\nBenutzerdefinierte BibTex-Keys mit Zotero | nerdpause\nJabRef - Library Guide Univ. Melbourne\nEndNote - Library Guide Univ. Melbourne",
+    "section": "1.7 Berichtswesen / Laborberichte",
+    "text": "1.7 Berichtswesen / Laborberichte\n\nquarto\n\nManuscripts\n\nLaTeX\n\nMikTeX (Windows, MacOS, Linux)\nMacTeX (MacOS)\nTeXLive (Linux)\n\nLaTeX Editoren\n\nTeXStudio\nTeXMaker\nTeXWorks\n\nKollaborative Frameworks\n\nShareLaTeX, Online LaTeX\nCoCalc - Online LaTeX\n\nein Service der AcademicCloud\n\n\nLiteraturverwaltung\n\nZotero\nCitavi\n\nDatenverarbeitung\n\nDateisystem Ordner und Dateien\nComma-Separated-Values (CSV), Tab-Separated-Values (TSV)\n\ncsvkit\nmiller\n\nSpreadsheet (.xlsx, .ods)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -145,8 +101,8 @@
     "objectID": "lec/lec-01-intro.html#labor",
     "href": "lec/lec-01-intro.html#labor",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.12 Labor",
-    "text": "1.12 Labor\n\nAnwendung unterschiedlicher Beschreibungsebenen\n\nSystemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)\nSchaltungsebene (SPICE)\nCharakterisierung (Messungen)\n\nAnalog System Lab Kit – ASLK Pro\nMessautomatisierung Red Pitaya STEMlab 125-14/10",
+    "section": "1.8 Labor",
+    "text": "1.8 Labor\n\nAnwendung unterschiedlicher Beschreibungsebenen\n\nSystemebene (Verhaltensmodell z.B. mit Matlab/Simulink oder Python)\nSchaltungsebene (SPICE)\nCharakterisierung (Messungen)\nPCB/Board-Level Design\n\nAnalog System Lab Kit – ASLK Pro\nMessautomatisierung Red Pitaya STEMlab 125-14/10",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -156,8 +112,8 @@
     "objectID": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
     "href": "lec/lec-01-intro.html#schaltungsanalyse-entwurf-neq-black-magic",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.13 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic",
-    "text": "1.13 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic\nSchaltungsanalyse. * ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen * basierend auf einem einfachen, aber hinreichend genauen Modell * “Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird! * eine Schaltung \\(\\Rightarrow\\) eine Lösung\nSchaltungsdesign/-entwurf. * ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse. * eine Spezifikation \\(\\Rightarrow\\) viele Lösungen * Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”",
+    "section": "1.9 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic",
+    "text": "1.9 Schaltungsanalyse/-entwurf \\(\\neq\\) Black Magic\nSchaltungsanalyse. * ist die Fähigkeit, Schaltungen in handhabbare Teile zu zerlegen * basierend auf einem einfachen, aber hinreichend genauen Modell * “Just-in-time” Modellierung: Verwende kein komplexes Modell, so lange es nicht benötigt wird! * eine Schaltung \\(\\Rightarrow\\) eine Lösung\nSchaltungsdesign/-entwurf. * ist die Fähigkeit der Schaltungssynthese auf Basis von Erfahrung und intensiver Analyse. * eine Spezifikation \\(\\Rightarrow\\) viele Lösungen * Entwurfspraktiken werden am besten durch’s “Selbermachen” ausgebildet – “Machen ist wie wollen nur krasser.”",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -167,8 +123,8 @@
     "objectID": "lec/lec-01-intro.html#schöne-neue-welt",
     "href": "lec/lec-01-intro.html#schöne-neue-welt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.14 Schöne neue Welt",
-    "text": "1.14 Schöne neue Welt",
+    "section": "1.10 Schöne neue Welt",
+    "text": "1.10 Schöne neue Welt",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -178,8 +134,8 @@
     "objectID": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
     "href": "lec/lec-01-intro.html#from-sand-to-silicon-infineon-dresden",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.15 From Sand to Silicon (Infineon, Dresden)",
-    "text": "1.15 From Sand to Silicon (Infineon, Dresden)",
+    "section": "1.11 From Sand to Silicon (Infineon, Dresden)",
+    "text": "1.11 From Sand to Silicon (Infineon, Dresden)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -189,8 +145,8 @@
     "objectID": "lec/lec-01-intro.html#finfet-intel",
     "href": "lec/lec-01-intro.html#finfet-intel",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.16 FinFET (Intel)",
-    "text": "1.16 FinFET (Intel)",
+    "section": "1.12 FinFET (Intel)",
+    "text": "1.12 FinFET (Intel)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -200,8 +156,8 @@
     "objectID": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
     "href": "lec/lec-01-intro.html#tsmc-fab-next-gen-75-nm",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.17 TSMC Fab (Next Gen 7/5 nm)",
-    "text": "1.17 TSMC Fab (Next Gen 7/5 nm)",
+    "section": "1.13 TSMC Fab (Next Gen 7/5 nm)",
+    "text": "1.13 TSMC Fab (Next Gen 7/5 nm)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -211,8 +167,8 @@
     "objectID": "lec/lec-01-intro.html#es-war-einmal",
     "href": "lec/lec-01-intro.html#es-war-einmal",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.18 Es war einmal …",
-    "text": "1.18 Es war einmal …",
+    "section": "1.14 Es war einmal …",
+    "text": "1.14 Es war einmal …",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -222,8 +178,8 @@
     "objectID": "lec/lec-01-intro.html#damals-und-heute",
     "href": "lec/lec-01-intro.html#damals-und-heute",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.19 Damals und heute",
-    "text": "1.19 Damals und heute",
+    "section": "1.15 Damals und heute",
+    "text": "1.15 Damals und heute",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -233,8 +189,8 @@
     "objectID": "lec/lec-01-intro.html#systemhierarchie",
     "href": "lec/lec-01-intro.html#systemhierarchie",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.20 Systemhierarchie",
-    "text": "1.20 Systemhierarchie\n\n\nNutzen Sie Hierarchien zur Beschreibung komplexer Systeme\nTeile und herrsche",
+    "section": "1.16 Systemhierarchie",
+    "text": "1.16 Systemhierarchie\n\n\nNutzen Sie Hierarchien zur Beschreibung komplexer Systeme\nTeile und herrsche",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -244,8 +200,8 @@
     "objectID": "lec/lec-01-intro.html#system-assembly",
     "href": "lec/lec-01-intro.html#system-assembly",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.21 System Assembly",
-    "text": "1.21 System Assembly",
+    "section": "1.17 System Assembly",
+    "text": "1.17 System Assembly",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -255,8 +211,8 @@
     "objectID": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
     "href": "lec/lec-01-intro.html#schnittstellen-zur-aussenwelt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.22 Schnittstellen zur Aussenwelt",
-    "text": "1.22 Schnittstellen zur Aussenwelt",
+    "section": "1.18 Schnittstellen zur Aussenwelt",
+    "text": "1.18 Schnittstellen zur Aussenwelt",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -266,8 +222,8 @@
     "objectID": "lec/lec-01-intro.html#meeting-mit-einem-system",
     "href": "lec/lec-01-intro.html#meeting-mit-einem-system",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.23 Meeting mit einem System",
-    "text": "1.23 Meeting mit einem System",
+    "section": "1.19 Meeting mit einem System",
+    "text": "1.19 Meeting mit einem System",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -277,8 +233,8 @@
     "objectID": "lec/lec-01-intro.html#system-in-a-package-sip",
     "href": "lec/lec-01-intro.html#system-in-a-package-sip",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.24 System in a Package (SiP)",
-    "text": "1.24 System in a Package (SiP)",
+    "section": "1.20 System in a Package (SiP)",
+    "text": "1.20 System in a Package (SiP)",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -288,8 +244,8 @@
     "objectID": "lec/lec-01-intro.html#backend-phasen",
     "href": "lec/lec-01-intro.html#backend-phasen",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.25 Backend Phasen",
-    "text": "1.25 Backend Phasen\n\nPackaging\nZuverlässigkeit = Qualität auf Zeit\nTesting auf Wafer Level, known good die (KGD)\n\nBurn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)\nAutomatic Test Equipment (ATE)\n\nSystem Probe\nInterconnect Test\nBuild-in Self-Test (BIST)\n\n\nStatistische Datenanalyse und Yield Prognosen\n\nAusfallrate FIT (failure in time)\nBadewannenkurve",
+    "section": "1.21 Backend Phasen",
+    "text": "1.21 Backend Phasen\n\nPackaging\nZuverlässigkeit = Qualität auf Zeit\nTesting auf Wafer Level, known good die (KGD)\n\nBurn-in und Accelerated Aging (thermischer Stress, Arrhenius Gesetz)\nAutomatic Test Equipment (ATE)\n\nSystem Probe\nInterconnect Test\nBuild-in Self-Test (BIST)\n\n\nStatistische Datenanalyse und Yield Prognosen\n\nAusfallrate FIT (failure in time)\nBadewannenkurve",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -299,8 +255,8 @@
     "objectID": "lec/lec-01-intro.html#sie-werden-experte",
     "href": "lec/lec-01-intro.html#sie-werden-experte",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.26 Sie werden Experte",
-    "text": "1.26 Sie werden Experte\nLeistungsmerkmale. * Hintergrundwissen * Systemverständnis, Architektur, Herstellungsverfahren, Implementation\n\nUnterbewusste Kompetenz\n\nAbgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen\n\nSpezialwissen\n\nBerufsspezifisches Wissen\n\nTeamwork Haltung\n\nKommunikationsfähigkeit, Berichtswesen und technische Präsentation\n\nKreativität\nTool-Kenntnisse",
+    "section": "1.22 Sie werden Experte",
+    "text": "1.22 Sie werden Experte\nLeistungsmerkmale. * Hintergrundwissen * Systemverständnis, Architektur, Herstellungsverfahren, Implementation\n\nUnterbewusste Kompetenz\n\nAbgespeicherte Erfahrungen aus Erfolgsgeschichten und Misserfolgen\n\nSpezialwissen\n\nBerufsspezifisches Wissen\n\nTeamwork Haltung\n\nKommunikationsfähigkeit, Berichtswesen und technische Präsentation\n\nKreativität\nTool-Kenntnisse",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -310,8 +266,8 @@
     "objectID": "lec/lec-01-intro.html#evolution-von-produkten",
     "href": "lec/lec-01-intro.html#evolution-von-produkten",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.27 Evolution von Produkten",
-    "text": "1.27 Evolution von Produkten\n\nAngetrieben durch Technologieverbesserung\n\nKosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)\nLeistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)\n\nAngetrieben durch Verbesserung der Entwurfsmethodik\n\nArchitektur (Leistung, Funktionen)\nCAD (Entwicklungskosten, Time-to-Market)\n\nKomplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)\nRolle von CAD\n\nVerbesserung der Produktivität von Konstruktionsprozessen\nReduzierung der Komplexität für den Konstrukteur\nSicherstellung des ordnungsgemäßen Betriebs der Geräte",
+    "section": "1.23 Evolution von Produkten",
+    "text": "1.23 Evolution von Produkten\n\nAngetrieben durch Technologieverbesserung\n\nKosten (größere Chips, geringere Größe der Merkmale, bessere Ausbeute)\nLeistung (neue Bauteile, höhere Geschwindigkeit, weniger Stromverbrauch)\n\nAngetrieben durch Verbesserung der Entwurfsmethodik\n\nArchitektur (Leistung, Funktionen)\nCAD (Entwicklungskosten, Time-to-Market)\n\nKomplexität der Designs verdoppelt sich jedes Jahr (Moore’s Gesetz)\nRolle von CAD\n\nVerbesserung der Produktivität von Konstruktionsprozessen\nReduzierung der Komplexität für den Konstrukteur\nSicherstellung des ordnungsgemäßen Betriebs der Geräte",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -321,8 +277,8 @@
     "objectID": "lec/lec-01-intro.html#eda-kompetenz",
     "href": "lec/lec-01-intro.html#eda-kompetenz",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.28 EDA Kompetenz",
-    "text": "1.28 EDA Kompetenz\n\nEDA-Anbieter (Tool-Entwickler)\n\nIdentifikation von Entwurfsaufgaben, Bedarf an Werkzeugen\nEntwicklung von Strategien und Algorithmen\nImplementierung von Software-Werkzeugen\nVerifikation der Stabilität und Funktionalität der Software-Tools\n\nIC-Hersteller\n\nEntscheidungsplanung, welches Tool die Produktivität steigern könnte\nEDA-Tool-Manager, Installation und Wartung\nExperten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung\n\nDozenten und Studenten\n\nJobchancen\nNotwendigkeit, auf dem Laufenden zu bleiben",
+    "section": "1.24 EDA Kompetenz",
+    "text": "1.24 EDA Kompetenz\n\nEDA-Anbieter (Tool-Entwickler)\n\nIdentifikation von Entwurfsaufgaben, Bedarf an Werkzeugen\nEntwicklung von Strategien und Algorithmen\nImplementierung von Software-Werkzeugen\nVerifikation der Stabilität und Funktionalität der Software-Tools\n\nIC-Hersteller\n\nEntscheidungsplanung, welches Tool die Produktivität steigern könnte\nEDA-Tool-Manager, Installation und Wartung\nExperten für Softwareeinsatz, Anwendung in Produktdesign und -entwicklung\n\nDozenten und Studenten\n\nJobchancen\nNotwendigkeit, auf dem Laufenden zu bleiben",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -332,8 +288,8 @@
     "objectID": "lec/lec-01-intro.html#design-entwurfsmethodik",
     "href": "lec/lec-01-intro.html#design-entwurfsmethodik",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.29 Design-/Entwurfsmethodik",
-    "text": "1.29 Design-/Entwurfsmethodik\n\nFull Custom - vollständig manuell: ASIC\n\nÜberwiegend analoge Schaltungen\nEinfache digitale Gatter\nVolle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)\n\nSemi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen\n\nStandardzellen, Makrozellen, IP’s\nWiederverwendung von vordefinierten Blöcken oder Maskensätzen\nEingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)\n\nVollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs\n\nFPGA, PLA\nAusschließlich digitale Schaltungen\nSchnelles Prototyping",
+    "section": "1.25 Design-/Entwurfsmethodik",
+    "text": "1.25 Design-/Entwurfsmethodik\n\nFull Custom - vollständig manuell: ASIC\n\nÜberwiegend analoge Schaltungen\nEinfache digitale Gatter\nVolle Kontrolle, aber lange Entwicklungszeit (bis zu Jahren)\n\nSemi-custom: ASIC-Fertigung mit Verwendung von vorgefertigten Teilen\n\nStandardzellen, Makrozellen, IP’s\nWiederverwendung von vordefinierten Blöcken oder Maskensätzen\nEingeschränkte Kontrolle/Flexibilität, aber kürzere Entwicklungszeit (bis zu Wochen)\n\nVollständig automatisiert: Keine Fertigung, reprogrammierbare ASICs\n\nFPGA, PLA\nAusschließlich digitale Schaltungen\nSchnelles Prototyping",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -343,8 +299,8 @@
     "objectID": "lec/lec-01-intro.html#nachhaltige-elektronik",
     "href": "lec/lec-01-intro.html#nachhaltige-elektronik",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.30 Nachhaltige Elektronik …",
-    "text": "1.30 Nachhaltige Elektronik …\n\n\nGeekchester.",
+    "section": "1.26 Nachhaltige Elektronik …",
+    "text": "1.26 Nachhaltige Elektronik …\n\n\nGeekchester.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -354,8 +310,8 @@
     "objectID": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
     "href": "lec/lec-01-intro.html#warum-es-sicht-lohnt",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.31 Warum es sicht lohnt …",
-    "text": "1.31 Warum es sicht lohnt …\n\n\nCircuit Song.",
+    "section": "1.27 Warum es sicht lohnt …",
+    "text": "1.27 Warum es sicht lohnt …\n\n\nCircuit Song.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -365,8 +321,8 @@
     "objectID": "lec/lec-01-intro.html#und-ab-an-den-strand",
     "href": "lec/lec-01-intro.html#und-ab-an-den-strand",
     "title": "1  Einleitung und Übersicht",
-    "section": "1.32 Und ab an den Strand …",
-    "text": "1.32 Und ab an den Strand …\n\n\nViva la Electronica.",
+    "section": "1.28 Und ab an den Strand …",
+    "text": "1.28 Und ab an den Strand …\n\n\nViva la Electronica.",
     "crumbs": [
       "Seminar",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung und Übersicht</span>"
@@ -377,7 +333,7 @@
     "href": "lab/Experiment_04.html",
     "title": "2  Experiment 4 - Design of Analog Filters",
     "section": "",
-    "text": "2.1 Brief theory and motivation\nSecond order filters (or biquard filters) are important since they are the building blocks in the construction of \\(N^{th}\\) order filters, for \\(N &gt; 2\\). When \\(N\\) is odd, the \\(N^{th}\\) order filter can be realized using \\(N - 1\\) second order filters and one first order filter. When \\(N\\) is even, we need \\(N-1\\) second order filters.\nSecond order filter can be used to construct four different types of filters. The transfer functions for the different filter types are shown in Section 2.1.1, where \\(f_0 = \\frac{1}{2 \\pi RC}\\) and \\(H_0\\) is the low frequency gain of the transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter), and BSF (bandstop filter).",
+    "text": "2.1 Brief theory and motivation\nSecond order filters (or biquard filters) are important since they are the building blocks in the construction of \\(N^{th}\\) order filters, for \\(N &gt; 2\\). When \\(N\\) is odd, the \\(N^{th}\\) order filter can be realized using \\(N - 1\\) second order filters and one first order filter. When \\(N\\) is even, we need \\(N-1\\) second order filters.\nSecond order filter can be used to construct four different types of filters. The transfer functions for the different filter types are shown in Kapitel 2.1.1, where \\(f_0 = \\frac{1}{2 \\pi RC}\\) and \\(H_0\\) is the low frequency gain of the transfer function. The filter names are often abbreviated as LPF (lowpass filter), HPF (highpass filter), BPF (bandpass filter), and BSF (bandstop filter).",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
@@ -388,7 +344,7 @@
     "href": "lab/Experiment_04.html#brief-theory-and-motivation",
     "title": "2  Experiment 4 - Design of Analog Filters",
     "section": "",
-    "text": "2.1.1 Transfer funtions of active filters\n\nLowpass Filter (LPF):\n\n\\[\n\\frac{V_{03}}{V_i} = \\frac{H_0}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nHighpass Filter (HPF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{\\left( H_0 \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandpass Filter (BPF):\n\n\\[\n\\frac{V_{02}}{V_i} = \\frac{\\left( -H_0 \\frac{s}{\\omega_0} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandstop Filter (BSF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{H_0 \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\n# -*- coding: utf-8 -*-\n\"\"\"\nMagnitude and phase response of active filters\n\n\"\"\"\n\n# %% Init\nimport numpy as np\n# https://docs.scipy.org/doc/scipy/reference/signal.html#\nimport scipy.signal as sig\nimport matplotlib.pyplot as plt\n\n# %% Definition der TFs\n# https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.tf2zpk.html#scipy.signal.tf2zpk\nH0 = 1\nQ = 10\nf0 = 1e3\nw0 = 2*np.pi*f0\nf = np.logspace(2, 4, 400)\n\nLPF = sig.lti([H0], [1/w0**2, 1/(w0*Q), 1])\nw, magLPF, phaseLPF = LPF.bode(2*np.pi*f)\n\nHPF = sig.lti([H0/w0**2, 0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magHPF, phaseHPF = HPF.bode(2*np.pi*f)\n\nBPF = sig.lti([-H0/w0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magBPF, phaseBPF = BPF.bode(2*np.pi*f)\n\nBSF = sig.lti([H0/w0**2, 0, H0], [1/w0**2, 1/(w0*Q), 1])\nw, magBSF, phaseBSF = BSF.bode(2*np.pi*f)\n\n# %% Erzeugen des Bode-Diagramms\nplt.subplot(2, 1, 1)\nplt.semilogx(f, magLPF, label='LPF')\nplt.semilogx(f, magHPF, label='HPF')\nplt.semilogx(f, magBPF, label='BPF')\nplt.semilogx(f, magBSF, label='BSF')\nplt.ylabel(r'$\\vert H_v \\vert$/dB')\nplt.grid()\nplt.legend()\nplt.subplot(2, 1, 2)\nplt.semilogx(f, phaseLPF, label='LPF')\nplt.semilogx(f, phaseHPF, label='HPF')\nplt.semilogx(f, phaseBPF, label='BPF')\nplt.semilogx(f, phaseBSF, label='BSF')\nplt.ylabel(r'$arg(H_v)$/deg')\nplt.xlabel('f/Hz')\nplt.grid()\nplt.show()\n\n\n\n\n\n\n\n\nIn this experiment, we will describe a universal active filter, which provides all four filter functionalities. Figure 2.1 shows a second order universal filter realized using two integrators. Note that there are different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.\n\n\n\n\n\n\nFigure 2.1: A second-order universal active filter",
+    "text": "2.1.1 Transfer funtions of active filters\n\nLowpass Filter (LPF):\n\n\\[\n\\frac{V_{03}}{V_i} = \\frac{H_0}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nHighpass Filter (HPF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{\\left( H_0 \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandpass Filter (BPF):\n\n\\[\n\\frac{V_{02}}{V_i} = \\frac{\\left( -H_0 \\frac{s}{\\omega_0} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\nBandstop Filter (BSF):\n\n\\[\n\\frac{V_{01}}{V_i} = \\frac{H_0 \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right)}\n{\\left( 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega^2_0} \\right)}\n\\]\n\n# -*- coding: utf-8 -*-\n\"\"\"\nMagnitude and phase response of active filters\n\n\"\"\"\n\n# %% Init\nimport numpy as np\n# https://docs.scipy.org/doc/scipy/reference/signal.html#\nimport scipy.signal as sig\nimport matplotlib.pyplot as plt\n\n# %% Definition der TFs\n# https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.tf2zpk.html#scipy.signal.tf2zpk\nH0 = 1\nQ = 10\nf0 = 1e3\nw0 = 2*np.pi*f0\nf = np.logspace(2, 4, 400)\n\nLPF = sig.lti([H0], [1/w0**2, 1/(w0*Q), 1])\nw, magLPF, phaseLPF = LPF.bode(2*np.pi*f)\n\nHPF = sig.lti([H0/w0**2, 0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magHPF, phaseHPF = HPF.bode(2*np.pi*f)\n\nBPF = sig.lti([-H0/w0, 0], [1/w0**2, 1/(w0*Q), 1])\nw, magBPF, phaseBPF = BPF.bode(2*np.pi*f)\n\nBSF = sig.lti([H0/w0**2, 0, H0], [1/w0**2, 1/(w0*Q), 1])\nw, magBSF, phaseBSF = BSF.bode(2*np.pi*f)\n\n# %% Erzeugen des Bode-Diagramms\nplt.subplot(2, 1, 1)\nplt.semilogx(f, magLPF, label='LPF')\nplt.semilogx(f, magHPF, label='HPF')\nplt.semilogx(f, magBPF, label='BPF')\nplt.semilogx(f, magBSF, label='BSF')\nplt.ylabel(r'$\\vert H_v \\vert$/dB')\nplt.grid()\nplt.legend()\nplt.subplot(2, 1, 2)\nplt.semilogx(f, phaseLPF, label='LPF')\nplt.semilogx(f, phaseHPF, label='HPF')\nplt.semilogx(f, phaseBPF, label='BPF')\nplt.semilogx(f, phaseBSF, label='BSF')\nplt.ylabel(r'$arg(H_v)$/deg')\nplt.xlabel('f/Hz')\nplt.grid()\nplt.show()\n\n\n\n\n\n\n\n\nIn this experiment, we will describe a universal active filter, which provides all four filter functionalities. Abbildung 2.1 shows a second order universal filter realized using two integrators. Note that there are different outputs of the circuit that realize LPF, HPF, BPF and BSF functions.\n\n\n\n\n\n\nAbbildung 2.1: A second-order universal active filter",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Experiment 4 - Design of Analog Filters</span>"
@@ -454,7 +410,7 @@
     "href": "lab/Experiment_04_NR.html#calculation-of-fracv_2v_i",
     "title": "3  Validation of Transfer Functions",
     "section": "3.2 Calculation of \\(\\frac{V_2}{V_i}\\)",
-    "text": "3.2 Calculation of \\(\\frac{V_2}{V_i}\\)\nInsert Equation 3.1 into Equation 3.2 :\n\\[\\begin{align}\nV_2 &= -\\frac{\\omega_0}{s} \\cdot V_1 = -\\frac{\\omega_0}{s} \\cdot (-V_3 - V_4) \\nonumber \\\\\n&= -\\frac{\\omega_0}{s} \\cdot \\left( \\frac{\\omega_0}{s} \\cdot V_2 + \\frac{1}{Q} \\cdot V_2 + H_0 \\cdot V_i \\right) \\label{eq:v2_expanded}\n\\end{align}\\]\nSummarizing results in:\n\\[\\begin{align}\nV_2 &= -\\frac{\\omega_0^2}{s^2} \\cdot V_2 - \\frac{\\omega_0}{s Q} \\cdot V_2 - \\frac{\\omega_0}{s} H_0 \\cdot V_i \\\\\n\\Rightarrow \\frac{\\omega_0}{s} H_0 \\cdot V_i &= -\\left( \\frac{\\omega_0^2}{s^2} + \\frac{\\omega_0}{s Q} + 1 \\right) V_2\n\\end{align}\\]\nResolve to \\(\\frac{V_2}{V_i}\\):\n\\[\n\\frac{V_2}{V_i} = \\frac{\\frac{\\omega_0}{s} H_0}{ -\\left( \\frac{\\omega_0^2}{s^2} + \\frac{\\omega_0}{s Q} + 1 \\right)}\n= -\\frac{ \\frac{s}{\\omega_0} H_0 }{ 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} }\n\\tag{3.5}\\]",
+    "text": "3.2 Calculation of \\(\\frac{V_2}{V_i}\\)\nInsert Gleichung 3.1 into Gleichung 3.2 :\n\\[\\begin{align}\nV_2 &= -\\frac{\\omega_0}{s} \\cdot V_1 = -\\frac{\\omega_0}{s} \\cdot (-V_3 - V_4) \\nonumber \\\\\n&= -\\frac{\\omega_0}{s} \\cdot \\left( \\frac{\\omega_0}{s} \\cdot V_2 + \\frac{1}{Q} \\cdot V_2 + H_0 \\cdot V_i \\right) \\label{eq:v2_expanded}\n\\end{align}\\]\nSummarizing results in:\n\\[\\begin{align}\nV_2 &= -\\frac{\\omega_0^2}{s^2} \\cdot V_2 - \\frac{\\omega_0}{s Q} \\cdot V_2 - \\frac{\\omega_0}{s} H_0 \\cdot V_i \\\\\n\\Rightarrow \\frac{\\omega_0}{s} H_0 \\cdot V_i &= -\\left( \\frac{\\omega_0^2}{s^2} + \\frac{\\omega_0}{s Q} + 1 \\right) V_2\n\\end{align}\\]\nResolve to \\(\\frac{V_2}{V_i}\\):\n\\[\n\\frac{V_2}{V_i} = \\frac{\\frac{\\omega_0}{s} H_0}{ -\\left( \\frac{\\omega_0^2}{s^2} + \\frac{\\omega_0}{s Q} + 1 \\right)}\n= -\\frac{ \\frac{s}{\\omega_0} H_0 }{ 1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} }\n\\tag{3.5}\\]",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
@@ -465,7 +421,7 @@
     "href": "lab/Experiment_04_NR.html#transfer-function-fracv_3v_i",
     "title": "3  Validation of Transfer Functions",
     "section": "3.3 Transfer-function \\(\\frac{V_3}{V_i}\\):",
-    "text": "3.3 Transfer-function \\(\\frac{V_3}{V_i}\\):\nInsert Equation 3.5 into Equation 3.3 :\n\\[\nV_3 = -\\frac{\\omega_0}{s} \\cdot V_2 = -\\frac{\\omega_0}{s} \\cdot \\left( -\\frac{\\frac{s}{\\omega_0} H_0 }{ 1 +\n\\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot V_i \\right)\n\\]\n\\[\nV_3 = \\left( \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\right) V_i\n\\]\n\\[\n\\Rightarrow \\frac{V_3}{V_i} = \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.6}\\]",
+    "text": "3.3 Transfer-function \\(\\frac{V_3}{V_i}\\):\nInsert Gleichung 3.5 into Gleichung 3.3 :\n\\[\nV_3 = -\\frac{\\omega_0}{s} \\cdot V_2 = -\\frac{\\omega_0}{s} \\cdot \\left( -\\frac{\\frac{s}{\\omega_0} H_0 }{ 1 +\n\\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot V_i \\right)\n\\]\n\\[\nV_3 = \\left( \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\right) V_i\n\\]\n\\[\n\\Rightarrow \\frac{V_3}{V_i} = \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.6}\\]",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
@@ -476,7 +432,7 @@
     "href": "lab/Experiment_04_NR.html#transfer-function-fracv_4v_i",
     "title": "3  Validation of Transfer Functions",
     "section": "3.4 Transfer-function \\(\\frac{V_4}{V_i}\\):",
-    "text": "3.4 Transfer-function \\(\\frac{V_4}{V_i}\\):\nInsert Equation 3.5 into Equation 3.4 :\n\\[\\begin{align}\nV_4 &= -\\left( \\frac{1}{Q} \\cdot V_2 + H_0 \\cdot V_i \\right) = -\\left( \\frac{1}{Q} \\cdot \\left( -\\frac{\n\\frac{s}{\\omega_0} H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\cdot V_i \\right) + H_0 \\cdot V_i \\right)\n\\nonumber \\\\\n&= \\left( \\frac{\\frac{s}{\\omega_0 Q} H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} - H_0 \\right) V_i \\\\\n&= \\left( \\frac{ \\frac{s}{\\omega_0 Q} - \\left(1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} \\right) }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot H_0 \\right) V_i \\\\\n&= - \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot V_i \\\\\n\\Rightarrow \\frac{V_4}{V_i} &= - \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} }\n\\end{align}\\]\nNote: In the task booklet, the following equation is given here:\n\\[\n\\frac{V_4}{V_i} = \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2} }\n\\]\nThis corresponds to a negation of my own result.",
+    "text": "3.4 Transfer-function \\(\\frac{V_4}{V_i}\\):\nInsert Gleichung 3.5 into Gleichung 3.4 :\n\\[\\begin{align}\nV_4 &= -\\left( \\frac{1}{Q} \\cdot V_2 + H_0 \\cdot V_i \\right) = -\\left( \\frac{1}{Q} \\cdot \\left( -\\frac{\n\\frac{s}{\\omega_0} H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\cdot V_i \\right) + H_0 \\cdot V_i \\right)\n\\nonumber \\\\\n&= \\left( \\frac{\\frac{s}{\\omega_0 Q} H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} - H_0 \\right) V_i \\\\\n&= \\left( \\frac{ \\frac{s}{\\omega_0 Q} - \\left(1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} \\right) }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot H_0 \\right) V_i \\\\\n&= - \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} } \\cdot V_i \\\\\n\\Rightarrow \\frac{V_4}{V_i} &= - \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2} }\n\\end{align}\\]\nNote: In the task booklet, the following equation is given here:\n\\[\n\\frac{V_4}{V_i} = \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2} }\n\\]\nThis corresponds to a negation of my own result.",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
@@ -487,7 +443,7 @@
     "href": "lab/Experiment_04_NR.html#calculation-of-the-transfer-function-fracv_1v_i",
     "title": "3  Validation of Transfer Functions",
     "section": "3.5 Calculation of the transfer function \\(\\frac{V_1}{V_i}\\):",
-    "text": "3.5 Calculation of the transfer function \\(\\frac{V_1}{V_i}\\):\nBased on equation Equation 3.1 : \\[V_1 = -(V_3 + V_4)\\]\nUsing the transfer-function Equation 3.6 for \\(V_3\\):\n\\[\n\\frac{V_3}{V_i} = \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nCase 1: Use of the negated form of the transfer function of \\(V_4\\) from my own derivation:\n\\[\n\\frac{V_4}{V_i} = - \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}}\n\\tag{3.7}\\]\nInserting Equation 3.6 and Equation 3.7 into Equation 3.1 results in:\n\\[\nV_1 = -\\left( V_3 + V_4 \\right)\n\\]\n\\[\nV_1 = -\\left( \\frac{H_0}{D} + \\left( -\\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) \\right) V_i\n\\]\n\\[\nV_1 = \\left( \\frac{ \\left( \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) V_i \\quad \\text{where } D = 1 +\n\\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}\n\\]\n\\[\n\\Rightarrow \\frac{V_1}{V_i} = \\frac{ \\left( \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.8}\\]\nCase 2: Use the positive form of the transfer function of \\(V_4\\) as specified in the task booklet:\n\\[\n\\frac{V_4}{V_i} = \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.9}\\]\nInsert into Equation 3.1 :\n\\[\\begin{align}\nV_1 &= -\\left( V_3 + V_4 \\right) = -\\left( \\frac{H_0}{D} + \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D}\n\\right) V_i \\nonumber \\\\\n&= -\\left( \\frac{ \\left( 2 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) V_i \\\\\n\\Rightarrow \\frac{V_1}{V_i} &= - \\frac{ \\left( 2 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}} \\label{eq:tf_v1_falsch}\n\\end{align}\\]",
+    "text": "3.5 Calculation of the transfer function \\(\\frac{V_1}{V_i}\\):\nBased on equation Gleichung 3.1 : \\[V_1 = -(V_3 + V_4)\\]\nUsing the transfer-function Gleichung 3.6 for \\(V_3\\):\n\\[\n\\frac{V_3}{V_i} = \\frac{H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nCase 1: Use of the negated form of the transfer function of \\(V_4\\) from my own derivation:\n\\[\n\\frac{V_4}{V_i} = - \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}}\n\\tag{3.7}\\]\nInserting Gleichung 3.6 and Gleichung 3.7 into Gleichung 3.1 results in:\n\\[\nV_1 = -\\left( V_3 + V_4 \\right)\n\\]\n\\[\nV_1 = -\\left( \\frac{H_0}{D} + \\left( -\\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) \\right) V_i\n\\]\n\\[\nV_1 = \\left( \\frac{ \\left( \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) V_i \\quad \\text{where } D = 1 +\n\\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}\n\\]\n\\[\n\\Rightarrow \\frac{V_1}{V_i} = \\frac{ \\left( \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.8}\\]\nCase 2: Use the positive form of the transfer function of \\(V_4\\) as specified in the task booklet:\n\\[\n\\frac{V_4}{V_i} = \\frac{\\left(1 + \\frac{s^2}{\\omega_0^2} \\right) \\cdot H_0}{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.9}\\]\nInsert into Gleichung 3.1 :\n\\[\\begin{align}\nV_1 &= -\\left( V_3 + V_4 \\right) = -\\left( \\frac{H_0}{D} + \\frac{ \\left( 1 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D}\n\\right) V_i \\nonumber \\\\\n&= -\\left( \\frac{ \\left( 2 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{D} \\right) V_i \\\\\n\\Rightarrow \\frac{V_1}{V_i} &= - \\frac{ \\left( 2 + \\frac{s^2}{\\omega_0^2} \\right) H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}} \\label{eq:tf_v1_falsch}\n\\end{align}\\]",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
@@ -498,7 +454,7 @@
     "href": "lab/Experiment_04_NR.html#repeated-calculation-of-the-transfer-function-fracv_2v_i-via-v_1",
     "title": "3  Validation of Transfer Functions",
     "section": "3.6 Repeated calculation of the Transfer-function \\(\\frac{V_2}{V_i}\\) via \\(V_1\\):",
-    "text": "3.6 Repeated calculation of the Transfer-function \\(\\frac{V_2}{V_i}\\) via \\(V_1\\):\nBased on the correct function for \\(V_1\\) Equation 3.8 :\n\\[\n\\frac{V_1}{V_i} = \\frac{ \\frac{s^2}{\\omega_0^2} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nUsing the known relationship \\(V_2 = -\\frac{\\omega_0}{s} \\cdot V_1\\):\n\\[\nV_2 = -\\frac{\\omega_0}{s} \\cdot V_1\n\\]\n\\[\nV_2 = -\\frac{\\omega_0}{s} \\cdot \\frac{ \\frac{s^2}{\\omega_0^2} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}} \\cdot V_i\n\\]\n\\[\nV_2 = -\\frac{ \\frac{s}{\\omega_0} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\cdot V_i\n\\]\n\\[\n\\Rightarrow \\frac{V_2}{V_i} = - \\frac{\\frac{s}{\\omega_0} H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.10}\\]\nA comparison of the two transfer functions \\(\\frac{V_2}{V_i}\\) Equation 3.5 and Equation 3.10 shows that the error is due to equation \\(\\frac{V_4}{V_1}\\) since the derivation of \\(\\frac{V_1}{V_i}\\) remains correct.",
+    "text": "3.6 Repeated calculation of the Transfer-function \\(\\frac{V_2}{V_i}\\) via \\(V_1\\):\nBased on the correct function for \\(V_1\\) Gleichung 3.8 :\n\\[\n\\frac{V_1}{V_i} = \\frac{ \\frac{s^2}{\\omega_0^2} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\]\nUsing the known relationship \\(V_2 = -\\frac{\\omega_0}{s} \\cdot V_1\\):\n\\[\nV_2 = -\\frac{\\omega_0}{s} \\cdot V_1\n\\]\n\\[\nV_2 = -\\frac{\\omega_0}{s} \\cdot \\frac{ \\frac{s^2}{\\omega_0^2} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} +\n\\frac{s^2}{\\omega_0^2}} \\cdot V_i\n\\]\n\\[\nV_2 = -\\frac{ \\frac{s}{\\omega_0} \\cdot H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}} \\cdot V_i\n\\]\n\\[\n\\Rightarrow \\frac{V_2}{V_i} = - \\frac{\\frac{s}{\\omega_0} H_0 }{1 + \\frac{s}{\\omega_0 Q} + \\frac{s^2}{\\omega_0^2}}\n\\tag{3.10}\\]\nA comparison of the two transfer functions \\(\\frac{V_2}{V_i}\\) Gleichung 3.5 and Gleichung 3.10 shows that the error is due to equation \\(\\frac{V_4}{V_1}\\) since the derivation of \\(\\frac{V_1}{V_i}\\) remains correct.",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
@@ -509,7 +465,7 @@
     "href": "lab/Experiment_04_NR.html#conclusion",
     "title": "3  Validation of Transfer Functions",
     "section": "3.7 Conclusion",
-    "text": "3.7 Conclusion\nOnly the use of the negated form of \\(\\frac{V_4}{V_i}\\) from Equation 3.7 leads to a consistent result for \\(\\frac{V_1}{V_i}\\) according to Equation 3.8 . The version from the exercise booklet (Equation 3.9) therefore appears to be incorrect.",
+    "text": "3.7 Conclusion\nOnly the use of the negated form of \\(\\frac{V_4}{V_i}\\) from Gleichung 3.7 leads to a consistent result for \\(\\frac{V_1}{V_i}\\) according to Gleichung 3.8 . The version from the exercise booklet (Gleichung 3.9) therefore appears to be incorrect.",
     "crumbs": [
       "Labor",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Validation of Transfer Functions</span>"
