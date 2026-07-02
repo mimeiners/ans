@@ -64,35 +64,26 @@ book:
 bibliography: "bibliography/references.bib"
 csl: "bibliography/ieee.csl"
 
-
 format:
+
   html:
     theme: flatly
     fontsize: 1.2em
     linestretch: 1.7
-    # mainfont: Helvetica Neue, Helvetica, Arial, sans
-    # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+    # mainfont: Verdana
+    # monofont: Menlo
     # backgroundcolor: "white"
     # fontcolor: "black"
     highlight-style: github
+    default-image-extension: svg
 
   typst: default
-    
-  # epub:
-  #   theme: flatly
-  #   fontsize: 1.2em
-  #   linestretch: 1.7
-  #   # mainfont: Helvetica Neue, Helvetica, Arial, sans
-  #   # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
-  #   # backgroundcolor: "white"
-  #   # fontcolor: "black"
-  #   highlight-style: github
-
+  
   # pdf:
   #   documentclass: scrbook
   #   classoption: [twoside]
 
-  #   keep-tex: true
+  #   # keep-tex: true
 
   #   toc: true
   #   toc-depth: 3
@@ -104,7 +95,7 @@ format:
   #   number-depth: 2
         
   #   papersize: a4
-        
+    
   #   geometry:
   #     - inner=3cm
   #     - outer=4cm
@@ -121,16 +112,25 @@ format:
   #   pdfengine: xelatex
 
   #   mainfont: "Calibri"
-  #   # mainfont: "Times New Roman"
-  #   # sansfont: "Arial"
-  #   # monofont: "Courier New"
+  #   monofont: "MesloLGS NF"
   #   mathfont: "TeX Gyre Termes Math"
     
-  #   # include-in-header:
-  #   #   - frontmatter/header.tex
-  #   # template-partials:
-  #   # - frontmatter/before-body.tex
-  #   # - frontmatter/toc.tex
+  # # include-in-header:
+  # #   - frontmatter/header.tex
+  # # template-partials:
+  # # - frontmatter/before-body.tex
+  # # - frontmatter/toc.tex
+  
+  # epub:
+  #   theme: flatly
+  #   fontsize: 1.2em
+  #   linestretch: 1.7
+  #   # mainfont: Helvetica Neue, Helvetica, Arial, sans
+  #   # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+  #   # backgroundcolor: "white"
+  #   # fontcolor: "black"
+  #   highlight-style: github
+  #   default-image-extension: svg
 
 
     

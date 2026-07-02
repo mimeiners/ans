@@ -42,11 +42,6 @@
             "x_format": "3~s",
             "y_format": "3~V"
           },
-          "cursor2": {
-            "position": 4.249993932334574e-06,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
           "cursorD": {
             "x_format": "3~s",
             "y_format": "3~V"
